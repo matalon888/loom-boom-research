@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="21 photo memory questions built from EXIF metadata and on-device vision, with the scoring, the share-card rule and the caveats.">
-<title>How Long Ago Was This</title>
+<meta name="description" content="Full cost of the mobile approach - build, media, CDN and storage - with the creator-vs-Meta comparison and the CDN choice that costs an engineer salary.">
+<title>Mobile Approach Budget</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -208,28 +208,22 @@ footer{margin-top:80px;border-top:2px solid var(--ink);padding-top:20px;
   font-family:var(--mono);font-size:11px;line-height:1.75;color:var(--muted)}
 footer b{color:var(--ink-soft);font-weight:500}
 </style>
-
 </head>
 <body>
 <div class="wrap">
 
 <header class="masthead">
-  <div class="kicker"><span class="dot"></span> question bank &middot; photo recall &middot; 19 aug 2026</div>
-  <h1>How Long Ago<br>Was This?</h1>
-  <p class="standfirst">Agreed — photos is the strongest one. Zero permission, infinite supply, and everyone's camera roll is different. Here is what a picked photo actually gives you, and <b>21 questions you can build from it.</b></p>
+  <div class="kicker"><span class="dot"></span> budget &middot; mobile approach &middot; 19 aug 2026</div>
+  <h1>$29k to $121k<br>for Six Months</h1>
+  <p class="standfirst">Build, media, and the infrastructure line nobody has mentioned. <b>Two findings change the plan: creators are 256× cheaper than Meta per impression, and picking the wrong CDN costs you an engineer's salary.</b></p>
 
   <nav class="sitenav" aria-label="Sections of this research">
     <a href="./">The Complaint Ledger</a>
-    <a href="./playbook.html">Acquisition Playbook</a>
     <a href="./engines.html">Three Engines</a>
-    <a href="./costs.html">Budget</a>
+    <a href="./costs.html" aria-current="page">Budget</a>
     <a href="./strategy.html">Strategy Memo</a>
-    <a href="./recall.html">Screen Recall Campaign</a>
-    <a href="./mobile.html">Mobile Design</a>
-    <a href="./mask.html">The Work Mask</a>
+    <a href="./recall.html">Screen Recall</a>
     <a href="./funnel.html">Funnel Model</a>
-    <a href="./photos.html" aria-current="page">Photo Questions</a>
-    <a href="./access.html">Data Access</a>
     <a href="./roster.html">The Roster</a>
     <a href="./memo.html">Team Memo</a>
   </nav>
@@ -237,65 +231,19 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">1 — the raw materials</div>
-    <h2>What one picked photo actually hands you</h2>
-    <p class="dek">Three separate sources, all available on-device, none requiring a permission dialog beyond the picker itself.</p>
+    <div class="sec-num">A — build</div>
+    <h2>12 dev-weeks. Six calendar weeks with two people.</h2>
   </div>
-
-  <div class="cards">
-    <div class="fmt">
-      <span class="no">source 01 · exif</span>
-      <h3>Metadata</h3>
-      <p>Date and exact time taken. Day of week. Device model. Orientation. Flash fired or not. Whether it's a Live Photo or part of a burst. Camera settings — focal length, ISO, exposure.</p>
-      <p style="margin-top:.5em">Free, instant, and precise. This is where the best questions come from, because <strong>time is the thing people are most wrong about.</strong></p>
-    </div>
-    <div class="fmt">
-      <span class="no">source 02 · on-device vision</span>
-      <h3>What's in the picture</h3>
-      <p>Apple's Vision framework and Android's ML Kit both run locally: face detection and count, scene and object classification, text recognition, pet detection, dominant colours, and saliency — which region of the image the eye goes to.</p>
-      <p style="margin-top:.5em">Nothing is uploaded. The model ships with the OS. Face <em>count</em> is highly reliable; object labels are decent; scene classification is rough.</p>
-    </div>
-    <div class="fmt">
-      <span class="no">source 03 · the set</span>
-      <h3>Relationships between photos</h3>
-      <p>If they pick four, you get the gaps between them, the order, the spread, which was the outlier, whether two were taken seconds apart or years apart.</p>
-      <p style="margin-top:.5em">This is the cheapest source and it powers the most reliable game — ordering. No vision model, no risk, works on any photo that has a date.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">2 — the bank</div>
-    <h2>21 questions, by what they need</h2>
-    <p class="dek">Difficulty is how hard it is to build, not how hard it is to play. Everything marked EXIF is essentially free.</p>
-  </div>
-
   <div class="tablewrap">
-    <table style="min-width:800px">
-      <thead><tr><th>#</th><th>Question</th><th>Needs</th><th>Why it lands</th><th>Build</th></tr></thead>
+    <table style="min-width:600px">
+      <thead><tr><th class="num">Dev-weeks</th><th>What</th></tr></thead>
       <tbody>
-        <tr class="ok"><td class="num">1</td><td><strong>"How long ago was this?"</strong><br><span class="nm">guess the years/months since</span></td><td class="num">EXIF</td><td>People are catastrophically wrong about their own timeline. The reveal genuinely lands.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">2</td><td><strong>"Which came first?"</strong><br><span class="nm">order 4 photos</span></td><td class="num">EXIF</td><td>Simplest scoreable game in the set. Works on literally any photos.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">3</td><td>"What month was this?"</td><td class="num">EXIF</td><td>The picture usually hints — season, light, clothing. Feels solvable.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">4</td><td>"What time of day?"</td><td class="num">EXIF</td><td>Shadows and light give it away. Satisfying to reason about.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">5</td><td>"What day of the week?"</td><td class="num">EXIF</td><td>Nearly impossible, so it's pure luck — good as a tiebreaker, bad as a round.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">6</td><td>"How big is the gap?"<br><span class="nm">days between two photos</span></td><td class="num">EXIF</td><td>Two photos that look adjacent can be years apart. Nice twist.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">7</td><td>"Which is the odd one out?"<br><span class="nm">3 same day, 1 not</span></td><td class="num">EXIF</td><td>Deduction rather than memory — varies the rhythm.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">8</td><td>"Portrait or landscape?"<br><span class="nm">after a 2-second flash</span></td><td class="num">EXIF</td><td>Trivially easy to build, surprisingly hard to answer.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">9</td><td><strong>"How many people?"</strong><br><span class="nm">flash 2s, then count</span></td><td class="num">vision</td><td>The purest memory test here. Face count is the most reliable thing the model does.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">10</td><td>"Was anyone smiling?"</td><td class="num">vision</td><td>Face landmarks give it. Warm, low-stakes, always a talking point.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">11</td><td>"Indoors or outdoors?"</td><td class="num">vision</td><td>Scene classification. Easy round to open with.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">12</td><td>"Was there a dog in this?"</td><td class="num">vision</td><td>Pet detection is solid, and pets are the most reposted category on the internet.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">13</td><td>"What was the dominant colour?"</td><td class="num">vision</td><td>Nobody remembers. Four swatches, pick one. Visually great in a thumbnail.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">14</td><td><strong>"What did the sign say?"</strong><br><span class="nm">OCR text recall</span></td><td class="num">vision</td><td>Text in a photo is the thing people least expect to be quizzed on. Very strong when it hits.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">15</td><td>"How many [detected object]?"<br><span class="nm">chairs, cars, plates</span></td><td class="num">vision</td><td>Object counting. Reliability varies by class — whitelist the ones that work.</td><td class="num"><span class="cpm bad">harder</span></td></tr>
-        <tr class="ok"><td class="num">16</td><td><strong>"What was here?"</strong><br><span class="nm">one region blurred out</span></td><td class="num">vision</td><td>Saliency picks the interesting region, you blur it, they recall it. The most "game-like" of the set.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">17</td><td>"Which photo is this crop from?"</td><td class="num">none</td><td>Zoom to 10%, show four candidates. Pure visual memory, zero model needed.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">18</td><td><strong>"What changed?"</strong><br><span class="nm">altered version of their own photo</span></td><td class="num">vision</td><td>Spot-the-difference, but it's <em>your</em> life. Highest comment rate of anything here.</td><td class="num"><span class="cpm bad">harder</span></td></tr>
-        <tr><td class="num">19</td><td>"Which one is missing?"<br><span class="nm">show 4, hide 1</span></td><td class="num">none</td><td>Classic memory mechanic, works with any four images.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">20</td><td>"Where was this?"<br><span class="nm">guess the city</span></td><td class="num">EXIF GPS</td><td>Strong if available — but see the caveat below, location is often stripped and is the one genuinely sensitive field.</td><td class="num"><span class="cpm bad">check first</span></td></tr>
-        <tr><td class="num">21</td><td>"Guess your friend's life"<br><span class="nm">their board, your guesses</span></td><td class="num">any</td><td>The share loop. You play someone else's photos and find out how well you know them.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
+        <tr><td class="num">3</td><td>Tier 0 web game — curated board, score, share. Plays in the TikTok browser, no install.</td></tr>
+        <tr><td class="num">5</td><td>Mobile app tier 1 — system photo picker, on-device play, the question bank</td></tr>
+        <tr><td class="num">1</td><td>Email / desktop bridge — "send yourself the link"</td></tr>
+        <tr><td class="num">2</td><td>Anti-fraud, ported from Boom Match</td></tr>
+        <tr><td class="num">1</td><td>Tracked links, attribution, analytics</td></tr>
+        <tr class="ok"><td class="num"><strong>12</strong></td><td><strong>$18,000 – $42,000</strong> depending on rate ($6k–14k per dev-month)</td></tr>
       </tbody>
     </table>
   </div>
@@ -303,103 +251,98 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">3 — the one to build first</div>
-    <h2>"How long ago was this?" is the whole game</h2>
+    <div class="sec-num">B — media</div>
+    <h2>The same 57.8M impressions, six ways</h2>
+    <p class="dek">This is the finding that should decide your channel mix.</p>
   </div>
-  <div class="grid">
-    <div class="col">
-      <p>If you only ship one question, ship number 1. It has a property none of the others do: <strong>the owner of the photo cannot win.</strong></p>
-      <p>You took the picture. You were there. And you will still guess "about a year ago" about something from 2021. That gap between certainty and reality is the entire emotional payload, and it fires every single time, on every photo, forever. There is no content to run out of.</p>
-      <p>It's also the safest. The answer is a number of months. No faces, no objects, no location, no model that might be wrong — just a date subtraction that is always correct.</p>
-    </div>
-    <div class="col">
-      <div class="callout note">
-        <div class="h">The scoring that makes it shareable</div>
-        <p>Don't score right or wrong. Score <strong>how wrong</strong> — "you were off by 3 years and 2 months." Sum the error across five photos and that total is the score.</p>
-        <p style="margin-top:.7em">Lower is better, it's comparable between any two people regardless of which photos they used, and it produces a single number that means something instantly: <em>"I was off by 11 years total."</em></p>
-      </div>
-      <div class="callout">
-        <div class="h">Round structure I'd use</div>
-        <p>Five photos. Each: show it, ask "how long ago", they drag a slider, reveal the true date with the error. Then a final card with the total. Whole thing under 45 seconds.</p>
-      </div>
-    </div>
+  <div class="tablewrap">
+    <table style="min-width:640px">
+      <thead><tr><th>Channel</th><th class="num">CPM</th><th class="num">Cost for 57.8M impressions</th></tr></thead>
+      <tbody>
+        <tr class="ok"><td><strong>TikTok creators</strong> — the wave-1 pack</td><td class="num">$0.08</td><td class="num"><strong>$4,625</strong></td></tr>
+        <tr><td>Meta — India</td><td class="num">$1.36</td><td class="num">$78,625</td></tr>
+        <tr><td>Meta — Philippines</td><td class="num">$3.40</td><td class="num">$196,562</td></tr>
+        <tr><td>Meta — Brazil</td><td class="num">$4.20</td><td class="num">$242,812</td></tr>
+        <tr class="no"><td>Meta — US</td><td class="num">$20.48</td><td class="num">$1,183,996</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warn">
+    <div class="h">Creators are 256× cheaper than Meta US, and 17× cheaper than the cheapest Meta market</div>
+    <p>I said earlier that Meta should be your volume engine, following your own Boom Match research. On these numbers that's wrong for <em>reach</em>. Use creators to buy attention and Meta only for what creators can't do: precise targeting, retargeting people who played but didn't sign up, and always-on delivery between creator waves.</p>
+    <p style="margin-top:.7em">Budget Meta as a <strong>$1–5k/month targeting tool</strong>, not as the thing that buys the audience.</p>
   </div>
 </section>
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">4 — the share card</div>
-    <h2>The shareable artifact is your wrongness, not your photo</h2>
+    <div class="sec-num">C — infrastructure</div>
+    <h2>The line nobody has mentioned</h2>
+    <p class="dek">100,000 signups · 30% ever record · 4 recordings/month · 150MB each · watched 3× → 18 TB/month added storage, 54 TB/month egress.</p>
   </div>
-  <div class="grid">
+  <div class="tablewrap">
+    <table style="min-width:640px">
+      <thead><tr><th>Provider</th><th class="num">$/GB egress</th><th class="num">Egress/mo</th><th class="num">Storage at mo 6</th><th class="num">Total</th></tr></thead>
+      <tbody>
+        <tr class="ok"><td><strong>Cloudflare R2</strong></td><td class="num">$0.000</td><td class="num">$0</td><td class="num">$1,620</td><td class="num"><strong>$1,620</strong></td></tr>
+        <tr class="ok"><td>Bunny (volume)</td><td class="num">$0.005</td><td class="num">$270</td><td class="num">$1,080</td><td class="num"><strong>$1,350</strong></td></tr>
+        <tr><td>Bunny (standard)</td><td class="num">$0.010</td><td class="num">$540</td><td class="num">$1,080</td><td class="num">$1,620</td></tr>
+        <tr class="no"><td>AWS CloudFront + S3</td><td class="num">$0.085</td><td class="num">$4,590</td><td class="num">$2,484</td><td class="num">$7,074</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warn">
+    <div class="h">Check which one you're on before wave 1</div>
+    <p>CloudFront costs <strong>4–5× more than R2 or Bunny</strong> at this scale, and the gap widens with every successful campaign. A viral hit on the wrong CDN is a bill, not a win. This is worth an hour of someone's time this week.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">D — the total</div>
+    <h2>Six months, everything in</h2>
+  </div>
+  <div class="tablewrap">
+    <table style="min-width:600px">
+      <thead><tr><th>Line</th><th class="num">Low</th><th class="num">High</th></tr></thead>
+      <tbody>
+        <tr><td>Build — 12 dev-weeks</td><td class="num">$18,000</td><td class="num">$42,000</td></tr>
+        <tr><td>TikTok creator waves 1 + 3</td><td class="num">$4,550</td><td class="num">$19,812</td></tr>
+        <tr><td>Meta — targeting &amp; retargeting only, 3 months</td><td class="num">$3,000</td><td class="num">$15,000</td></tr>
+        <tr><td>CDN + storage, 6 months</td><td class="num">$3,200</td><td class="num">$33,000</td></tr>
+        <tr><td>Transcoding / encoding</td><td class="num">$600</td><td class="num">$3,000</td></tr>
+        <tr><td>Affiliate bounties — paid only on revenue</td><td class="num">$0</td><td class="num">$8,000</td></tr>
+        <tr><td>Prize pool — your lever, not a cost I can estimate</td><td class="num">—</td><td class="num">—</td></tr>
+        <tr class="ok"><td><strong>Total</strong></td><td class="num"><strong>$29,350</strong></td><td class="num"><strong>$120,812</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid" style="margin-top:24px">
     <div class="col">
-      <p>This is the design decision that makes the whole thing safe, and it happens to make it more viral rather than less.</p>
-      <p>A score card that says <strong>"off by 11 years, 4 months"</strong> contains no image, no face, no location, no name. Nothing to redact, nothing to leak, nothing anyone can regret posting. And it is <em>more</em> compelling than the photo would have been, because it's a number people want to beat.</p>
-      <p>Same logic for every question in the bank: the output is the error, the streak, the score — never the input.</p>
+      <div class="callout">
+        <div class="h">How to land at the low end</div>
+        <ul class="tight">
+          <li>Build tier 0 only first — 3 dev-weeks, not 12. Wave 1 doesn't need the mobile app.</li>
+          <li>Creators for reach; cap Meta at $1k/month.</li>
+          <li>R2 or Bunny, never CloudFront.</li>
+          <li>Affiliates cost nothing until they earn.</li>
+        </ul>
+        <p style="margin-top:.8em"><strong>That path is roughly $12–15k to find out whether any of this works.</strong></p>
+      </div>
     </div>
     <div class="col">
       <div class="callout warn">
-        <div class="h">Rules for whoever builds it</div>
-        <ul class="tight">
-          <li><strong>Never render a picked photo into a share image.</strong> Not blurred, not cropped, not as a thumbnail. If it's shareable, it has no photo in it.</li>
-          <li><strong>Never upload the photo.</strong> EXIF read and vision run on-device; only the score is a network call.</li>
-          <li><strong>Drop location by default.</strong> Question 20 is the one field that can expose a home address. Ship without it, add it later behind an explicit opt-in if it tests well.</li>
-          <li><strong>Discard on exit.</strong> No cache, no temp directory that survives the session.</li>
-        </ul>
+        <div class="h">What's missing and why</div>
+        <p><strong>The prize pool.</strong> Daily cash prizes are already live in your product and I have no idea what you're paying out. It could be the largest line here or a rounding error — and unlike everything above, it scales directly with success.</p>
+        <p style="margin-top:.7em">Also excluded: your own time, App Store fees, payment processing on credits, and any legal review — the App Store 5.1.3 read and the camera-roll privacy check both need one.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">5 — the bridge</div>
-    <h2>Why a photo game sells a screen recorder</h2>
-  </div>
-  <div class="grid">
-    <div class="col">
-      <p>Worth being explicit about this, because it's the obvious hole: a photo memory game does not obviously have anything to do with recording screens.</p>
-      <p>The link is the engine. <strong>Flash → recall → score → share</strong> is one mechanic, and it doesn't care what the image is. Photos are the mass-market on-ramp because everyone has them and nobody needs an explanation. Screens are the same game with different material — and that version is the one that sells the recorder.</p>
-    </div>
-    <div class="col">
-      <div class="callout">
-        <div class="h">The progression</div>
-        <ul class="tight">
-          <li><strong>Your photos</strong> — anyone can play, no explanation needed. This is the TikTok version.</li>
-          <li><strong>Your screenshots</strong> — same engine, funnier, more "how did you know that about me".</li>
-          <li><strong>A product demo</strong> — now it's a watch-through test, and now it's a work tool.</li>
-        </ul>
-        <p style="margin-top:.8em">One engine, three materials, increasing commercial value. Build it once for photos and the other two are content, not code.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">6 — caveats</div>
-    <h2>Things to check before building</h2>
-  </div>
-  <div class="grid">
-    <div class="col">
-      <ul class="tight">
-        <li><strong>Location metadata may not arrive.</strong> The system pickers are designed to hand over as little as possible, and location handling has changed repeatedly across OS versions. Verify what you actually receive before designing question 20 — and my recommendation is to skip it regardless.</li>
-        <li><strong>Not every photo has a date.</strong> Screenshots, saved WhatsApp images, downloads and anything re-encoded may have no EXIF at all. Since questions 1–8 all depend on it, you need a graceful fallback — detect missing EXIF at pick time and route those photos to the vision questions instead.</li>
-      </ul>
-    </div>
-    <div class="col">
-      <ul class="tight">
-        <li><strong>Vision reliability is uneven.</strong> Face count is dependable. Pet detection is good. Generic object counting is not — whitelist the classes that actually work rather than trusting the label.</li>
-        <li><strong>Four photos is a lot to ask.</strong> Each pick is friction. Consider asking for one and generating several questions from it, rather than asking for four and generating one.</li>
-        <li><strong>Nobody has tested whether this is fun twice.</strong> The whole bank is design, not evidence. Question 1 is the one I'd bet on because its emotional payload doesn't decay — but that's an argument, not a result.</li>
-      </ul>
     </div>
   </div>
 </section>
 
 <footer>
-  <b>Built on:</b> EXIF fields available from the system photo pickers · Apple Vision framework &amp; Android ML Kit on-device capabilities · the access decision in <a href="./access.html">Data Access</a><br>
-  <b>Companions:</b> <a href="./mobile.html">mobile design</a> · <a href="./recall.html">screen recall campaign</a> · <a href="./memo.html">team memo</a><br>
+  <b>Sources:</b> Meta CPM benchmarks by country 2026 · CDN egress pricing 2026 (Bunny, Cloudflare R2, CloudFront) · creator fees from the <a href="./roster.html">roster</a> at observed view counts<br>
+  <b>Companions:</b> <a href="./engines.html">three engines</a> · <a href="./funnel.html">funnel model</a> · <a href="./recall.html">screen recall</a><br>
   <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
 </footer>
 
