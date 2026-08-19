@@ -12,6 +12,7 @@ A competitive teardown of **Loom**, built from 4,500 first-party user comments, 
 | 📣 **[Team Memo](https://matalon888.github.io/loom-boom-research/memo.html)** | The one-page internal brief — the plot, the reasoning, and who does what |
 | 🧠 **[Screen Recall Campaign](https://matalon888.github.io/loom-boom-research/recall.html)** | The invented sub-niche merging recorder + memory game, with an 80-creator cross-platform roster |
 | 📱 **[Mobile Design](https://matalon888.github.io/loom-boom-research/mobile.html)** | How Boom Match works on phones — screenshots instead of live capture, plus the privacy rules |
+| 🔐 **[Data Access](https://matalon888.github.io/loom-boom-research/access.html)** | Every data source we could ask for, with what it really costs to get |
 | 📋 **[The Roster](https://matalon888.github.io/loom-boom-research/roster.html)** | All 80 creators, sortable and searchable, with fees, reach and CPM |
 | 🎯 **[The 50 Creators](https://matalon888.github.io/loom-boom-research/creators.html)** | 50 X creators whose output is already screen recordings — ranked, with the $20-referral DM |
 | 💬 **[1,795 Raw Comments](https://matalon888.github.io/loom-boom-research/comments.html)** | Every user comment behind it, searchable and filterable |
