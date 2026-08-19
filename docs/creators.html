@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="50 X creators whose output is already screen recordings, ranked and ready to recruit onto a $20-per-referral loop for Boom Share.">
-<title>Fifty Creators, Twenty Dollars</title>
+<meta name="description" content="50 X creators whose output is already screen recordings, each priced against their real view counts, with pack budgets and break-even maths for Boom Share and Boom Match.">
+<title>Fifty Creators, Priced</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -144,6 +144,19 @@ ul.tight li{margin-bottom:.42em;font-size:.94rem;color:var(--ink-soft)}
 ul.tight li:last-child{margin-bottom:0}
 code{font-family:var(--mono);font-size:.87em;background:var(--rule-soft);padding:1px 5px}
 
+.cpm{font-family:var(--mono);padding:2px 7px;border:1px solid var(--rule);white-space:nowrap}
+.cpm.good{color:var(--boom);border-color:var(--boom);background:var(--boom-wash)}
+.cpm.ok{color:var(--warm);border-color:var(--warm)}
+.cpm.bad{color:var(--rec);border-color:var(--rec)}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin-top:20px}
+.pk{background:var(--card);border:1px solid var(--rule);padding:18px 20px;box-shadow:var(--shadow)}
+.pk.rec{border:2px solid var(--boom)}
+.pk .lab{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.pk .big{font-family:var(--display);font-weight:700;font-size:2.1rem;line-height:1;margin:9px 0 2px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.pk.rec .big{color:var(--boom)}
+.pk .sub{font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.6}
+.pk .tag{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;
+  background:var(--boom);color:var(--paper);padding:2px 7px;margin-top:9px}
 footer{margin-top:80px;border-top:2px solid var(--ink);padding-top:20px;
   font-family:var(--mono);font-size:11px;line-height:1.75;color:var(--muted)}
 footer b{color:var(--ink-soft);font-weight:500}
@@ -153,9 +166,9 @@ footer b{color:var(--ink-soft);font-weight:500}
 <div class="wrap">
 
 <header class="masthead">
-  <div class="kicker"><span class="dot"></span> Recruitment list &middot; Boom Share &middot; 19 August 2026</div>
-  <h1>Fifty Creators,<br>Twenty Dollars</h1>
-  <p class="standfirst">Scraped from 720 X posts where someone was <b>showing their screen</b> — demos, devlogs, walkthroughs, vibe-coding builds. These are people whose output is already a screen recording. Here they are, with the DM.</p>
+  <div class="kicker"><span class="dot"></span> Paid creator plan &middot; Boom Share &times; Boom Match &middot; 19 August 2026</div>
+  <h1>Fifty Creators,<br>Priced</h1>
+  <p class="standfirst">720 X posts scraped, filtered to 50 people whose output is already a screen recording. Each one priced against <b>their real view counts</b>, not their follower count — so you can see exactly what a post is worth before you offer.</p>
 
   <nav class="sitenav" aria-label="Sections of this research">
     <a href="./">The Complaint Ledger</a>
@@ -166,561 +179,741 @@ footer b{color:var(--ink-soft);font-weight:500}
   </nav>
 
   <div class="stats">
-    <div class="st"><span class="n">50</span><span class="l">Creators</span></div>
-    <div class="st"><span class="n">2.29M</span><span class="l">Combined reach</span></div>
-    <div class="st"><span class="n">17,206</span><span class="l">Median followers</span></div>
-    <div class="st"><span class="n">720</span><span class="l">Posts screened</span></div>
-    <div class="st"><span class="n">$20</span><span class="l">Per referred subscriber</span></div>
+    <div class="st"><span class="n">50</span><span class="l">Creators priced</span></div>
+    <div class="st"><span class="n">$2,025</span><span class="l">Recommended first spend</span></div>
+    <div class="st"><span class="n">679k</span><span class="l">Est. views for it</span></div>
+    <div class="st"><span class="n">$2.98</span><span class="l">CPM · benchmark $10–40</span></div>
+    <div class="st"><span class="n">$31,941</span><span class="l">All 50, one post each</span></div>
   </div>
 </header>
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">01 — the offer</div>
-    <h2>$20 a referral is affordable. Here's the arithmetic.</h2>
+    <div class="sec-num">01 — two corrections</div>
+    <h2>You were right on both, and the credit model is the bigger one</h2>
   </div>
+
   <div class="grid">
     <div class="col">
-      <div class="callout">
-        <div class="h">$20 against $71.99 of year-one revenue</div>
-        <p>That's <strong>28% of the first year</strong>, paid once, after the referred person's payment clears. You keep $52 in year one and all of it thereafter. Nothing is at risk before revenue exists.</p>
-        <p style="margin-top:.7em">Google's implied cost for the same paying customer is <strong>$1,335</strong>. This is roughly <strong>67× cheaper</strong> — and it only ever costs you anything when it works.</p>
+      <div class="callout warn">
+        <div class="h">“The influencers will do it free” — wrong, and I should have known</div>
+        <p>Free product plus a referral bounty is an affiliate offer, and creators with real audiences decline affiliate offers. The market rate for a tech video post on X is <strong>$8–$20 per 1,000 followers</strong>, with a ~1.4× premium for video over plain text. Everything below is priced at that, and the whole page is rebuilt around paying up front.</p>
       </div>
-      <div class="callout note">
-        <div class="h">What 50 creators is actually worth</div>
-        <p>Combined reach is 2.29M. Even at a deliberately pessimistic 0.1% of reach trying Boom and 2% of those upgrading, that's ~43 subscribers — about $3,100 of year-one revenue for $860 in bounties. The upside case is an order of magnitude higher, and the downside case costs you nothing but the DMs.</p>
+      <div class="callout">
+        <div class="h">“Users buy virtual credit for Boom Match” — this changes the strategy</div>
+        <p>In the last memo I warned that memory-game content pulls a huge, cheap audience who will never pay $71.99 for a screen recorder. <strong>That warning is now void.</strong> They don't need to buy a subscription — they buy credits.</p>
+        <p style="margin-top:.7em">Which means a game player is a <em>directly monetised user</em>, not an ad impression you hope converts later. The “low-intent” audience I flagged as a risk is now your second revenue line, and it converts on a $5–20 impulse instead of a $71.99 annual commitment. That's a far easier sale, and it makes paid creator posts justifiable in a way they weren't an hour ago.</p>
       </div>
     </div>
     <div class="col">
-      <p><strong>Why these 50 and not any 50.</strong> The filter wasn't follower count. It was: does this person already publish screen recordings? Every one of them was found because they posted a video of their screen — a demo, a devlog, a build walkthrough, a tool tutorial.</p>
-      <p>That matters because you are not asking them to make new content. You're asking them to make the content they already make, with your recorder, and take a link. The behaviour change is close to zero, which is the only kind of creator ask that actually gets done.</p>
-      <ul class="tight">
-        <li><strong>24 of 50</strong> post about Claude Code — the densest single cluster</li>
-        <li>Then Figma (7), Replit (7), Codex (5), Antigravity (5), Cursor (4), Lovable, v0, Vercel, n8n</li>
-        <li>Excluded: crypto and DAO accounts, news aggregators, anyone with no bio, and <strong>@pie6k — who is the founder of Screen Studio</strong>, i.e. a competitor, not a recruit</li>
-      </ul>
+      <p><strong>So the funnel has two exits, not one.</strong> A person who sees a creator's post can become a Premium subscriber at $71.99/year, or a credit buyer at whatever a pack costs. You said you don't mind if they only ever do the second — that's the right instinct, because the second is where the volume is.</p>
+      <p>It also resolves the tension that has been running through this whole project. The reliability story sells subscriptions to Loom refugees. The memory game sells credits to everyone else. They are different audiences, different price points and different creative — but they share one product, one payment rail and one creator roster.</p>
+      <div class="callout note">
+        <div class="h">The number I still need from you</div>
+        <p>What a credit pack costs and what a buyer spends in their first month. Every break-even figure below is expressed as <em>“revenue needed per paying user”</em> precisely because I don't have it. Give me that one number and these tables become a go/no-go instead of a range.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">02 — the list</div>
-    <h2>The 50, ranked by reach</h2>
-    <p class="dek">Every row links to the profile and to the specific screen-recording post that qualified them — open it before you DM, and reference it. Tiers are split so you can start where the reply rate is highest.</p>
+    <div class="sec-num">02 — the packs</div>
+    <h2>Buy the top ten first. It is not close.</h2>
+    <p class="dek">Cost-efficiency collapses fast as you go down the list, because follower count and actual reach diverge wildly. Pricing every creator against their own observed views makes that visible.</p>
   </div>
 
-  <div class="filters" role="group" aria-label="Filter by tier">
+  <div class="packs">
+    <div class="pk rec">
+      <span class="lab">Recommended</span>
+      <div class="big">$2,025</div>
+      <div class="sub">Top 10 creators<br>~678,700 views<br><strong>CPM $2.98</strong></div>
+      <span class="tag">Start here</span>
+    </div>
+    <div class="pk">
+      <span class="lab">Scale-up</span>
+      <div class="big">$9,605</div>
+      <div class="sub">Top 20 creators<br>~1,305,200 views<br><strong>CPM $7.36</strong></div>
+    </div>
+    <div class="pk">
+      <span class="lab">Broad</span>
+      <div class="big">$19,843</div>
+      <div class="sub">Top 35 creators<br>~1,621,500 views<br><strong>CPM $12.24</strong></div>
+    </div>
+    <div class="pk">
+      <span class="lab">Everyone</span>
+      <div class="big">$31,941</div>
+      <div class="sub">All 50 creators<br>~1,787,900 views<br><strong>CPM $17.87</strong></div>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:26px">
+    <div class="col">
+      <p>Going from ten creators to fifty costs <strong>15.8× more</strong> and buys <strong>2.6× the views</strong>. The last fifteen names cost $12,098 and add 166,000 views — a CPM north of $70, which is worse than most paid media.</p>
+      <p>The tech-niche benchmark for sponsored content is a <strong>$10–40 CPM</strong>. The top-10 pack lands at $2.98. That is the entire argument for starting small: you are buying the most under-priced attention in the list, and you find out whether any of this works for two thousand dollars.</p>
+    </div>
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">How I priced it, and where it's optimistic</div>
+        <p>Rate = followers ÷ 1,000 × $8–12 (banded by size) × 1.4 for video, floored at $60 and capped at $2,500.</p>
+        <p style="margin-top:.7em">Views come from the actual <code>viewCount</code> on each creator's qualifying post. But my scrape sorted by <strong>Top</strong>, so those are each creator's better posts, not their median. I applied a <strong>40% haircut</strong> and capped any creator at 8× their follower count to stop one viral outlier distorting the model. Even so, treat these as the optimistic end — a real campaign will land below them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">03 — break-even</div>
+    <h2>What each pack needs to earn back</h2>
+    <p class="dek">Read down to your believed click-through rate, across to your believed pay rate. The cell is the revenue you need per paying user for the spend to wash its face. Assumes 25% of visitors sign up.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table style="min-width:640px">
+      <thead><tr>
+        <th>Pack</th><th>CTR on views</th><th class="num">Visits</th><th class="num">Signups</th>
+        <th class="num">If 2% pay</th><th class="num">If 5% pay</th><th class="num">If 10% pay</th>
+      </tr></thead>
+      <tbody>
+        <tr><td rowspan="3"><strong>Top 10</strong><br><span class="nm">$2,025</span></td><td>0.5%</td><td class="num">3,394</td><td class="num">848</td><td class="num">$119.34</td><td class="num">$47.73</td><td class="num"><span class="cpm ok">$23.87</span></td></tr>
+        <tr><td>1.0%</td><td class="num">6,787</td><td class="num">1,697</td><td class="num">$59.67</td><td class="num"><span class="cpm ok">$23.87</span></td><td class="num"><span class="cpm good">$11.93</span></td></tr>
+        <tr><td>2.0%</td><td class="num">13,575</td><td class="num">3,394</td><td class="num">$29.83</td><td class="num"><span class="cpm good">$11.93</span></td><td class="num"><span class="cpm good">$5.97</span></td></tr>
+        <tr><td rowspan="3"><strong>Top 20</strong><br><span class="nm">$9,605</span></td><td>0.5%</td><td class="num">6,526</td><td class="num">1,632</td><td class="num">$294.35</td><td class="num">$117.74</td><td class="num">$58.87</td></tr>
+        <tr><td>1.0%</td><td class="num">13,052</td><td class="num">3,263</td><td class="num">$147.18</td><td class="num">$58.87</td><td class="num">$29.44</td></tr>
+        <tr><td>2.0%</td><td class="num">26,105</td><td class="num">6,526</td><td class="num">$73.59</td><td class="num">$29.44</td><td class="num"><span class="cpm ok">$14.72</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid" style="margin-top:24px">
+    <div class="col">
+      <div class="callout">
+        <div class="h">Why the credit model makes this work</div>
+        <p>On the top-10 pack at a realistic 1% CTR and 5% pay rate, you need <strong>$23.87 per paying user</strong>. Against a $71.99 subscription that's comfortable. Against a credit pack it depends entirely on your pricing — but a buyer who spends $25 across their first month puts you at break-even on day one, with every repeat purchase pure margin.</p>
+        <p style="margin-top:.7em">At a 2% CTR the number drops to <strong>$11.93</strong>, which almost any credit pack clears on first purchase.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="callout note">
+        <div class="h">Keep a small bounty on top of the fee</div>
+        <p>Pay the post fee <em>and</em> $20 per referred paying user. The fee gets the post made; the bounty keeps them posting after the contract ends and tells you which creator actually drove revenue rather than just views.</p>
+        <p style="margin-top:.7em">All-in on the top-10 pack: <strong>$3,722 at a 1% CTR and 5% pay rate</strong> (85 payers, $43.87 each), or <strong>$5,419 at 2% / 5%</strong> (170 payers, $31.93 each). The bounty only grows when the campaign is working, which is the correct shape for a variable cost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">04 — the list</div>
+    <h2>All 50, ranked by cost per view</h2>
+    <p class="dek">Not by followers. Rank 1 is the best value in the list; the bottom rows are people whose audience does not watch them. Every row links to the post that qualified them — open it before you offer.</p>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filter">
     <button class="fb" data-t="all" aria-pressed="true" type="button">All 50</button>
-    <button class="fb" data-t="L" aria-pressed="false" type="button">50k+ · 12</button>
-    <button class="fb" data-t="M" aria-pressed="false" type="button">10–50k · 20</button>
-    <button class="fb" data-t="S" aria-pressed="false" type="button">under 10k · 18</button>
+    <button class="fb" data-t="top10" aria-pressed="false" type="button">Top 10 · recommended</button>
+    <button class="fb" data-t="L" aria-pressed="false" type="button">50k+</button>
+    <button class="fb" data-t="M" aria-pressed="false" type="button">10–50k</button>
+    <button class="fb" data-t="S" aria-pressed="false" type="button">under 10k</button>
   </div>
 
   <div class="tablewrap">
     <table>
       <thead><tr>
-        <th>#</th><th>Creator</th><th>Followers</th><th>Avg eng.</th><th>Builds with</th><th>Bio</th><th>Proof</th>
+        <th>#</th><th>Creator</th><th>Followers</th><th>Est. views<br>per post</th><th>Offer</th><th>CPM</th><th>Builds with</th><th>Bio</th><th>Proof</th>
       </tr></thead>
       <tbody id="tb">
-<tr data-tier="L" data-f="228220">
+<tr data-tier="S" data-cpm="1.63">
 <td class="num">1</td>
-<td><a href="https://x.com/mckaywrigley" target="_blank" rel="noopener"><strong>@mckaywrigley</strong></a><div class="nm">Mckay Wrigley</div></td>
-<td class="num">228,220</td><td class="num">4,390</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">I build &amp; teach AI stuff. Founder @TakeoffAI + @AgentShare.</td>
-<td class="num"><a href="https://x.com/mckaywrigley/status/1891544731496206365" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="227861">
-<td class="num">2</td>
-<td><a href="https://x.com/rileybrown" target="_blank" rel="noopener"><strong>@rileybrown</strong></a><div class="nm">Riley Brown</div></td>
-<td class="num">227,861</td><td class="num">908</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span> <span class="tool">cursor</span> <span class="tool">figma</span></td>
-<td class="bio">Building @agentnative_ riley@agentnative.inc</td>
-<td class="num"><a href="https://x.com/rileybrown/status/1956499352136134696" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="222323">
-<td class="num">3</td>
-<td><a href="https://x.com/mitchellh" target="_blank" rel="noopener"><strong>@mitchellh</strong></a><div class="nm">Mitchell Hashimoto</div></td>
-<td class="num">222,323</td><td class="num">1,151</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">Co-founder of @Superlogical. Creator of Ghostty. 👻 Prev founded @HashiCorp, created Vagrant, Terraform, Vault, and others.</td>
-<td class="num"><a href="https://x.com/mitchellh/status/1976697791151001905" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="177894">
-<td class="num">4</td>
-<td><a href="https://x.com/MengTo" target="_blank" rel="noopener"><strong>@MengTo</strong></a><div class="nm">Meng To</div></td>
-<td class="num">177,894</td><td class="num">1,296</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">Founder at @designcodeio and https://t.co/Kpiogf225W. I teach designers code and developers design. Screen recorder: https://t.co/KA2Rr</td>
-<td class="num"><a href="https://x.com/MengTo/status/1910996478408917070" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="169202">
-<td class="num">5</td>
-<td><a href="https://x.com/BrettFromDJ" target="_blank" rel="noopener"><strong>@BrettFromDJ</strong></a><div class="nm">Brett</div></td>
-<td class="num">169,202</td><td class="num">3,720</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">Running a $1M one-man design studio. 🙂 https://t.co/Bd698tR2Fe: $100K MRR ✍️ https://t.co/qtdiuMA9LP: $12K MRR // Building https://t.co</td>
-<td class="num"><a href="https://x.com/BrettFromDJ/status/1923061854747886035" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="149211">
-<td class="num">6</td>
-<td><a href="https://x.com/heynavtoor" target="_blank" rel="noopener"><strong>@heynavtoor</strong></a><div class="nm">Nav Toor</div></td>
-<td class="num">149,211</td><td class="num">4,610</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">copilot</span></td>
-<td class="bio">Helping you master AI daily with step-by-step AI guides, latest news, &amp; practical tools • DM for Collabs</td>
-<td class="num"><a href="https://x.com/heynavtoor/status/2040702196401197358" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="131711">
-<td class="num">7</td>
-<td><a href="https://x.com/dr_cintas" target="_blank" rel="noopener"><strong>@dr_cintas</strong></a><div class="nm">Alvaro Cintas</div></td>
-<td class="num">131,711</td><td class="num">924</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span></td>
-<td class="bio">Educating about AI, Cybersecurity and Technology | Professor | PhD in Computer Science &amp; Engineering</td>
-<td class="num"><a href="https://x.com/dr_cintas/status/2081094058139918595" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="82057">
-<td class="num">8</td>
-<td><a href="https://x.com/Timmysofine" target="_blank" rel="noopener"><strong>@Timmysofine</strong></a><div class="nm">Oluwatimileyin✨🦋</div></td>
-<td class="num">82,057</td><td class="num">181</td>
-<td class="tools"><span class="tool">cursor</span></td>
-<td class="bio">Tech and AI Influencer | MSc Governance of Digitalization, Åbo Akademi 🇫🇮 | favourtimileyin2018@gmail.com</td>
-<td class="num"><a href="https://x.com/Timmysofine/status/2063881478719856742" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="78044">
-<td class="num">9</td>
-<td><a href="https://x.com/mikefutia" target="_blank" rel="noopener"><strong>@mikefutia</strong></a><div class="nm">Mike Futia</div></td>
-<td class="num">78,044</td><td class="num">1,072</td>
-<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
-<td class="bio">Building AI systems for ads | Clients: Kitsch &amp; MAELYS | 🤖 Join 600+ brands &amp; agencies 👉 https://t.co/Op2LABIY1A | 🤝 Collabs: hi@mikefu</td>
-<td class="num"><a href="https://x.com/mikefutia/status/2067766615962489258" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="73106">
-<td class="num">10</td>
-<td><a href="https://x.com/testingcatalog" target="_blank" rel="noopener"><strong>@testingcatalog</strong></a><div class="nm">🚨 AI News | TestingCatalog</div></td>
-<td class="num">73,106</td><td class="num">727</td>
-<td class="tools"><span class="tool">claude code</span></td>
-<td class="bio">Reporting AI nonsense. Latest AI News on AI Agents, Model Releases, Tools, Leaks, and Rumors 🗞️</td>
-<td class="num"><a href="https://x.com/testingcatalog/status/2089499940963643567" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="66622">
-<td class="num">11</td>
-<td><a href="https://x.com/alexcooldev" target="_blank" rel="noopener"><strong>@alexcooldev</strong></a><div class="nm">Alex Nguyen</div></td>
-<td class="num">66,622</td><td class="num">1,327</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">Indie Hacker building AI apps: 370K users 🤙 (https://t.co/BOZvk1H2cP) 40K users 🤌 (https://t.co/wHZuITsfBh) +3 stealth apps, partnered </td>
-<td class="num"><a href="https://x.com/alexcooldev/status/2084212268708094177" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="L" data-f="65205">
-<td class="num">12</td>
-<td><a href="https://x.com/shushant_l" target="_blank" rel="noopener"><strong>@shushant_l</strong></a><div class="nm">Shushant Lakhyani</div></td>
-<td class="num">65,205</td><td class="num">18</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">Marketer. Builder. AI generalist. I help entrepreneurs, professionals, and creators build AI-powered businesses, systems, and personal </td>
-<td class="num"><a href="https://x.com/shushant_l/status/2064346903601664272" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="48421">
-<td class="num">13</td>
-<td><a href="https://x.com/Nabhel_" target="_blank" rel="noopener"><strong>@Nabhel_</strong></a><div class="nm">Nabhel</div></td>
-<td class="num">48,421</td><td class="num">1,571</td>
-<td class="tools"><span class="tool">figma</span></td>
-<td class="bio">🦋 I build software products.</td>
-<td class="num"><a href="https://x.com/Nabhel_/status/1488096839643832320" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="46344">
-<td class="num">14</td>
-<td><a href="https://x.com/BHolmesDev" target="_blank" rel="noopener"><strong>@BHolmesDev</strong></a><div class="nm">Ben Holmes</div></td>
-<td class="num">46,344</td><td class="num">262</td>
-<td class="tools"><span class="tool">vercel</span></td>
-<td class="bio">The Whiteboard Guy @warpdotdev</td>
-<td class="num"><a href="https://x.com/BHolmesDev/status/1696899822324756522" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="43582">
-<td class="num">15</td>
-<td><a href="https://x.com/mannupaaji" target="_blank" rel="noopener"><strong>@mannupaaji</strong></a><div class="nm">Manu Arora</div></td>
-<td class="num">43,582</td><td class="num">313</td>
-<td class="tools"><span class="tool">claude code</span></td>
-<td class="bio">Building https://t.co/4eCBc4SSJt (180k+ users) • https://t.co/0jrp6s2JJ9 Dev studio → https://t.co/NPJalHkrux (worked w @cursor_ai, @Fi</td>
-<td class="num"><a href="https://x.com/mannupaaji/status/1964230013483700695" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="36184">
-<td class="num">16</td>
-<td><a href="https://x.com/jacobrodri_" target="_blank" rel="noopener"><strong>@jacobrodri_</strong></a><div class="nm">Jacob Rodri</div></td>
-<td class="num">36,184</td><td class="num">1,541</td>
-<td class="tools"><span class="tool">n8n</span></td>
-<td class="bio">founder https://t.co/JVdPBQHcqJ - find winning apps, replicate what&#x27;s working. tweets about growth and my learnings🫡</td>
-<td class="num"><a href="https://x.com/jacobrodri_/status/2001315344086859926" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="35708">
-<td class="num">17</td>
-<td><a href="https://x.com/hrswatigupta" target="_blank" rel="noopener"><strong>@hrswatigupta</strong></a><div class="nm">Swati Gupta</div></td>
-<td class="num">35,708</td><td class="num">119</td>
-<td class="tools"><span class="tool">claude code</span></td>
-<td class="bio">I help you grow online using AI, marketing &amp; personal branding Daily action | Resume Writer | DM for Collab : swatigupta4190@gmail.com</td>
-<td class="num"><a href="https://x.com/hrswatigupta/status/2087887847768695001" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="33571">
-<td class="num">18</td>
-<td><a href="https://x.com/iamgdsa" target="_blank" rel="noopener"><strong>@iamgdsa</strong></a><div class="nm">Guillaume</div></td>
-<td class="num">33,571</td><td class="num">226</td>
-<td class="tools"><span class="tool">lovable</span></td>
-<td class="bio">writing daily @wesocialgrowth tracking+analytics: https://t.co/2CJ6jIRSKY creatornets: https://t.co/MQpfhTH1VW + 4 apps + @viraltoktrac</td>
-<td class="num"><a href="https://x.com/iamgdsa/status/2036118255023378801" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="33020">
-<td class="num">19</td>
-<td><a href="https://x.com/jasonzhou1993" target="_blank" rel="noopener"><strong>@jasonzhou1993</strong></a><div class="nm">Jason Zhou</div></td>
-<td class="num">33,020</td><td class="num">308</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">Builder. I run my companies on agent loops Founder @SuperDesignDev @treg_ai and @aibuilderclub_</td>
-<td class="num"><a href="https://x.com/jasonzhou1993/status/1721895326221828130" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="32347">
-<td class="num">20</td>
-<td><a href="https://x.com/alexgoughcooper" target="_blank" rel="noopener"><strong>@alexgoughcooper</strong></a><div class="nm">Alex Cooper</div></td>
-<td class="num">32,347</td><td class="num">857</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span></td>
-<td class="bio">Building things with AI. Tweets about AI &amp; advertising. Co-Founder @ @heyparkerdotai and https://t.co/Iq2NylgSwZ</td>
-<td class="num"><a href="https://x.com/alexgoughcooper/status/2087597411954737453" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="31294">
-<td class="num">21</td>
-<td><a href="https://x.com/VibeMarketer_" target="_blank" rel="noopener"><strong>@VibeMarketer_</strong></a><div class="nm">J.B.</div></td>
-<td class="num">31,294</td><td class="num">580</td>
-<td class="tools"><span class="tool">bolt</span> <span class="tool">n8n</span></td>
-<td class="bio">ai systems for content, media, and growth</td>
-<td class="num"><a href="https://x.com/VibeMarketer_/status/1932853656426086664" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="28701">
-<td class="num">22</td>
-<td><a href="https://x.com/daniel_mac8" target="_blank" rel="noopener"><strong>@daniel_mac8</strong></a><div class="nm">Dan McAteer</div></td>
-<td class="num">28,701</td><td class="num">288</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span></td>
-<td class="bio">I build AI agents for a living and write about what they&#x27;re doing to our minds. Essays weekly at https://t.co/ROXTvUfk75 · Agentic Ops </td>
-<td class="num"><a href="https://x.com/daniel_mac8/status/2088018732761117072" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="26852">
-<td class="num">23</td>
-<td><a href="https://x.com/om_patel5" target="_blank" rel="noopener"><strong>@om_patel5</strong></a><div class="nm">Om Patel</div></td>
-<td class="num">26,852</td><td class="num">1,910</td>
-<td class="tools"><span class="tool">claude code</span></td>
-<td class="bio">🇨🇦 growing https://t.co/Tr6rRuOdX9 ($10k/m) + https://t.co/K8xdwRDHqX building cool stuff</td>
-<td class="num"><a href="https://x.com/om_patel5/status/2037776537341051300" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="25071">
-<td class="num">24</td>
-<td><a href="https://x.com/GuptaSayujya" target="_blank" rel="noopener"><strong>@GuptaSayujya</strong></a><div class="nm">Sayujya Gupta</div></td>
-<td class="num">25,071</td><td class="num">172</td>
-<td class="tools"><span class="tool">claude code</span></td>
-<td class="bio">Obsessed about AI | Building and Scaling SaaS for fun</td>
-<td class="num"><a href="https://x.com/GuptaSayujya/status/2050196195050434835" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="17206">
-<td class="num">25</td>
-<td><a href="https://x.com/ericciarla" target="_blank" rel="noopener"><strong>@ericciarla</strong></a><div class="nm">Eric Ciarla (hiring)</div></td>
-<td class="num">17,206</td><td class="num">142</td>
-<td class="tools"><span class="tool">supabase</span></td>
-<td class="bio">Co-Founder @ Firecrawl (YC S22). Previously Mendable.</td>
-<td class="num"><a href="https://x.com/ericciarla/status/1650952120537866241" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="15037">
-<td class="num">26</td>
-<td><a href="https://x.com/chhddavid" target="_blank" rel="noopener"><strong>@chhddavid</strong></a><div class="nm">David Ch</div></td>
-<td class="num">15,037</td><td class="num">630</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">building @shipper_now 🚢 i collect saas companies. all w/@chddaniel, my brother and co-founder</td>
-<td class="num"><a href="https://x.com/chhddavid/status/2017932062460617145" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="13322">
-<td class="num">27</td>
-<td><a href="https://x.com/undefinedKi" target="_blank" rel="noopener"><strong>@undefinedKi</strong></a><div class="nm">Yarchi</div></td>
-<td class="num">13,322</td><td class="num">4,080</td>
-<td class="tools"><span class="tool">claude code</span></td>
-<td class="bio">AI &amp; tech researcher | Building cool stuff | Sharing everything I learn</td>
-<td class="num"><a href="https://x.com/undefinedKi/status/2066504594755031343" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="11555">
-<td class="num">28</td>
-<td><a href="https://x.com/TechWith_Nova" target="_blank" rel="noopener"><strong>@TechWith_Nova</strong></a><div class="nm">NOVA</div></td>
-<td class="num">11,555</td><td class="num">394</td>
-<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span> <span class="tool">replit</span></td>
-<td class="bio">AI Video • Tech Tools • Future Media Exploring how AI is reshaping creativity and digital skills . DM for Collaboration</td>
-<td class="num"><a href="https://x.com/TechWith_Nova/status/2033356678713000229" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="11339">
-<td class="num">29</td>
-<td><a href="https://x.com/MervinPraison" target="_blank" rel="noopener"><strong>@MervinPraison</strong></a><div class="nm">Mervin Praison</div></td>
-<td class="num">11,339</td><td class="num">1,782</td>
-<td class="tools"><span class="tool">replit</span></td>
-<td class="bio">AI https://t.co/REymen9ODd</td>
-<td class="num"><a href="https://x.com/MervinPraison/status/1893747809741840387" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="10616">
-<td class="num">30</td>
-<td><a href="https://x.com/polash_ai" target="_blank" rel="noopener"><strong>@polash_ai</strong></a><div class="nm">Polash Khan</div></td>
-<td class="num">10,616</td><td class="num">171</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
-<td class="bio">Helping busy Founders &amp; CEOs build Personal Brands on Linkedin &amp; Twitter | AI Enthusiast | DM for Collaborations 📩</td>
-<td class="num"><a href="https://x.com/polash_ai/status/2028452211005813124" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="10382">
-<td class="num">31</td>
-<td><a href="https://x.com/NabilMinhaz" target="_blank" rel="noopener"><strong>@NabilMinhaz</strong></a><div class="nm">Nabil Abdullah</div></td>
-<td class="num">10,382</td><td class="num">224</td>
-<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
-<td class="bio">AI Educator | Teaching you how to earn smarter with AI, automation &amp; digital skills | 📩 DM Open for collaboration</td>
-<td class="num"><a href="https://x.com/NabilMinhaz/status/2030463576918704346" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="M" data-f="10121">
-<td class="num">32</td>
-<td><a href="https://x.com/Tanju_mim" target="_blank" rel="noopener"><strong>@Tanju_mim</strong></a><div class="nm">Tanjina Islam</div></td>
-<td class="num">10,121</td><td class="num">253</td>
-<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
-<td class="bio">Sharing effective ways to grow your business using tech and AI. Also Running AI Influencers Community. DM for paid collaboration. 📩: ta</td>
-<td class="num"><a href="https://x.com/Tanju_mim/status/2034150532324200735" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="9694">
-<td class="num">33</td>
-<td><a href="https://x.com/TheWalid" target="_blank" rel="noopener"><strong>@TheWalid</strong></a><div class="nm">walid (nyc for summer)</div></td>
-<td class="num">9,694</td><td class="num">58</td>
-<td class="tools"><span class="tool">figma</span> <span class="tool">replit</span></td>
-<td class="bio">ceo @ breadwinners club | helping consumer apps with tech UGC and paid ads | campaigns include @perplexity_ai @kalshi @partiful @figma</td>
-<td class="num"><a href="https://x.com/TheWalid/status/1998029884178985469" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="9159">
-<td class="num">34</td>
-<td><a href="https://x.com/brdrck" target="_blank" rel="noopener"><strong>@brdrck</strong></a><div class="nm">Jeff Broderick</div></td>
-<td class="num">9,159</td><td class="num">181</td>
-<td class="tools"><span class="tool">figma</span></td>
-<td class="bio">Building @OpacityHQ. @figma wizard &amp; plugin tinkerer. DMs Open. Mastodon: https://t.co/0MwCXrTGH0</td>
-<td class="num"><a href="https://x.com/brdrck/status/2021054040122261860" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="8678">
-<td class="num">35</td>
-<td><a href="https://x.com/this_is_tasnim" target="_blank" rel="noopener"><strong>@this_is_tasnim</strong></a><div class="nm">Maliha Tasnim</div></td>
-<td class="num">8,678</td><td class="num">127</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
-<td class="bio">AI Entrepreneur | Helping businesses grow with AI &amp; tech | Ghostwriter for founders | DM for collabs 📩 malihatasnim956@gmail.com</td>
-<td class="num"><a href="https://x.com/this_is_tasnim/status/2033796721252438127" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="8012">
-<td class="num">36</td>
-<td><a href="https://x.com/sakhil_ai" target="_blank" rel="noopener"><strong>@sakhil_ai</strong></a><div class="nm">Sakhil Khan</div></td>
-<td class="num">8,012</td><td class="num">140</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
-<td class="bio">AI Educator | Teaching you how to earn smarter with AI, automation &amp; digital skills | 📩 DM Open for collaboration</td>
-<td class="num"><a href="https://x.com/sakhil_ai/status/2032859943016214764" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="7597">
-<td class="num">37</td>
-<td><a href="https://x.com/seelffff" target="_blank" rel="noopener"><strong>@seelffff</strong></a><div class="nm">self.dll</div></td>
-<td class="num">7,597</td><td class="num">826</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">copilot</span> <span class="tool">cursor</span> <span class="tool">windsurf</span></td>
-<td class="bio">AI/ML engineer DM is open/long-term cooperation</td>
-<td class="num"><a href="https://x.com/seelffff/status/2049776832451408288" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="6950">
-<td class="num">38</td>
-<td><a href="https://x.com/dhruvalgolakiya" target="_blank" rel="noopener"><strong>@dhruvalgolakiya</strong></a><div class="nm">Dhruval</div></td>
-<td class="num">6,950</td><td class="num">380</td>
-<td class="tools"><span class="tool">bolt</span> <span class="tool">claude code</span> <span class="tool">supabase</span></td>
-<td class="bio">Founder https://t.co/wiF7Ha4weT A Product Design and Development studio for founders side project - https://t.co/E1gXzZt0q7</td>
-<td class="num"><a href="https://x.com/dhruvalgolakiya/status/2039046295927857633" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="6589">
-<td class="num">39</td>
-<td><a href="https://x.com/aniketapanjwani" target="_blank" rel="noopener"><strong>@aniketapanjwani</strong></a><div class="nm">Aniket Panjwani</div></td>
-<td class="num">6,589</td><td class="num">63</td>
-<td class="tools"><span class="tool">codex</span></td>
-<td class="bio">I teach agentic coding to economists || PhD Economics Northwestern || ~9k on YouTube</td>
-<td class="num"><a href="https://x.com/aniketapanjwani/status/2089489110495088729" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="6084">
-<td class="num">40</td>
-<td><a href="https://x.com/prachiruns" target="_blank" rel="noopener"><strong>@prachiruns</strong></a><div class="nm">Prachi Sethi</div></td>
-<td class="num">6,084</td><td class="num">81</td>
-<td class="tools"><span class="tool dim">—</span></td>
-<td class="bio">Design partner for deep-tech and consumer hardware teams. Co-founder https://t.co/1LBEsr68pc Running everyday since Jun &#x27;21</td>
-<td class="num"><a href="https://x.com/prachiruns/status/2051687601304973464" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="5325">
-<td class="num">41</td>
-<td><a href="https://x.com/jamesdevonport" target="_blank" rel="noopener"><strong>@jamesdevonport</strong></a><div class="nm">James Devonport</div></td>
-<td class="num">5,325</td><td class="num">121</td>
-<td class="tools"><span class="tool">claude code</span></td>
-<td class="bio">Building things with AI ✨ Founder @UserLoopHQ, Co-founder @CreateWithHQ Conference, Write a newsletter on with AI: https://t.co/6oLs38s</td>
-<td class="num"><a href="https://x.com/jamesdevonport/status/2029913789215170798" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="4866">
-<td class="num">42</td>
-<td><a href="https://x.com/dorukkavcioglu" target="_blank" rel="noopener"><strong>@dorukkavcioglu</strong></a><div class="nm">Doruk</div></td>
-<td class="num">4,866</td><td class="num">91</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">figma</span></td>
-<td class="bio">co-founder, design @diffusionhq</td>
-<td class="num"><a href="https://x.com/dorukkavcioglu/status/2064672041526026608" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="4610">
-<td class="num">43</td>
 <td><a href="https://x.com/EstebanSuarez" target="_blank" rel="noopener"><strong>@EstebanSuarez</strong></a><div class="nm">Esteban Suárez</div></td>
-<td class="num">4,610</td><td class="num">481</td>
+<td class="num">4,610</td>
+<td class="num">36,880</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm good">$1.63</span></td>
 <td class="tools"><span class="tool">v0</span> <span class="tool">vercel</span></td>
 <td class="bio">developer relations at @vercel</td>
 <td class="num"><a href="https://x.com/EstebanSuarez/status/2065541491355717761" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="4429">
-<td class="num">44</td>
-<td><a href="https://x.com/ashiqur_ai" target="_blank" rel="noopener"><strong>@ashiqur_ai</strong></a><div class="nm">Shanto</div></td>
-<td class="num">4,429</td><td class="num">253</td>
-<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
-<td class="bio">Learn Al Today and Future proof yourself. I help you to 10x Your Business with Al.</td>
-<td class="num"><a href="https://x.com/ashiqur_ai/status/2030857157684686999" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="4410">
-<td class="num">45</td>
-<td><a href="https://x.com/techxsarfraj" target="_blank" rel="noopener"><strong>@techxsarfraj</strong></a><div class="nm">Abdul Sarfraj</div></td>
-<td class="num">4,410</td><td class="num">329</td>
-<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
-<td class="bio">AI-Powered Growth | Digital Creativity Future of Media &amp; Skills Helping businesses scale with AI. HIGGS-G55OP</td>
-<td class="num"><a href="https://x.com/techxsarfraj/status/2035924899584487453" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="2466">
-<td class="num">46</td>
-<td><a href="https://x.com/jiayun_studio" target="_blank" rel="noopener"><strong>@jiayun_studio</strong></a><div class="nm">Jia</div></td>
-<td class="num">2,466</td><td class="num">13</td>
-<td class="tools"><span class="tool">cursor</span> <span class="tool">figma</span></td>
-<td class="bio">Building apps in public &amp; sharing tips about UX and growth. Design partner for B2B/B2C https://t.co/COdEeaHLHe</td>
-<td class="num"><a href="https://x.com/jiayun_studio/status/2010177976223367387" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="1926">
-<td class="num">47</td>
+<tr data-tier="M" data-cpm="1.75">
+<td class="num">2</td>
+<td><a href="https://x.com/undefinedKi" target="_blank" rel="noopener"><strong>@undefinedKi</strong></a><div class="nm">Yarchi</div></td>
+<td class="num">13,322</td>
+<td class="num">106,576</td>
+<td class="num"><strong>$187</strong></td>
+<td class="num"><span class="cpm good">$1.75</span></td>
+<td class="tools"><span class="tool">claude code</span></td>
+<td class="bio">AI &amp; tech researcher | Building cool stuff | Sharing everything I learn</td>
+<td class="num"><a href="https://x.com/undefinedKi/status/2066504594755031343" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="1.75">
+<td class="num">3</td>
+<td><a href="https://x.com/MervinPraison" target="_blank" rel="noopener"><strong>@MervinPraison</strong></a><div class="nm">Mervin Praison</div></td>
+<td class="num">11,339</td>
+<td class="num">90,712</td>
+<td class="num"><strong>$159</strong></td>
+<td class="num"><span class="cpm good">$1.75</span></td>
+<td class="tools"><span class="tool">replit</span></td>
+<td class="bio">AI https://t.co/REymen9ODd</td>
+<td class="num"><a href="https://x.com/MervinPraison/status/1893747809741840387" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="1.88">
+<td class="num">4</td>
+<td><a href="https://x.com/seelffff" target="_blank" rel="noopener"><strong>@seelffff</strong></a><div class="nm">self.dll</div></td>
+<td class="num">7,597</td>
+<td class="num">45,163</td>
+<td class="num"><strong>$85</strong></td>
+<td class="num"><span class="cpm good">$1.88</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">copilot</span> <span class="tool">cursor</span></td>
+<td class="bio">AI/ML engineer DM is open/long-term cooperation</td>
+<td class="num"><a href="https://x.com/seelffff/status/2049776832451408288" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="2.39">
+<td class="num">5</td>
+<td><a href="https://x.com/alexgoughcooper" target="_blank" rel="noopener"><strong>@alexgoughcooper</strong></a><div class="nm">Alex Cooper</div></td>
+<td class="num">32,347</td>
+<td class="num">189,776</td>
+<td class="num"><strong>$453</strong></td>
+<td class="num"><span class="cpm good">$2.39</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span></td>
+<td class="bio">Building things with AI. Tweets about AI &amp; advertising. Co-Founder @ @heyparkerdotai and https://t.co/Iq2NylgS</td>
+<td class="num"><a href="https://x.com/alexgoughcooper/status/2087597411954737453" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="3.89">
+<td class="num">6</td>
 <td><a href="https://x.com/adi808080" target="_blank" rel="noopener"><strong>@adi808080</strong></a><div class="nm">Aditya Saxena</div></td>
-<td class="num">1,926</td><td class="num">92</td>
+<td class="num">1,926</td>
+<td class="num">15,408</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm good">$3.89</span></td>
 <td class="tools"><span class="tool dim">—</span></td>
 <td class="bio">Founder, CalStudio</td>
 <td class="num"><a href="https://x.com/adi808080/status/1698772123819373040" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="1295">
-<td class="num">48</td>
+<tr data-tier="M" data-cpm="4.78">
+<td class="num">7</td>
+<td><a href="https://x.com/jacobrodri_" target="_blank" rel="noopener"><strong>@jacobrodri_</strong></a><div class="nm">Jacob Rodri</div></td>
+<td class="num">36,184</td>
+<td class="num">105,966</td>
+<td class="num"><strong>$507</strong></td>
+<td class="num"><span class="cpm good">$4.78</span></td>
+<td class="tools"><span class="tool">n8n</span></td>
+<td class="bio">founder https://t.co/JVdPBQHcqJ - find winning apps, replicate what&#x27;s working. tweets about growth and my lear</td>
+<td class="num"><a href="https://x.com/jacobrodri_/status/2001315344086859926" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="5.12">
+<td class="num">8</td>
+<td><a href="https://x.com/jamesdevonport" target="_blank" rel="noopener"><strong>@jamesdevonport</strong></a><div class="nm">James Devonport</div></td>
+<td class="num">5,325</td>
+<td class="num">11,709</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm good">$5.12</span></td>
+<td class="tools"><span class="tool">claude code</span></td>
+<td class="bio">Building things with AI ✨ Founder @UserLoopHQ, Co-founder @CreateWithHQ Conference, Write a newsletter on with</td>
+<td class="num"><a href="https://x.com/jamesdevonport/status/2029913789215170798" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="5.54">
+<td class="num">9</td>
+<td><a href="https://x.com/dhruvalgolakiya" target="_blank" rel="noopener"><strong>@dhruvalgolakiya</strong></a><div class="nm">Dhruval</div></td>
+<td class="num">6,950</td>
+<td class="num">14,062</td>
+<td class="num"><strong>$78</strong></td>
+<td class="num"><span class="cpm good">$5.54</span></td>
+<td class="tools"><span class="tool">bolt</span> <span class="tool">claude code</span> <span class="tool">supabase</span></td>
+<td class="bio">Founder https://t.co/wiF7Ha4weT A Product Design and Development studio for founders side project - https://t.</td>
+<td class="num"><a href="https://x.com/dhruvalgolakiya/status/2039046295927857633" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="6.02">
+<td class="num">10</td>
+<td><a href="https://x.com/om_patel5" target="_blank" rel="noopener"><strong>@om_patel5</strong></a><div class="nm">Om Patel</div></td>
+<td class="num">26,852</td>
+<td class="num">62,496</td>
+<td class="num"><strong>$376</strong></td>
+<td class="num"><span class="cpm good">$6.02</span></td>
+<td class="tools"><span class="tool">claude code</span></td>
+<td class="bio">🇨🇦 growing https://t.co/Tr6rRuOdX9 ($10k/m) + https://t.co/K8xdwRDHqX building cool stuff</td>
+<td class="num"><a href="https://x.com/om_patel5/status/2037776537341051300" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="8.7">
+<td class="num">11</td>
+<td><a href="https://x.com/alexcooldev" target="_blank" rel="noopener"><strong>@alexcooldev</strong></a><div class="nm">Alex Nguyen</div></td>
+<td class="num">66,622</td>
+<td class="num">128,615</td>
+<td class="num"><strong>$1,119</strong></td>
+<td class="num"><span class="cpm ok">$8.70</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">Indie Hacker building AI apps: 370K users 🤙 (https://t.co/BOZvk1H2cP) 40K users 🤌 (https://t.co/wHZuITsfBh) +3</td>
+<td class="num"><a href="https://x.com/alexcooldev/status/2084212268708094177" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="9.24">
+<td class="num">12</td>
+<td><a href="https://x.com/techxsarfraj" target="_blank" rel="noopener"><strong>@techxsarfraj</strong></a><div class="nm">Abdul Sarfraj</div></td>
+<td class="num">4,410</td>
+<td class="num">6,495</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm ok">$9.24</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
+<td class="bio">AI-Powered Growth | Digital Creativity Future of Media &amp; Skills Helping businesses scale with AI. HIGGS-G55OP</td>
+<td class="num"><a href="https://x.com/techxsarfraj/status/2035924899584487453" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="9.7">
+<td class="num">13</td>
+<td><a href="https://x.com/chhddavid" target="_blank" rel="noopener"><strong>@chhddavid</strong></a><div class="nm">David Ch</div></td>
+<td class="num">15,037</td>
+<td class="num">21,698</td>
+<td class="num"><strong>$211</strong></td>
+<td class="num"><span class="cpm ok">$9.70</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">building @shipper_now 🚢 i collect saas companies. all w/@chddaniel, my brother and co-founder</td>
+<td class="num"><a href="https://x.com/chhddavid/status/2017932062460617145" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="10.09">
+<td class="num">14</td>
+<td><a href="https://x.com/dorukkavcioglu" target="_blank" rel="noopener"><strong>@dorukkavcioglu</strong></a><div class="nm">Doruk</div></td>
+<td class="num">4,866</td>
+<td class="num">5,947</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm ok">$10.09</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">figma</span></td>
+<td class="bio">co-founder, design @diffusionhq</td>
+<td class="num"><a href="https://x.com/dorukkavcioglu/status/2064672041526026608" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="11.24">
+<td class="num">15</td>
+<td><a href="https://x.com/VibeMarketer_" target="_blank" rel="noopener"><strong>@VibeMarketer_</strong></a><div class="nm">J.B.</div></td>
+<td class="num">31,294</td>
+<td class="num">38,976</td>
+<td class="num"><strong>$438</strong></td>
+<td class="num"><span class="cpm ok">$11.24</span></td>
+<td class="tools"><span class="tool">bolt</span> <span class="tool">n8n</span></td>
+<td class="bio">ai systems for content, media, and growth</td>
+<td class="num"><a href="https://x.com/VibeMarketer_/status/1932853656426086664" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="11.41">
+<td class="num">16</td>
+<td><a href="https://x.com/mckaywrigley" target="_blank" rel="noopener"><strong>@mckaywrigley</strong></a><div class="nm">Mckay Wrigley</div></td>
+<td class="num">228,220</td>
+<td class="num">219,184</td>
+<td class="num"><strong>$2,500</strong></td>
+<td class="num"><span class="cpm ok">$11.41</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">I build &amp; teach AI stuff. Founder @TakeoffAI + @AgentShare.</td>
+<td class="num"><a href="https://x.com/mckaywrigley/status/1891544731496206365" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="11.71">
+<td class="num">17</td>
+<td><a href="https://x.com/ashiqur_ai" target="_blank" rel="noopener"><strong>@ashiqur_ai</strong></a><div class="nm">Shanto</div></td>
+<td class="num">4,429</td>
+<td class="num">5,123</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm ok">$11.71</span></td>
+<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
+<td class="bio">Learn Al Today and Future proof yourself. I help you to 10x Your Business with Al.</td>
+<td class="num"><a href="https://x.com/ashiqur_ai/status/2030857157684686999" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="14.42">
+<td class="num">18</td>
+<td><a href="https://x.com/iamgdsa" target="_blank" rel="noopener"><strong>@iamgdsa</strong></a><div class="nm">Guillaume</div></td>
+<td class="num">33,571</td>
+<td class="num">32,589</td>
+<td class="num"><strong>$470</strong></td>
+<td class="num"><span class="cpm ok">$14.42</span></td>
+<td class="tools"><span class="tool">lovable</span></td>
+<td class="bio">writing daily @wesocialgrowth tracking+analytics: https://t.co/2CJ6jIRSKY creatornets: https://t.co/MQpfhTH1VW</td>
+<td class="num"><a href="https://x.com/iamgdsa/status/2036118255023378801" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="15.67">
+<td class="num">19</td>
+<td><a href="https://x.com/TechWith_Nova" target="_blank" rel="noopener"><strong>@TechWith_Nova</strong></a><div class="nm">NOVA</div></td>
+<td class="num">11,555</td>
+<td class="num">10,325</td>
+<td class="num"><strong>$162</strong></td>
+<td class="num"><span class="cpm ok">$15.67</span></td>
+<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span> <span class="tool">replit</span></td>
+<td class="bio">AI Video • Tech Tools • Future Media Exploring how AI is reshaping creativity and digital skills . DM for Coll</td>
+<td class="num"><a href="https://x.com/TechWith_Nova/status/2033356678713000229" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="15.87">
+<td class="num">20</td>
+<td><a href="https://x.com/heynavtoor" target="_blank" rel="noopener"><strong>@heynavtoor</strong></a><div class="nm">Nav Toor</div></td>
+<td class="num">149,211</td>
+<td class="num">157,536</td>
+<td class="num"><strong>$2,500</strong></td>
+<td class="num"><span class="cpm ok">$15.87</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">copilot</span></td>
+<td class="bio">Helping you master AI daily with step-by-step AI guides, latest news, &amp; practical tools • DM for Collabs</td>
+<td class="num"><a href="https://x.com/heynavtoor/status/2040702196401197358" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="22.5">
+<td class="num">21</td>
+<td><a href="https://x.com/BrettFromDJ" target="_blank" rel="noopener"><strong>@BrettFromDJ</strong></a><div class="nm">Brett</div></td>
+<td class="num">169,202</td>
+<td class="num">111,088</td>
+<td class="num"><strong>$2,500</strong></td>
+<td class="num"><span class="cpm bad">$22.50</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">Running a $1M one-man design studio. 🙂 https://t.co/Bd698tR2Fe: $100K MRR ✍️ https://t.co/qtdiuMA9LP: $12K MRR</td>
+<td class="num"><a href="https://x.com/BrettFromDJ/status/1923061854747886035" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="23.7">
+<td class="num">22</td>
+<td><a href="https://x.com/prachiruns" target="_blank" rel="noopener"><strong>@prachiruns</strong></a><div class="nm">Prachi Sethi</div></td>
+<td class="num">6,084</td>
+<td class="num">2,875</td>
+<td class="num"><strong>$68</strong></td>
+<td class="num"><span class="cpm bad">$23.70</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">Design partner for deep-tech and consumer hardware teams. Co-founder https://t.co/1LBEsr68pc Running everyday </td>
+<td class="num"><a href="https://x.com/prachiruns/status/2051687601304973464" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="24.51">
+<td class="num">23</td>
+<td><a href="https://x.com/jasonzhou1993" target="_blank" rel="noopener"><strong>@jasonzhou1993</strong></a><div class="nm">Jason Zhou</div></td>
+<td class="num">33,020</td>
+<td class="num">18,861</td>
+<td class="num"><strong>$462</strong></td>
+<td class="num"><span class="cpm bad">$24.51</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">Builder. I run my companies on agent loops Founder @SuperDesignDev @treg_ai and @aibuilderclub_</td>
+<td class="num"><a href="https://x.com/jasonzhou1993/status/1721895326221828130" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="25.35">
+<td class="num">24</td>
+<td><a href="https://x.com/aniketapanjwani" target="_blank" rel="noopener"><strong>@aniketapanjwani</strong></a><div class="nm">Aniket Panjwani</div></td>
+<td class="num">6,589</td>
+<td class="num">2,911</td>
+<td class="num"><strong>$74</strong></td>
+<td class="num"><span class="cpm bad">$25.35</span></td>
+<td class="tools"><span class="tool">codex</span></td>
+<td class="bio">I teach agentic coding to economists || PhD Economics Northwestern || ~9k on YouTube</td>
+<td class="num"><a href="https://x.com/aniketapanjwani/status/2089489110495088729" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="26.54">
+<td class="num">25</td>
+<td><a href="https://x.com/daniel_mac8" target="_blank" rel="noopener"><strong>@daniel_mac8</strong></a><div class="nm">Dan McAteer</div></td>
+<td class="num">28,701</td>
+<td class="num">15,140</td>
+<td class="num"><strong>$402</strong></td>
+<td class="num"><span class="cpm bad">$26.54</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span></td>
+<td class="bio">I build AI agents for a living and write about what they&#x27;re doing to our minds. Essays weekly at https://t.co/</td>
+<td class="num"><a href="https://x.com/daniel_mac8/status/2088018732761117072" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="30.86">
+<td class="num">26</td>
+<td><a href="https://x.com/ericciarla" target="_blank" rel="noopener"><strong>@ericciarla</strong></a><div class="nm">Eric Ciarla (hiring)</div></td>
+<td class="num">17,206</td>
+<td class="num">7,806</td>
+<td class="num"><strong>$241</strong></td>
+<td class="num"><span class="cpm bad">$30.86</span></td>
+<td class="tools"><span class="tool">supabase</span></td>
+<td class="bio">Co-Founder @ Firecrawl (YC S22). Previously Mendable.</td>
+<td class="num"><a href="https://x.com/ericciarla/status/1650952120537866241" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="32.64">
+<td class="num">27</td>
+<td><a href="https://x.com/Tanju_mim" target="_blank" rel="noopener"><strong>@Tanju_mim</strong></a><div class="nm">Tanjina Islam</div></td>
+<td class="num">10,121</td>
+<td class="num">4,341</td>
+<td class="num"><strong>$142</strong></td>
+<td class="num"><span class="cpm bad">$32.64</span></td>
+<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
+<td class="bio">Sharing effective ways to grow your business using tech and AI. Also Running AI Influencers Community. DM for </td>
+<td class="num"><a href="https://x.com/Tanju_mim/status/2034150532324200735" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="32.65">
+<td class="num">28</td>
+<td><a href="https://x.com/brdrck" target="_blank" rel="noopener"><strong>@brdrck</strong></a><div class="nm">Jeff Broderick</div></td>
+<td class="num">9,159</td>
+<td class="num">3,142</td>
+<td class="num"><strong>$103</strong></td>
+<td class="num"><span class="cpm bad">$32.65</span></td>
+<td class="tools"><span class="tool">figma</span></td>
+<td class="bio">Building @OpacityHQ. @figma wizard &amp; plugin tinkerer. DMs Open. Mastodon: https://t.co/0MwCXrTGH0</td>
+<td class="num"><a href="https://x.com/brdrck/status/2021054040122261860" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="37.33">
+<td class="num">29</td>
+<td><a href="https://x.com/NabilMinhaz" target="_blank" rel="noopener"><strong>@NabilMinhaz</strong></a><div class="nm">Nabil Abdullah</div></td>
+<td class="num">10,382</td>
+<td class="num">3,893</td>
+<td class="num"><strong>$145</strong></td>
+<td class="num"><span class="cpm bad">$37.33</span></td>
+<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
+<td class="bio">AI Educator | Teaching you how to earn smarter with AI, automation &amp; digital skills | 📩 DM Open for collaborat</td>
+<td class="num"><a href="https://x.com/NabilMinhaz/status/2030463576918704346" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="39.14">
+<td class="num">30</td>
+<td><a href="https://x.com/mikefutia" target="_blank" rel="noopener"><strong>@mikefutia</strong></a><div class="nm">Mike Futia</div></td>
+<td class="num">78,044</td>
+<td class="num">33,501</td>
+<td class="num"><strong>$1,311</strong></td>
+<td class="num"><span class="cpm bad">$39.14</span></td>
+<td class="tools"><span class="tool">antigravity</span> <span class="tool">claude code</span></td>
+<td class="bio">Building AI systems for ads | Clients: Kitsch &amp; MAELYS | 🤖 Join 600+ brands &amp; agencies 👉 https://t.co/Op2LABIY</td>
+<td class="num"><a href="https://x.com/mikefutia/status/2067766615962489258" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="40.54">
+<td class="num">31</td>
+<td><a href="https://x.com/dr_cintas" target="_blank" rel="noopener"><strong>@dr_cintas</strong></a><div class="nm">Alvaro Cintas</div></td>
+<td class="num">131,711</td>
+<td class="num">54,588</td>
+<td class="num"><strong>$2,213</strong></td>
+<td class="num"><span class="cpm bad">$40.54</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span></td>
+<td class="bio">Educating about AI, Cybersecurity and Technology | Professor | PhD in Computer Science &amp; Engineering</td>
+<td class="num"><a href="https://x.com/dr_cintas/status/2081094058139918595" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="40.81">
+<td class="num">32</td>
+<td><a href="https://x.com/BHolmesDev" target="_blank" rel="noopener"><strong>@BHolmesDev</strong></a><div class="nm">Ben Holmes</div></td>
+<td class="num">46,344</td>
+<td class="num">15,898</td>
+<td class="num"><strong>$649</strong></td>
+<td class="num"><span class="cpm bad">$40.81</span></td>
+<td class="tools"><span class="tool">vercel</span></td>
+<td class="bio">The Whiteboard Guy @warpdotdev</td>
+<td class="num"><a href="https://x.com/BHolmesDev/status/1696899822324756522" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="43.48">
+<td class="num">33</td>
+<td><a href="https://x.com/testingcatalog" target="_blank" rel="noopener"><strong>@testingcatalog</strong></a><div class="nm">🚨 AI News | TestingCatalog</div></td>
+<td class="num">73,106</td>
+<td class="num">28,248</td>
+<td class="num"><strong>$1,228</strong></td>
+<td class="num"><span class="cpm bad">$43.48</span></td>
+<td class="tools"><span class="tool">claude code</span></td>
+<td class="bio">Reporting AI nonsense. Latest AI News on AI Agents, Model Releases, Tools, Leaks, and Rumors 🗞️</td>
+<td class="num"><a href="https://x.com/testingcatalog/status/2089499940963643567" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="48.63">
+<td class="num">34</td>
+<td><a href="https://x.com/sakhil_ai" target="_blank" rel="noopener"><strong>@sakhil_ai</strong></a><div class="nm">Sakhil Khan</div></td>
+<td class="num">8,012</td>
+<td class="num">1,845</td>
+<td class="num"><strong>$90</strong></td>
+<td class="num"><span class="cpm bad">$48.63</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
+<td class="bio">AI Educator | Teaching you how to earn smarter with AI, automation &amp; digital skills | 📩 DM Open for collaborat</td>
+<td class="num"><a href="https://x.com/sakhil_ai/status/2032859943016214764" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="50.11">
+<td class="num">35</td>
+<td><a href="https://x.com/mannupaaji" target="_blank" rel="noopener"><strong>@mannupaaji</strong></a><div class="nm">Manu Arora</div></td>
+<td class="num">43,582</td>
+<td class="num">12,176</td>
+<td class="num"><strong>$610</strong></td>
+<td class="num"><span class="cpm bad">$50.11</span></td>
+<td class="tools"><span class="tool">claude code</span></td>
+<td class="bio">Building https://t.co/4eCBc4SSJt (180k+ users) • https://t.co/0jrp6s2JJ9 Dev studio → https://t.co/NPJalHkrux </td>
+<td class="num"><a href="https://x.com/mannupaaji/status/1964230013483700695" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="51.23">
+<td class="num">36</td>
+<td><a href="https://x.com/rileybrown" target="_blank" rel="noopener"><strong>@rileybrown</strong></a><div class="nm">Riley Brown</div></td>
+<td class="num">227,861</td>
+<td class="num">48,795</td>
+<td class="num"><strong>$2,500</strong></td>
+<td class="num"><span class="cpm bad">$51.23</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">codex</span> <span class="tool">cursor</span></td>
+<td class="bio">Building @agentnative_ riley@agentnative.inc</td>
+<td class="num"><a href="https://x.com/rileybrown/status/1956499352136134696" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="52.44">
+<td class="num">37</td>
+<td><a href="https://x.com/mitchellh" target="_blank" rel="noopener"><strong>@mitchellh</strong></a><div class="nm">Mitchell Hashimoto</div></td>
+<td class="num">222,323</td>
+<td class="num">47,672</td>
+<td class="num"><strong>$2,500</strong></td>
+<td class="num"><span class="cpm bad">$52.44</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">Co-founder of @Superlogical. Creator of Ghostty. 👻 Prev founded @HashiCorp, created Vagrant, Terraform, Vault,</td>
+<td class="num"><a href="https://x.com/mitchellh/status/1976697791151001905" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="66.21">
+<td class="num">38</td>
+<td><a href="https://x.com/GuptaSayujya" target="_blank" rel="noopener"><strong>@GuptaSayujya</strong></a><div class="nm">Sayujya Gupta</div></td>
+<td class="num">25,071</td>
+<td class="num">5,301</td>
+<td class="num"><strong>$351</strong></td>
+<td class="num"><span class="cpm bad">$66.21</span></td>
+<td class="tools"><span class="tool">claude code</span></td>
+<td class="bio">Obsessed about AI | Building and Scaling SaaS for fun</td>
+<td class="num"><a href="https://x.com/GuptaSayujya/status/2050196195050434835" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="67.3">
+<td class="num">39</td>
+<td><a href="https://x.com/MengTo" target="_blank" rel="noopener"><strong>@MengTo</strong></a><div class="nm">Meng To</div></td>
+<td class="num">177,894</td>
+<td class="num">37,146</td>
+<td class="num"><strong>$2,500</strong></td>
+<td class="num"><span class="cpm bad">$67.30</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">Founder at @designcodeio and https://t.co/Kpiogf225W. I teach designers code and developers design. Screen rec</td>
+<td class="num"><a href="https://x.com/MengTo/status/1910996478408917070" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="76.37">
+<td class="num">40</td>
+<td><a href="https://x.com/jiayun_studio" target="_blank" rel="noopener"><strong>@jiayun_studio</strong></a><div class="nm">Jia</div></td>
+<td class="num">2,466</td>
+<td class="num">786</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm bad">$76.37</span></td>
+<td class="tools"><span class="tool">cursor</span> <span class="tool">figma</span></td>
+<td class="bio">Building apps in public &amp; sharing tips about UX and growth. Design partner for B2B/B2C https://t.co/COdEeaHLHe</td>
+<td class="num"><a href="https://x.com/jiayun_studio/status/2010177976223367387" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="77.23">
+<td class="num">41</td>
+<td><a href="https://x.com/TheWalid" target="_blank" rel="noopener"><strong>@TheWalid</strong></a><div class="nm">walid (nyc for summer)</div></td>
+<td class="num">9,694</td>
+<td class="num">1,406</td>
+<td class="num"><strong>$109</strong></td>
+<td class="num"><span class="cpm bad">$77.23</span></td>
+<td class="tools"><span class="tool">figma</span> <span class="tool">replit</span></td>
+<td class="bio">ceo @ breadwinners club | helping consumer apps with tech UGC and paid ads | campaigns include @perplexity_ai </td>
+<td class="num"><a href="https://x.com/TheWalid/status/1998029884178985469" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="83.16">
+<td class="num">42</td>
+<td><a href="https://x.com/this_is_tasnim" target="_blank" rel="noopener"><strong>@this_is_tasnim</strong></a><div class="nm">Maliha Tasnim</div></td>
+<td class="num">8,678</td>
+<td class="num">1,169</td>
+<td class="num"><strong>$97</strong></td>
+<td class="num"><span class="cpm bad">$83.16</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
+<td class="bio">AI Entrepreneur | Helping businesses grow with AI &amp; tech | Ghostwriter for founders | DM for collabs 📩 malihat</td>
+<td class="num"><a href="https://x.com/this_is_tasnim/status/2033796721252438127" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="97.2">
+<td class="num">43</td>
+<td><a href="https://x.com/Timmysofine" target="_blank" rel="noopener"><strong>@Timmysofine</strong></a><div class="nm">Oluwatimileyin✨🦋</div></td>
+<td class="num">82,057</td>
+<td class="num">14,182</td>
+<td class="num"><strong>$1,379</strong></td>
+<td class="num"><span class="cpm bad">$97.20</span></td>
+<td class="tools"><span class="tool">cursor</span></td>
+<td class="bio">Tech and AI Influencer | MSc Governance of Digitalization, Åbo Akademi 🇫🇮 | favourtimileyin2018@gmail.com</td>
+<td class="num"><a href="https://x.com/Timmysofine/status/2063881478719856742" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="M" data-cpm="97.6">
+<td class="num">44</td>
+<td><a href="https://x.com/polash_ai" target="_blank" rel="noopener"><strong>@polash_ai</strong></a><div class="nm">Polash Khan</div></td>
+<td class="num">10,616</td>
+<td class="num">1,523</td>
+<td class="num"><strong>$149</strong></td>
+<td class="num"><span class="cpm bad">$97.60</span></td>
+<td class="tools"><span class="tool">claude code</span> <span class="tool">replit</span></td>
+<td class="bio">Helping busy Founders &amp; CEOs build Personal Brands on Linkedin &amp; Twitter | AI Enthusiast | DM for Collaboratio</td>
+<td class="num"><a href="https://x.com/polash_ai/status/2028452211005813124" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="106.01">
+<td class="num">45</td>
 <td><a href="https://x.com/nikhilsbuilds" target="_blank" rel="noopener"><strong>@nikhilsbuilds</strong></a><div class="nm">Nikhil</div></td>
-<td class="num">1,295</td><td class="num">20</td>
+<td class="num">1,295</td>
+<td class="num">566</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm bad">$106.01</span></td>
 <td class="tools"><span class="tool">v0</span></td>
-<td class="bio">Engineer | Learning and Building in Public. Vibing in Communities &amp;&amp; Mountains | Team @gdg_nd | @v0 &amp;&amp; @warpdotdev Ambassador | Buildin</td>
+<td class="bio">Engineer | Learning and Building in Public. Vibing in Communities &amp;&amp; Mountains | Team @gdg_nd | @v0 &amp;&amp; @warpdo</td>
 <td class="num"><a href="https://x.com/nikhilsbuilds/status/2014158907271463136" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="1174">
-<td class="num">49</td>
+<tr data-tier="M" data-cpm="112.43">
+<td class="num">46</td>
+<td><a href="https://x.com/hrswatigupta" target="_blank" rel="noopener"><strong>@hrswatigupta</strong></a><div class="nm">Swati Gupta</div></td>
+<td class="num">35,708</td>
+<td class="num">4,447</td>
+<td class="num"><strong>$500</strong></td>
+<td class="num"><span class="cpm bad">$112.43</span></td>
+<td class="tools"><span class="tool">claude code</span></td>
+<td class="bio">I help you grow online using AI, marketing &amp; personal branding Daily action | Resume Writer | DM for Collab : </td>
+<td class="num"><a href="https://x.com/hrswatigupta/status/2087887847768695001" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="269.78">
+<td class="num">47</td>
 <td><a href="https://x.com/hariprasad_bg" target="_blank" rel="noopener"><strong>@hariprasad_bg</strong></a><div class="nm">Hari Prasad</div></td>
-<td class="num">1,174</td><td class="num">17</td>
+<td class="num">1,174</td>
+<td class="num">222</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm bad">$269.78</span></td>
 <td class="tools"><span class="tool dim">—</span></td>
 <td class="bio">👨🏻‍💻 Software Engineer 🚀 Building SaaS in public 📈 Road to $10k MRR ⚡ Shipping. Learning. Iterating.</td>
 <td class="num"><a href="https://x.com/hariprasad_bg/status/2087843586046075298" target="_blank" rel="noopener">post ↗</a></td></tr>
-<tr data-tier="S" data-f="964">
-<td class="num">50</td>
-<td><a href="https://x.com/internetdialup" target="_blank" rel="noopener"><strong>@internetdialup</strong></a><div class="nm">🇨🇭Matt Stenquist</div></td>
-<td class="num">964</td><td class="num">10</td>
+<tr data-tier="M" data-cpm="291.67">
+<td class="num">48</td>
+<td><a href="https://x.com/Nabhel_" target="_blank" rel="noopener"><strong>@Nabhel_</strong></a><div class="nm">Nabhel</div></td>
+<td class="num">48,421</td>
+<td class="num">2,324</td>
+<td class="num"><strong>$678</strong></td>
+<td class="num"><span class="cpm bad">$291.67</span></td>
 <td class="tools"><span class="tool">figma</span></td>
-<td class="bio">⚔️ AI ML / PDE · Staff DSE coordinating machine learning. Building Memoryfield AI, Founder of LD and Joyhype. Past: Pro Snowboarder. TB</td>
+<td class="bio">🦋 I build software products.</td>
+<td class="num"><a href="https://x.com/Nabhel_/status/1488096839643832320" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="S" data-cpm="348.03">
+<td class="num">49</td>
+<td><a href="https://x.com/internetdialup" target="_blank" rel="noopener"><strong>@internetdialup</strong></a><div class="nm">🇨🇭Matt Stenquist</div></td>
+<td class="num">964</td>
+<td class="num">172</td>
+<td class="num"><strong>$60</strong></td>
+<td class="num"><span class="cpm bad">$348.03</span></td>
+<td class="tools"><span class="tool">figma</span></td>
+<td class="bio">⚔️ AI ML / PDE · Staff DSE coordinating machine learning. Building Memoryfield AI, Founder of LD and Joyhype. </td>
 <td class="num"><a href="https://x.com/internetdialup/status/2089511415514104210" target="_blank" rel="noopener">post ↗</a></td></tr>
+<tr data-tier="L" data-cpm="1770.65">
+<td class="num">50</td>
+<td><a href="https://x.com/shushant_l" target="_blank" rel="noopener"><strong>@shushant_l</strong></a><div class="nm">Shushant Lakhyani</div></td>
+<td class="num">65,205</td>
+<td class="num">619</td>
+<td class="num"><strong>$1,095</strong></td>
+<td class="num"><span class="cpm bad">$1,770.65</span></td>
+<td class="tools"><span class="tool dim">—</span></td>
+<td class="bio">Marketer. Builder. AI generalist. I help entrepreneurs, professionals, and creators build AI-powered businesse</td>
+<td class="num"><a href="https://x.com/shushant_l/status/2064346903601664272" target="_blank" rel="noopener">post ↗</a></td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="callout warn">
-    <div class="h">Start at the bottom of the list, not the top</div>
-    <p>The 18 creators under 10k followers will reply at several times the rate of the 12 above 50k, and they need the $20 more. Use them to prove the loop works and to collect the first payout screenshots — <em>then</em> approach the large accounts with evidence instead of a pitch.</p>
+    <div class="h">Never pay from the follower count alone</div>
+    <p>Look at rank 1 versus the bottom of the list. <strong>@EstebanSuarez at 4,610 followers pulls ~37,000 views a post</strong> — eight times his audience. <strong>@shushant_l at 65,205 followers pulls about 1,500.</strong> On a follower-based rate card you would pay him eighteen times more for two per cent of the reach. The <code>est. views</code> column is the only one that matters when you negotiate.</p>
   </div>
 </section>
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">03 — the DM</div>
-    <h2>Three messages, in order</h2>
-    <p class="dek">Short, specific, and referencing their actual post. No pitch deck, no calendar link. Replace the bracketed parts — the specificity is the whole reason it gets a reply.</p>
+    <div class="sec-num">05 — the offer</div>
+    <h2>What to send, now that it's paid</h2>
+    <p class="dek">A paid brief is a different message from a free-tool pitch: lead with the fee, be specific about deliverable and deadline, and keep the creative in their voice.</p>
   </div>
 
   <div class="dm">
-    <div class="dm-h"><span class="t">1 · First touch</span><span class="w">Day 0 · X DM or reply</span></div>
-<pre>Hey <b>[name]</b> — saw your <b>[the specific thing they built/demoed]</b> walkthrough.
-The recording itself was the part that sold it.
+    <div class="dm-h"><span class="t">1 · The offer</span><span class="w">Day 0 · X DM</span></div>
+<pre>Hey <b>[name]</b> — your <b>[the thing they demoed]</b> post is exactly the kind
+of recording I'm building for.
 
-I make Boom (boomshare.ai), a free screen recorder — auto-zoom on clicks,
-auto-captions, and it dubs into 50+ languages so one demo covers every market.
+Paid brief, no strings after it:
+• <b>$[fee]</b> for one video post, your voice, your call on the angle
+• Record it with Boom (free, I'll set you up with Premium)
+• One link, one honest line about what it did or didn't do well
+• Plus <b>$20</b> per person who upgrades through your link, ongoing
 
-Two things, no strings:
-1. Free Premium for you, permanently. Just use it if it's better.
-2. If you ever share it, I pay <b>$20</b> per person who upgrades. No cap, no exclusivity.
+Boom is a free screen recorder — auto-zoom on clicks, auto-captions,
+dubs into 50+ languages. Happy to send it over so you can judge it
+before you say yes.
 
-Want the Premium code? I'll send it whether or not you share anything.</pre>
+Interested?</pre>
   </div>
 
   <div class="dm">
-    <div class="dm-h"><span class="t">2 · If they take the code and go quiet</span><span class="w">Day 7 · after they've recorded once</span></div>
-<pre>Did the auto-zoom hold up on your last recording?
+    <div class="dm-h"><span class="t">2 · Easier ask for the big accounts</span><span class="w">When the fee alone won't land it</span></div>
+<pre>Different idea, smaller lift.
 
-Genuinely asking — if it got in the way I want to know, that's the part
-I'm least sure about.
+We're launching Boom Match — a memory game with real cash prizes.
+A round takes 15 seconds and it screen-records itself.
 
-(Your link's live if you want it: <b>[ref link]</b>. $20 per upgrade,
-paid the day it clears. Zero pressure.)</pre>
-  </div>
+<b>$[fee]</b> for one post of you playing it and your score. That's it.
+No product pitch, no talking about my software.
 
-  <div class="dm">
-    <div class="dm-h"><span class="t">3 · After the first payout</span><span class="w">The one that recruits the next ten</span></div>
-<pre>Just sent you <b>$[amount]</b> — <b>[n]</b> people upgraded off your link this month.
-
-If you want, post the receipt. That's the whole marketing plan and
-I'd rather it came from you than from me.
-
-Anything you want built into the recorder, tell me. You're the reason
-it's getting used.</pre>
+It performs well for you (score posts get replies), it takes you
+30 seconds, and it does the job for me either way.</pre>
   </div>
 
   <div class="callout">
-    <div class="h">Why the offer leads with "free Premium, no strings"</div>
-    <p>Leading with the bounty makes it an affiliate pitch, and creators delete affiliate pitches. Leading with a genuine free upgrade makes it a gift, and the bounty becomes a reason to stay rather than a reason to reply. You also get the thing you actually need first — a good creator using the product and telling you where it breaks.</p>
+    <div class="h">Why the second message exists</div>
+    <p>“Post about my screen recorder” is a hard ask that reads as an ad. “Post your score on this game” is a low-effort piece of content that performs for <em>them</em> — and it still shows Boom recording, in their feed, to their audience. For the 50k+ accounts it is usually the only version that gets a yes.</p>
   </div>
 </section>
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">04 — Boom Match</div>
-    <h2>You're right about the memory game — and it solves a different problem</h2>
-    <p class="dek">This is the strongest instinct in the thread so far, but it belongs in a separate funnel from the 50 above, and it's worth being precise about why.</p>
-  </div>
-
-  <div class="grid">
-    <div class="col">
-      <p>A memory game is <strong>natively the format</strong>. A round is fifteen seconds. “Can you beat this?” is the most replicable hook that exists — it produces duets, stitches, quote-tweets and comment-your-score without you making anything else. And a cash prize turns the score reveal into a watch-to-the-end payoff.</p>
-      <p>The part that makes it specifically <em>yours</em>: <strong>gameplay is a screen recording.</strong> Boom films Boom Match. Every clip you post is simultaneously game content and a live demonstration of the recorder — the auto-zoom following the cards, the captions, the instant link. You have been circling a loop where the product makes its own marketing, and this is the cleanest version of it in the whole business.</p>
-    </div>
-    <div class="col">
-      <div class="callout warn">
-        <div class="h">The trap, said plainly</div>
-        <p>Memory-game content reaches an enormous, cheap, low-intent audience. Most of those viewers will never pay $71.99 for a screen recorder. If you judge this campaign on subscriptions it will look like a failure at a million views.</p>
-      </div>
-      <div class="callout note">
-        <div class="h">Except your free tier is ad-supported — so it isn't a trap</div>
-        <p>A free user who plays and never records still earns you ad revenue. That reframes the “wrong” audience as the <strong>right audience for the other revenue line</strong>. Judge Boom Match content on free signups, sessions per week and impressions per user. Judge the 50 creators on subscriptions. Two funnels, two scoreboards, one product.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="cards">
-    <div class="cardx">
-      <span class="tagline">Format · the core loop</span>
-      <h3>“Can you beat 8 seconds?”</h3>
-      <p>A 15-second round, screen-recorded in Boom, ending on the score. Caption invites the reply. The comments become the next week's content, and the leaderboard becomes a reason to come back.</p>
-      <div class="why">Infinitely repeatable · zero production cost · the recording is the demo</div>
-    </div>
-    <div class="cardx">
-      <span class="tagline">Format · the payoff</span>
-      <h3>The prize reveal</h3>
-      <p>Daily cash prizes already exist in the product. Film the winner being paid. This is the payout-receipt format, and it is the single most-shared genre on short-form — with the advantage that yours is real.</p>
-      <div class="why">Needs the anti-fraud work first; a fake-looking receipt kills the brand faster than no receipt</div>
-    </div>
-    <div class="cardx">
-      <span class="tagline">Format · the crossover</span>
-      <h3>Creators play, on their own channel</h3>
-      <p>The same 50 people. A memory-game challenge is an easier ask than “try my recorder” — it takes them 30 seconds, it performs well for them, and their audience meets Boom through the game rather than a pitch.</p>
-      <div class="why">Same recruits, lower-friction first ask — this is how the two funnels actually join</div>
-    </div>
-  </div>
-
-  <div class="callout">
-    <div class="h">One thing I couldn't verify</div>
-    <p>I found no public Boom Match site, app listing or link from boomshare.ai — only the <strong>“Prize entries”</strong> row on your pricing table. So I can't tell how much of the game is shipped, where it lives, or whether it's playable outside the dashboard. That determines whether the plays above are a launch or a campaign, and it's the one thing I'd need from you before writing the content calendar.</p>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">05 — this week</div>
+    <div class="sec-num">06 — how I'd spend the first $2,025</div>
     <h2>The sequence</h2>
   </div>
   <div class="steps">
-    <div class="step"><span class="when">Day 1</span><div>
-      <h4>Build the referral link and the payout page</h4>
-      <p>A tracked link per creator, a dashboard showing referred upgrades, and a stated payout day. Creators do not chase money — if it isn't visible and automatic, they stop.</p>
+    <div class="step"><span class="when">Before</span><div>
+      <h4>Tracked links, a payout date, and the 25-video cap gone</h4>
+      <p>Every visitor these posts send lands on your pricing page and sees the same 25-video wall they left Loom over. Fix that first or you are paying to show people your weakest screen.</p>
     </div></div>
-    <div class="step"><span class="when">Day 1</span><div>
-      <h4>Fix the 25-video free cap first</h4>
-      <p>Every person these creators send arrives at your pricing page. Right now it shows the same 25-video wall they left Loom over. That single number will undo the outreach.</p>
+    <div class="step"><span class="when">Week 1</span><div>
+      <h4>Book the top 10 — $2,025, one post each</h4>
+      <p>Half briefed on the recorder, half on Boom Match. That split is the actual experiment: which message converts cheaper. Everything after this decision should be informed by it rather than guessed.</p>
     </div></div>
-    <div class="step"><span class="when">Days 2–4</span><div>
-      <h4>DM the 18 under 10k followers</h4>
-      <p>Highest reply rate, lowest ego cost, and they need the $20. Target ~8 accepting the free Premium. Open their qualifying post first and name the thing they built.</p>
+    <div class="step"><span class="when">Week 2</span><div>
+      <h4>Measure CTR and cost per paying user, per creator</h4>
+      <p>You now have a real click-through rate instead of my 0.5–2% range, and a real pay rate. Put those into the break-even table above and the decision to scale makes itself.</p>
     </div></div>
-    <div class="step"><span class="when">Days 5–10</span><div>
-      <h4>DM the 20 mid-tier, then the 12 large ones</h4>
-      <p>By now you have creators using it and, ideally, one payout screenshot. That evidence is what converts the bigger accounts — approach them with proof, not a proposal.</p>
-    </div></div>
-    <div class="step"><span class="when">Ongoing</span><div>
-      <h4>Track it in the CSV, not in your head</h4>
-      <p>The export has empty <code>dm_sent</code>, <code>replied</code> and <code>joined</code> columns. Fifty is exactly the size where a spreadsheet works and memory doesn't.</p>
+    <div class="step"><span class="when">Week 3+</span><div>
+      <h4>Re-book the winners, drop the rest, add ranks 11–20</h4>
+      <p>Creator marketing is won by repeat posts from the few who work, not by one post from many. Expect two or three of the ten to carry the campaign — pay those three more and stop paying the others.</p>
     </div></div>
   </div>
   <div class="callout warn">
     <div class="h">I have not contacted anyone</div>
-    <p>These are drafts. Sending DMs on your behalf is your call to make, not mine — the list, the messages and the tracker are ready for you to send.</p>
+    <p>The list, the prices and the briefs are drafts for you to send. Negotiating and paying creators is your call, not mine.</p>
   </div>
 </section>
 
 <footer>
-  <b>Method:</b> 720 X posts scraped via Apify across 12 demo/devlog/vibe-coding queries, video posts only · deduplicated to 439 authors · filtered to 202 on bio, tool signal and engagement rate · tiered and cut to 50<br>
-  <b>Excluded:</b> crypto/DAO accounts, news aggregators, blank bios, competitor founders<br>
-  <b>Download:</b> <a href="./boom_50_creators.csv">boom_50_creators.csv</a> — with tracking columns · <b>Companions:</b> <a href="./">Complaint Ledger</a> · <a href="./playbook.html">Playbook</a> · <a href="./strategy.html">Strategy</a><br>
+  <b>Method:</b> 720 X posts scraped via Apify across 12 demo/devlog/vibe-coding queries, video only · 439 authors deduped · filtered to 202 on bio, tool signal and engagement · cut to 50 · priced at $8–12 per 1,000 followers × 1.4 video premium, floor $60, cap $2,500 · views from observed <code>viewCount</code>, cut 40% for Top-sort bias and capped at 8× followers<br>
+  <b>Rate sources:</b> published 2026 X sponsored-post benchmarks — $2–20 per 1,000 followers baseline, 2–3× premium for tech, $50–500 per micro-creator tweet, tech CPM $10–40<br>
+  <b>Excluded:</b> crypto/DAO accounts, news aggregators, blank bios, and @pie6k — founder of Screen Studio<br>
+  <b>Download:</b> <a href="./boom_50_creators.csv">boom_50_creators.csv</a> — priced, with negotiation and tracking columns<br>
   <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
 </footer>
 
@@ -733,9 +926,10 @@ it's getting used.</pre>
   btns.forEach(function(b){
     b.addEventListener('click',function(){
       var t=b.dataset.t;
-      btns.forEach(function(x){x.setAttribute('aria-pressed', x===b ? 'true':'false');});
-      rows.forEach(function(r){
-        r.style.display = (t==='all' || r.dataset.tier===t) ? '' : 'none';
+      btns.forEach(function(x){x.setAttribute('aria-pressed', x===b?'true':'false');});
+      rows.forEach(function(r,i){
+        var show = t==='all' ? true : (t==='top10' ? i<10 : r.dataset.tier===t);
+        r.style.display = show ? '' : 'none';
       });
     });
   });
