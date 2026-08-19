@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Every personal data source Boom Match could ask for, with the real access cost - what is free, what needs review, and what is closed or dangerous.">
+<meta name="description" content="Every personal data source Boom Match could ask for, with the real access cost - steps, contacts, photos, calendar, browser history and the ones that are closed.">
 <title>What We Can Actually Ask For</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -215,7 +215,7 @@ footer b{color:var(--ink-soft);font-weight:500}
 <header class="masthead">
   <div class="kicker"><span class="dot"></span> access decision &middot; boom match &middot; 19 aug 2026</div>
   <h1>What We Can<br>Actually Ask For</h1>
-  <p class="standfirst">Every data source you named, with what it really costs to get. Two are free, two need a Google review, and the rest are closed, gated or dangerous. <b>Spotify shut its door in February — I had to change my answer mid-research.</b></p>
+  <p class="standfirst">Every data source you named, with what it really costs to get. Two are free, two need a Google review, and the rest are closed, gated or dangerous. <b>You were right about steps, half right about contacts, and browser history is worse than I first said.</b></p>
 
   <nav class="sitenav" aria-label="Sections of this research">
     <a href="./">The Complaint Ledger</a>
@@ -324,25 +324,68 @@ footer b{color:var(--ink-soft);font-weight:500}
           <td class="num">low</td><td class="num">high</td>
           <td><strong>No.</strong> An admin approval is fatal to consumer virality.</td>
         </tr>
-        <tr class="no">
+        <tr class="ok">
+          <td><strong>Steps</strong><br><span class="nm">via pedometer, not HealthKit</span></td>
+          <td>CoreMotion <code>CMPedometer</code> — Motion &amp; Fitness prompt. Android: equivalent sensor.</td>
+          <td class="num"><span class="cpm ok">one light prompt</span></td>
+          <td class="num">high</td><td class="num">low</td>
+          <td><strong>Yes — you were right.</strong> Step count isn't medical data.</td>
+        </tr>
+        <tr>
           <td><strong>Contacts</strong></td>
-          <td>Scary system prompt.</td>
-          <td class="num"><span class="cpm bad">prompt</span></td>
-          <td class="num">medium</td><td class="num">extreme</td>
-          <td><strong>No.</strong> Exposes people who never consented.</td>
+          <td>iOS 18 <code>contactAccessPicker</code> — user picks specific contacts, same as photos.</td>
+          <td class="num"><span class="cpm ok">picker, not<br>full access</span></td>
+          <td class="num">high</td><td class="num">high</td>
+          <td><strong>Possible now.</strong> Never put a name in a shareable artifact.</td>
         </tr>
         <tr class="no">
-          <td><strong>Health / steps</strong></td>
+          <td><strong>HealthKit</strong><br><span class="nm">workouts, heart rate, sleep</span></td>
           <td>HealthKit permission.</td>
-          <td class="num"><span class="cpm bad">prompt</span></td>
-          <td class="num">low</td><td class="num">extreme</td>
-          <td><strong>No.</strong> Highest regulatory class there is.</td>
+          <td class="num"><span class="cpm bad">marketing use<br>prohibited</span></td>
+          <td class="num">medium</td><td class="num">very high</td>
+          <td><strong>No.</strong> Apple bars HealthKit data for advertising or marketing — a prize game is a bad place to test that line.</td>
+        </tr>
+        <tr class="no">
+          <td><strong>Browser history</strong></td>
+          <td>Chrome extension <code>chrome.history</code>. Impossible on iOS; only via spyware patterns on Android.</td>
+          <td class="num"><span class="cpm bad">desktop only<br>+ policy risk</span></td>
+          <td class="num">very high</td><td class="num">extreme</td>
+          <td><strong>No — and it could cost you the extension.</strong> See below.</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <div class="callout warn">
+  <div class="callout note">
+    <div class="h">Three revisions to what I told you first — two in your favour</div>
+    <p>You pushed back on contacts and steps and you were largely right. I'd blanketed them as "no" without checking what the platforms actually built. Here is the corrected position on all three.</p>
+  </div>
+
+  <div class="cards" style="margin-top:16px">
+    <div class="fmt">
+      <span class="no">revision 01 · you were right</span>
+      <h3>Steps: yes, if you avoid HealthKit</h3>
+      <p>There are two different doors here and I treated them as one. <strong>CoreMotion's <code>CMPedometer</code> gives you step count behind a Motion &amp; Fitness prompt — that is not HealthKit and step count is not medical data.</strong> Light prompt, low risk, and Android has the equivalent.</p>
+      <p style="margin-top:.5em">"Guess how many steps you did this week" is the same shock mechanic as screen time, and unlike screenshots there is nothing embarrassing in a step count — which makes it far more shareable, not less.</p>
+      <p style="margin-top:.5em"><strong>The line to hold:</strong> the moment you touch HealthKit proper — workouts, heart rate, sleep — Apple's rules prohibit using that data for advertising or marketing. A game with cash prizes is the worst possible place to argue about where marketing begins. Pedometer yes, HealthKit no.</p>
+    </div>
+    <div class="fmt">
+      <span class="no">revision 02 · partly right</span>
+      <h3>Contacts: Apple built the safe path</h3>
+      <p>My objection was that contacts expose people who never consented. That was right about the old all-or-nothing prompt — and <strong>iOS 18 fixed exactly that.</strong> There is now a <code>contactAccessPicker</code> and a Contact Access Button: the user picks specific contacts, the same pattern as the photo picker, and apps no longer need full address-book access at all.</p>
+      <p style="margin-top:.5em">So the API risk is largely handled, and "who did you add most recently" or "match the name to the number" is genuinely fun.</p>
+      <p style="margin-top:.5em"><strong>The residual risk isn't the API, it's the output.</strong> If a contact's name appears on the score card, every screenshot of your game leaks a third party who never used Boom. Rule: names can appear during play, never in anything shareable.</p>
+    </div>
+    <div class="fmt">
+      <span class="no">revision 03 · no, and worse than I thought</span>
+      <h3>Browser history: don't touch it</h3>
+      <p>It's the funniest data on the list — "what did you google at 2am" would print. That is precisely the problem: the funny material <em>is</em> the sensitive material. Health searches, job hunting, legal trouble, porn.</p>
+      <p style="margin-top:.5em">But the practical objections settle it before the ethics do. <strong>On mobile it does not exist</strong> — iOS blocks it outright, and on Android the only routes are accessibility-service tricks that read as spyware and get you removed. So it is desktop-extension-only, which is the same dead end as the desktop screen: useless for a mobile-first campaign.</p>
+      <p style="margin-top:.5em"><strong>And it puts your existing extension at risk.</strong> Chrome Web Store policy updated on 1 July 2026 with enforcement from 1 August — extensions may now only collect data <em>strictly necessary for their stated purpose</em>, closing exactly the loophole this would use. A screen recorder harvesting browsing history for a game is the textbook case. Risking the extension listing — a real distribution channel — for a game feature is a bad trade at any odds.</p>
+    </div>
+  </div>
+
+  <div class="callout warn" style="margin-top:22px">
     <div class="h">The Spotify finding is worth pausing on</div>
     <p>Music was my instinct — Wrapped proved personal music data is the most viral format of this kind ever made, and music taste carries almost no privacy risk. Then I checked. <strong>Since February 2026, Spotify restricts Development Mode to non-commercial personal projects, and Extended Quota Mode requires a registered business with at least 250,000 monthly active users.</strong></p>
     <p style="margin-top:.7em">So you need the audience before you can build the thing that gets you the audience. It's closed to us, and I'd have led you into a dead end if I hadn't looked.</p>
@@ -401,8 +444,10 @@ footer b{color:var(--ink-soft);font-weight:500}
           <li><strong>Wave 1:</strong> zero data. Curated and creator boards only.</li>
           <li><strong>Then:</strong> typed handle → public data. Free, fast, no review.</li>
           <li><strong>Then:</strong> photo picker. Free, but ship the privacy rules with it.</li>
+          <li><strong>Then:</strong> steps via the pedometer. One light prompt, nothing embarrassing in the answer.</li>
           <li><strong>Then, for the work funnel only:</strong> calendar counts. Start the Google review now if you want it in a month — it's ~10 days plus your own build time.</li>
-          <li><strong>Never:</strong> Gmail, Slack, contacts, health.</li>
+          <li><strong>Optional:</strong> contacts via the iOS 18 picker — only if names never reach a shareable card.</li>
+          <li><strong>Never:</strong> Gmail, Slack, HealthKit, browser history.</li>
         </ul>
       </div>
       <div class="callout note">
@@ -420,7 +465,7 @@ footer b{color:var(--ink-soft);font-weight:500}
   </div>
   <div class="grid">
     <div class="col">
-      <p><strong>Checked:</strong> Spotify's February 2026 developer lockdown and the 250k MAU threshold for Extended Quota. Gmail restricted-scope CASA Tier 2 — cost band, 4–12 week timeline, annual recertification. Calendar and <code>youtube.readonly</code> both being <em>sensitive</em> scopes with a Google review of up to ~10 days, not the restricted-scope audit. That the system photo picker requires no permission on either platform. Apple MusicKit needing a paid developer account and a user token.</p>
+      <p><strong>Checked:</strong> Spotify's February 2026 developer lockdown and the 250k MAU threshold for Extended Quota. Gmail restricted-scope CASA Tier 2 — cost band, 4–12 week timeline, annual recertification. Calendar and <code>youtube.readonly</code> both being <em>sensitive</em> scopes with a Google review of up to ~10 days, not the restricted-scope audit. That the system photo picker requires no permission on either platform. Apple MusicKit needing a paid developer account and a user token. That iOS 18 added <code>contactAccessPicker</code> and the Contact Access Button so apps no longer need full address-book access. That Chrome Web Store policy updated 1 July 2026, enforced from 1 August, limiting extensions to data strictly necessary for their stated purpose. That iOS does not expose browser history to third-party apps at all.</p>
     </div>
     <div class="col">
       <p><strong>Not verified, and you should before committing:</strong> whether TikTok, Instagram and X public-data APIs will serve you at the volume this needs, and on what terms — public data is not the same as freely fetchable data, and those three have all tightened access recently. Also whether "guess your own X" is fun for more than one round; nobody has tested that. And these are engineering and product judgements, not a legal review — get one before anything touches a camera roll or a calendar.</p>
@@ -429,7 +474,7 @@ footer b{color:var(--ink-soft);font-weight:500}
 </section>
 
 <footer>
-  <b>Verified against:</b> Spotify developer platform update (Feb 2026) &amp; quota-mode docs · Google restricted &amp; sensitive scope verification docs · Apple MusicKit / Apple Music API docs · Apple PHPickerViewController &amp; Android photo picker · all checked 19 Aug 2026<br>
+  <b>Verified against:</b> Spotify developer platform update (Feb 2026) &amp; quota-mode docs · Google restricted &amp; sensitive scope verification docs · Apple MusicKit docs · PHPickerViewController &amp; Android photo picker · iOS 18 Contact Access Button (WWDC24) &amp; <code>contactAccessPicker</code> · Chrome Web Store policy update July/Aug 2026 · CoreMotion vs HealthKit · all checked 19 Aug 2026<br>
   <b>Companions:</b> <a href="./mobile.html">mobile design</a> · <a href="./recall.html">screen recall campaign</a> · <a href="./memo.html">team memo</a><br>
   <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
 </footer>
