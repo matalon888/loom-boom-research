@@ -9,6 +9,7 @@ A competitive teardown of **Loom**, built from 4,500 first-party user comments, 
 | 📄 **[The Complaint Ledger](https://matalon888.github.io/loom-boom-research/)** | The teardown: what Loom's users complain about, ranked, turned into a backlog |
 | 🧲 **[Acquisition Playbook](https://matalon888.github.io/loom-boom-research/playbook.html)** | How every competitor grows *without* paid search — sitemap evidence + nine plays |
 | 🧭 **[Strategy Memo](https://matalon888.github.io/loom-boom-research/strategy.html)** | Where the uncontested ground actually is — the paid distribution loop, social, and Boom Match |
+| 🧠 **[Screen Recall Campaign](https://matalon888.github.io/loom-boom-research/recall.html)** | The invented sub-niche merging recorder + memory game, with an 80-creator cross-platform roster |
 | 🎯 **[The 50 Creators](https://matalon888.github.io/loom-boom-research/creators.html)** | 50 X creators whose output is already screen recordings — ranked, with the $20-referral DM |
 | 💬 **[1,795 Raw Comments](https://matalon888.github.io/loom-boom-research/comments.html)** | Every user comment behind it, searchable and filterable |
 
@@ -21,6 +22,7 @@ A competitive teardown of **Loom**, built from 4,500 first-party user comments, 
 | `docs/index.html` | The teardown report |
 | `docs/playbook.html` | The competitor acquisition playbook |
 | `docs/strategy.html` | The strategy memo — paid distribution loop, social, Boom Match |
+| `docs/recall.html` | The Screen Recall campaign + 80-creator roster |
 | `docs/creators.html` | The 50-creator recruitment list + outreach |
 | `docs/comments.html` | The searchable raw-comment explorer |
 | `data/` | The raw scraped corpora as JSON — see `data/README.md` |
