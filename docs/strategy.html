@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Why Boom's uncontested ground is the paid distribution loop Loom killed - with the social and Boom Match angles worked through.">
+<meta name="description" content="Why Boom's uncontested ground is the paid distribution loop Loom killed - with real pricing, the referral maths, and Boom Match's actual role.">
 <title>The Loop Loom Killed</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,7 +395,19 @@ footer b{color:var(--ink-soft);font-weight:500}
     <p class="dek">Worth being blunt here, because forcing two products together is a common way to weaken both.</p>
   </div>
 
-  <div class="grid">
+  <div class="callout warn">
+    <div class="h">First, a correction: they are already joined</div>
+    <p>I wrote the section below as though Boom Match were a separate product to connect. It isn't. <strong>“Prize entries” is a line on the Boom Share pricing table</strong>, present on both tiers — the game and prize layer is already inside the recording product. So the question was never “should these connect.” It's <em>what job the game is doing there</em>, and that job is clearer once you know the free tier is ad-supported.</p>
+  </div>
+
+  <div class="callout note">
+    <div class="h">The role I'd give Boom Match: free-tier revenue multiplier</div>
+    <p>Boom's free tier makes money from <strong>ads</strong>, and ad revenue scales with time on site — not with signups. A recording tool is, by nature, something you open, use for ninety seconds, and close. A memory game is a reason to be there when you have nothing to record.</p>
+    <p style="margin-top:.7em">That reframes it entirely. Boom Match isn't a second business needing its own audience, and it isn't an acquisition channel. It is <strong>the thing that makes an ad-supported free tier viable</strong> — sessions per week, minutes per session, impressions per free user. Measured that way it has an obvious KPI and an obvious home: inside the Boom dashboard, on the watch page, and in the moment after you finish a recording and are waiting for the link.</p>
+    <p style="margin-top:.7em">It also gives the prize pool a funding source that isn't the subscription line — ads pay for prizes, prizes buy attention, attention sells ads. That loop closes on itself without touching Premium revenue.</p>
+  </div>
+
+  <div class="grid" style="margin-top:26px">
     <div class="col">
       <p style="font-family:var(--display);font-weight:600;font-size:1.05rem;margin-bottom:.6em">Transfers — and it's the expensive part</p>
       <ul class="tight">
@@ -422,25 +434,82 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">07 — the hole</div>
-    <h2>The question this plan does not yet answer</h2>
+    <div class="sec-num">07 — corrected</div>
+    <h2>Boom is not free, and that changes the maths in your favour</h2>
+    <p class="dek">An earlier draft of this memo asked “if everything is free, what funds the payouts?” That was my error — I read the homepage banner instead of the pricing page. Here is what is actually there, read on 19 August 2026.</p>
   </div>
+
   <div class="grid">
     <div class="col">
-      <div class="callout warn">
-        <div class="h">If everything is free forever and you also pay users, what pays for it?</div>
-        <p>This is the load-bearing unknown, and I don't have your numbers so I can't resolve it. Every other item in this memo is downstream of the answer, because the payout rate you can sustain determines whether the loop spins or bleeds.</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th></th><th class="num">Free</th><th class="num">Premium</th></tr></thead>
+          <tbody>
+            <tr class="busy"><td>Recordings</td><td class="num">25 videos</td><td class="num">Unlimited</td></tr>
+            <tr><td>Price</td><td class="num">$0</td><td class="num">$9.99/mo<br>$71.99/yr</td></tr>
+            <tr><td>Transcripts &amp; AI summaries</td><td class="num">—</td><td class="num">✓</td></tr>
+            <tr><td>Global Voice dubbing</td><td class="num">—</td><td class="num">Unlimited</td></tr>
+            <tr><td>Quality</td><td class="num">1080p</td><td class="num">4K</td></tr>
+            <tr><td>Cloud storage</td><td class="num">5 GB</td><td class="num">Unlimited</td></tr>
+            <tr><td>Custom branding</td><td class="num">—</td><td class="num">✓</td></tr>
+            <tr class="busy"><td>Ads</td><td class="num">Supported</td><td class="num">No ads</td></tr>
+            <tr><td>Prize entries</td><td class="num">✓</td><td class="num">✓</td></tr>
+          </tbody>
+        </table>
       </div>
-      <p style="margin-top:20px">The plausible answers, roughly in order of how well they fit what exists today:</p>
+      <div class="callout" style="margin-top:18px">
+        <div class="h">So the funding question was already answered</div>
+        <p>Two revenue lines exist today: <strong>$71.99/year subscriptions</strong> and <strong>ads on the free tier</strong>. Retract the “hole” — the plan doesn't need a new business model, it needs a payout number that fits this one.</p>
+      </div>
     </div>
+
     <div class="col">
-      <ul class="tight">
-        <li><strong>A team tier.</strong> Audience A pays for shared workspaces, admin, retention, SSO. Free stays free for individuals; the payout is a customer-acquisition cost funded by team revenue. This is the most conventional and most likely correct answer.</li>
-        <li><strong>Boom Match rake.</strong> Gaming revenue subsidises recording payouts, and recording brings the players. The shared wallet makes this mechanically clean.</li>
-        <li><strong>Attention on the watch page.</strong> You'd be monetising the viewer, which is the same place Loom now extracts a seat fee — with the difference that yours pays the creator instead of charging the viewer. Risky for the work-tool audience; fine for the creator audience.</li>
-      </ul>
-      <p style="margin-top:1em">My recommendation is the first, with the second as the bridge. But this is the one decision I'd want settled before scaling payouts, rather than after.</p>
+      <div class="callout warn">
+        <div class="h">But look at the first row again</div>
+        <p>Boom's free tier stops at <strong>25 videos</strong>. That is the exact number Loom stops at — and Loom's 25-video cap is the single most-cited churn trigger in the entire 1,795-comment corpus. Reddit posts say it in those words: <em>“25 videos, 5-min limit — the free tier is useless.”</em></p>
+        <p style="margin-top:.7em">Boom is currently attacking Loom for a limit it also imposes. Anyone who churned from Loom over the cap and lands on Boom's pricing page hits the same wall and the same number. Free also carries ads, which is a second friction that Loom's free tier doesn't have.</p>
+      </div>
+      <div class="callout note">
+        <div class="h">The cheapest strategic move available</div>
+        <p>Raise or remove the free video cap — or at minimum stop it being <em>25</em>. Boom's real constraint is storage (5 GB), which is a far more defensible limit and one nobody in the corpus complains about. Cap on gigabytes, not on the number of videos, and “no 25-video wall” becomes a headline you can actually defend against the incumbent.</p>
+      </div>
+      <p style="margin-top:18px">On price, Boom is already well positioned: <strong>$71.99/year against Loom Business at $180/user/year</strong> — 60% cheaper, unlimited recordings, dubbing included. That comparison is strong and is not being made anywhere in your marketing.</p>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">07b — the mechanic, stated plainly</div>
+    <h2>What “pay for distribution” actually means, in numbers</h2>
+    <p class="dek">Three different mechanics get bundled under that phrase and they are not the same thing. With the real pricing in hand, one of them is clearly right and the other two are not yet.</p>
+  </div>
+
+  <div class="cards">
+    <div class="cardx">
+      <span class="tagline">Option A · recommended</span>
+      <h3>Pay per referred paying subscriber</h3>
+      <p>A user brings someone who upgrades to Premium. You pay a one-time bounty. Year-one revenue is <strong>$71.99</strong>, so a bounty of <strong>$25–30</strong> is roughly 35–40% of it — affordable, and paid only after the money arrives.</p>
+      <p style="margin-top:.6em">Against Google's implied <strong>$1,335</strong> per paying customer, that is <strong>~45× cheaper</strong>, with no spend at risk.</p>
+      <div class="why">Fraud-resistant · self-funding · slowest loop, but the only one that is unambiguously affordable today</div>
+    </div>
+    <div class="cardx">
+      <span class="tagline">Option B · not yet</span>
+      <h3>Pay per verified viewer</h3>
+      <p>A small credit for each distinct authenticated person who watches your Boom. This is the true distribution loop and it spins far faster than referrals — but at $71.99/year of revenue per converted customer, the payout per view has to be tiny, and tiny payouts attract farming rather than real senders.</p>
+      <div class="why">Needs the anti-fraud layer and a proven view→signup rate before the arithmetic can be trusted</div>
+    </div>
+    <div class="cardx">
+      <span class="tagline">Option C · already live</span>
+      <h3>Credits and prize entries</h3>
+      <p>What Boom ships today. Both tiers get prize entries, so this is a <em>retention and engagement</em> mechanic, not an acquisition one — and it should be measured that way: time on site, sessions per week, ad impressions per free user.</p>
+      <div class="why">Don't judge it on signups; judge it on free-tier ARPU and return visits</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <div class="h">Direct answer to “so I pay each user who brings a paying user?”</div>
+    <p>Yes — that's Option A, and it's what I'd start with. <strong>~$25–30, once, after the referred person's first payment clears.</strong> Not per signup, not per view, not upfront. Option B is the bigger idea and the one competitors can't copy, but it needs the fraud work and a measured view-to-signup rate first. Run A now; earn the right to run B.</p>
   </div>
 </section>
 
@@ -453,12 +522,16 @@ footer b{color:var(--ink-soft);font-weight:500}
 
   <div class="steps">
     <div class="step"><span class="when">First</span><div>
-      <h4>Settle the money question</h4>
-      <p>Decide what funds payouts, and derive a payout rate you can defend at 100× current volume. Everything below assumes a number here.</p>
+      <h4>Kill the 25-video cap on free</h4>
+      <p>It is the same number Loom uses and the loudest churn trigger in the corpus. Limit on the 5&nbsp;GB storage instead — a constraint nobody complains about — and you get a headline you can defend: no video wall.</p>
     </div></div>
     <div class="step"><span class="when">Then</span><div>
-      <h4>Port Boom Match's anti-fraud onto Boom Share views</h4>
-      <p>Before a single payout ad runs. Pay on distinct authenticated viewers with per-creator caps, not raw views. This is the difference between a growth loop and a bot farm, and you already own the hard part.</p>
+      <h4>Launch the referral bounty: $25–30 per referred paying subscriber</h4>
+      <p>Paid once, after the first payment clears. ~35–40% of $71.99 year-one revenue, versus $1,335 implied CAC on Google. Start here; it is the only payout mechanic that is affordable today without new fraud infrastructure.</p>
+    </div></div>
+    <div class="step"><span class="when">Then</span><div>
+      <h4>Instrument the view→signup rate before paying per view</h4>
+      <p>Option B only becomes arithmetic once you know how many authenticated viewers a Boom link produces and what share ever sign up. Port Boom Match's anti-fraud onto views in the same pass — pay on distinct authenticated viewers with per-creator caps, never raw views.</p>
     </div></div>
     <div class="step"><span class="when">Then</span><div>
       <h4>Split the two messages</h4>
