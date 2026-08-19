@@ -1,0 +1,463 @@
+{
+ "Freelancer": [
+  {
+   "id": "6003374632277",
+   "name": "Freelancer",
+   "audience_size_lower_bound": 34283690,
+   "audience_size_upper_bound": 40317620,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Freelancer"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003121584182",
+   "name": "Freelancer.com",
+   "audience_size_lower_bound": 578945,
+   "audience_size_upper_bound": 680840,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Freelancer.com"
+   ],
+   "description": null,
+   "disambiguation_category": "Website",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003359005637",
+   "name": "Freelancer (video game)",
+   "audience_size_lower_bound": 139285,
+   "audience_size_upper_bound": 163800,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Freelancer (video game)"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "News and entertainment"
+  },
+  {
+   "id": "6003344597780",
+   "name": "Freelancers (film)",
+   "audience_size_lower_bound": 126399,
+   "audience_size_upper_bound": 148646,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Freelancers (film)"
+   ],
+   "description": null,
+   "topic": "News and entertainment"
+  },
+  {
+   "id": "6003243604899",
+   "name": "Action movies",
+   "audience_size_lower_bound": 627385552,
+   "audience_size_upper_bound": 737805410,
+   "path": [
+    "Interests",
+    "Entertainment",
+    "Movies",
+    "Action movies"
+   ],
+   "description": "",
+   "topic": "News and entertainment"
+  },
+  {
+   "id": "6003246168013",
+   "name": "Simulation games",
+   "audience_size_lower_bound": 92506020,
+   "audience_size_upper_bound": 108787080,
+   "path": [
+    "Interests",
+    "Entertainment",
+    "Games",
+    "Simulation games"
+   ],
+   "description": "",
+   "topic": "News and entertainment"
+  }
+ ],
+ "Advertising agency": [
+  {
+   "id": "6003702887891",
+   "name": "Advertising agency",
+   "audience_size_lower_bound": 28411173,
+   "audience_size_upper_bound": 33411540,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Advertising agency"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003125893549",
+   "name": "Recruitment",
+   "audience_size_lower_bound": 58884642,
+   "audience_size_upper_bound": 69248340,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Recruitment"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  }
+ ],
+ "Small business": [
+  {
+   "id": "6002884511422",
+   "name": "Small business",
+   "audience_size_lower_bound": 177101195,
+   "audience_size_upper_bound": 208271006,
+   "path": [
+    "Interests",
+    "Small business"
+   ],
+   "description": "",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003258526157",
+   "name": "Small Business Administration",
+   "audience_size_lower_bound": 12849421,
+   "audience_size_upper_bound": 15110920,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Small Business Administration"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003755775353",
+   "name": "Small business software",
+   "audience_size_lower_bound": 269642,
+   "audience_size_upper_bound": 317100,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Small business software"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6012894934015",
+   "name": "Small Business Expo",
+   "audience_size_lower_bound": 86760,
+   "audience_size_upper_bound": 102030,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Small Business Expo"
+   ],
+   "description": null,
+   "disambiguation_category": "Event",
+   "topic": "Travel, places and events"
+  },
+  {
+   "id": "6007977195248",
+   "name": "Small Business Week",
+   "audience_size_lower_bound": 65375,
+   "audience_size_upper_bound": 76882,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Small Business Week"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003156333233",
+   "name": "Federation of Small Businesses",
+   "audience_size_lower_bound": 61096,
+   "audience_size_upper_bound": 71850,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Federation of Small Businesses"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6017015601826",
+   "name": "Small Business Funding",
+   "audience_size_lower_bound": 43863,
+   "audience_size_upper_bound": 51584,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Small Business Funding"
+   ],
+   "description": null,
+   "disambiguation_category": "Loan Service",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6002958216723",
+   "name": "Small Business Innovation Research",
+   "audience_size_lower_bound": 4965,
+   "audience_size_upper_bound": 5840,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Small Business Innovation Research"
+   ],
+   "description": null,
+   "disambiguation_category": "Government Organization",
+   "topic": "Business and industry"
+  }
+ ],
+ "Entrepreneurship": [
+  {
+   "id": "6003371567474",
+   "name": "Entrepreneurship",
+   "audience_size_lower_bound": 382208471,
+   "audience_size_upper_bound": 449477162,
+   "path": [
+    "Interests",
+    "Entrepreneurship"
+   ],
+   "description": "",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003102820440",
+   "name": "Creative entrepreneurship",
+   "audience_size_lower_bound": 8157593,
+   "audience_size_upper_bound": 9593330,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Creative entrepreneurship"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003396973683",
+   "name": "Social entrepreneurship",
+   "audience_size_lower_bound": 4039098,
+   "audience_size_upper_bound": 4749980,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Social entrepreneurship"
+   ],
+   "description": null,
+   "disambiguation_category": "Concentration or Major",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003160465208",
+   "name": "Global Entrepreneurship Week",
+   "audience_size_lower_bound": 104804,
+   "audience_size_upper_bound": 123250,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Global Entrepreneurship Week"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003162116885",
+   "name": "Xavier Institute of Management and Entrepreneurship",
+   "audience_size_lower_bound": 46777,
+   "audience_size_upper_bound": 55010,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Xavier Institute of Management and Entrepreneurship"
+   ],
+   "description": null,
+   "disambiguation_category": "College & university",
+   "topic": "Education"
+  },
+  {
+   "id": "6003221747467",
+   "name": "Schwab Foundation for Social Entrepreneurship",
+   "audience_size_lower_bound": 15816,
+   "audience_size_upper_bound": 18600,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Schwab Foundation for Social Entrepreneurship"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6013729295062",
+   "name": "Global Entrepreneurship Summer School",
+   "audience_size_lower_bound": 7653,
+   "audience_size_upper_bound": 9000,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Global Entrepreneurship Summer School"
+   ],
+   "description": null,
+   "disambiguation_category": "College & university",
+   "topic": "Education"
+  },
+  {
+   "id": "6003398296402",
+   "name": "National Social Entrepreneurship Forum",
+   "audience_size_lower_bound": 1054,
+   "audience_size_upper_bound": 1240,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "National Social Entrepreneurship Forum"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Business and industry"
+  }
+ ],
+ "Startup company": [
+  {
+   "id": "6003325004380",
+   "name": "Startup company",
+   "audience_size_lower_bound": 86475467,
+   "audience_size_upper_bound": 101695150,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Startup company"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  }
+ ],
+ "Screen recording": [],
+ "Software development": [
+  {
+   "id": "6003409558536",
+   "name": "Software development",
+   "audience_size_lower_bound": 16269642,
+   "audience_size_upper_bound": 19133100,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Software development"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003387381404",
+   "name": "Component-based software engineering",
+   "audience_size_lower_bound": 1523265,
+   "audience_size_upper_bound": 1791360,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Component-based software engineering"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003224761145",
+   "name": "Software Engineering Institute",
+   "audience_size_lower_bound": 8409,
+   "audience_size_upper_bound": 9890,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Software Engineering Institute"
+   ],
+   "description": null,
+   "disambiguation_category": "School",
+   "topic": "Technology"
+  }
+ ],
+ "Puzzle video game": [
+  {
+   "id": "6003668975718",
+   "name": "Puzzle video games",
+   "audience_size_lower_bound": 288117984,
+   "audience_size_upper_bound": 338826750,
+   "path": [
+    "Interests",
+    "Entertainment",
+    "Games",
+    "Puzzle video games"
+   ],
+   "description": "",
+   "topic": "News and entertainment"
+  },
+  {
+   "id": "6003102728434",
+   "name": "Casual game",
+   "audience_size_lower_bound": 74939319,
+   "audience_size_upper_bound": 88128640,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Casual game"
+   ],
+   "description": null,
+   "topic": "Technology"
+  },
+  {
+   "id": "6007698456652",
+   "name": "Tile-matching video game",
+   "audience_size_lower_bound": 5468052,
+   "audience_size_upper_bound": 6430430,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Tile-matching video game"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "News and entertainment"
+  },
+  {
+   "id": "6003446500391",
+   "name": "Level (video gaming)",
+   "audience_size_lower_bound": 2757568,
+   "audience_size_upper_bound": 3242900,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Level (video gaming)"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "News and entertainment"
+  },
+  {
+   "id": "6003337633443",
+   "name": "Word Puzzle (video game)",
+   "audience_size_lower_bound": 9073,
+   "audience_size_upper_bound": 10670,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Word Puzzle (video game)"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "News and entertainment"
+  }
+ ]
+}

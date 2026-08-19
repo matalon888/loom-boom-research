@@ -1,0 +1,49 @@
+{
+ "tella": [
+  "course-creator",
+  "creators",
+  "designers",
+  "founders",
+  "how-can-i-add-a-team-member-as-an-editor-of-your-video",
+  "internal-comms",
+  "learning-and-development",
+  "online-communities",
+  "product-teams",
+  "sales-teams",
+  "startups",
+  "youtubers"
+ ],
+ "boom": [
+  "design",
+  "education",
+  "engineering",
+  "marketing",
+  "product-management",
+  "sales"
+ ],
+ "loom": [
+  "design",
+  "education",
+  "engineering",
+  "marketing",
+  "product-management",
+  "sales",
+  "support",
+  "team-alignment",
+  "video-hosting",
+  "video-library"
+ ],
+ "supademo": [
+  "customer-success",
+  "customer-support",
+  "education-training",
+  "finance-banking",
+  "government",
+  "healthcare",
+  "product",
+  "product-marketing",
+  "product-onboarding",
+  "sales-enablement",
+  "software"
+ ]
+}
