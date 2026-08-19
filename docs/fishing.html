@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Full cost of the mobile approach - build, media, CDN and storage - with the creator-vs-Meta comparison and the CDN choice that costs an engineer salary.">
-<title>Mobile Approach Budget</title>
+<meta name="description" content="Ad creative and funnel sequence for Boom - three audiences, three baits drawn from real user complaints, with verified Meta interest IDs and message timing.">
+<title>Three Ponds, Three Baits</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -204,26 +204,32 @@ tr.no td{background:var(--rec-wash)}
 .fmt .hook{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--ink);
   padding:11px 14px;background:var(--rule-soft);margin:2px 0}
 .fmt p{font-size:.94rem;color:var(--ink-soft);margin:0}
+.dm{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);margin-top:14px}
+.dm-h{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:11px 16px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.dm-h .t{font-family:var(--display);font-weight:600;font-size:.98rem;letter-spacing:-.01em}
+.dm-h .w{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.dm pre{margin:0;padding:16px;font-family:var(--mono);font-size:12.5px;line-height:1.65;
+  white-space:pre-wrap;color:var(--ink-soft);overflow-x:auto}
+.dm pre b{color:var(--boom);font-weight:600}
 footer{margin-top:80px;border-top:2px solid var(--ink);padding-top:20px;
   font-family:var(--mono);font-size:11px;line-height:1.75;color:var(--muted)}
 footer b{color:var(--ink-soft);font-weight:500}
 </style>
-
 </head>
 <body>
 <div class="wrap">
 
 <header class="masthead">
-  <div class="kicker"><span class="dot"></span> budget &middot; mobile approach &middot; 19 aug 2026</div>
-  <h1>$29k to $121k<br>for Six Months</h1>
-  <p class="standfirst">Build, media, and the infrastructure line nobody has mentioned. <b>Two findings change the plan: creators are 256× cheaper than Meta per impression, and picking the wrong CDN costs you an engineer's salary.</b></p>
+  <div class="kicker"><span class="dot"></span> ad &amp; funnel spec &middot; 19 aug 2026</div>
+  <h1>Three Ponds,<br>Three Baits</h1>
+  <p class="standfirst">Every hook below is a real sentence from the 1,795-comment corpus, matched to a verified Meta audience. <b>And the cross-device problem you keep hitting only exists in one of the three ponds — so stop routing the other two through it.</b></p>
 
-  <nav class="sitenav" aria-label="Sections of this research">
+  <nav class="sitenav" aria-label="Sections">
     <a href="./">The Complaint Ledger</a>
-    <a href="./fishing.html">Ads &amp; Funnel</a>
+    <a href="./fishing.html" aria-current="page">Ads &amp; Funnel</a>
     <a href="./engines.html">Three Engines</a>
-    <a href="./costs.html" aria-current="page">Budget</a>
-    <a href="./strategy.html">Strategy Memo</a>
+    <a href="./costs.html">Budget</a>
     <a href="./recall.html">Screen Recall</a>
     <a href="./funnel.html">Funnel Model</a>
     <a href="./roster.html">The Roster</a>
@@ -233,118 +239,173 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">A — build</div>
-    <h2>12 dev-weeks. Six calendar weeks with two people.</h2>
+    <div class="sec-num">the insight first</div>
+    <h2>Two of these ponds should never see a desktop ask</h2>
   </div>
-  <div class="tablewrap">
-    <table style="min-width:600px">
-      <thead><tr><th class="num">Dev-weeks</th><th>What</th></tr></thead>
-      <tbody>
-        <tr><td class="num">3</td><td>Tier 0 web game — curated board, score, share. Plays in the TikTok browser, no install.</td></tr>
-        <tr><td class="num">5</td><td>Mobile app tier 1 — system photo picker, on-device play, the question bank</td></tr>
-        <tr><td class="num">1</td><td>Email / desktop bridge — "send yourself the link"</td></tr>
-        <tr><td class="num">2</td><td>Anti-fraud, ported from Boom Match</td></tr>
-        <tr><td class="num">1</td><td>Tracked links, attribution, analytics</td></tr>
-        <tr class="ok"><td class="num"><strong>12</strong></td><td><strong>$18,000 – $42,000</strong> depending on rate ($6k–14k per dev-month)</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">B — media</div>
-    <h2>The same 57.8M impressions, six ways</h2>
-    <p class="dek">This is the finding that should decide your channel mix.</p>
-  </div>
-  <div class="tablewrap">
-    <table style="min-width:640px">
-      <thead><tr><th>Channel</th><th class="num">CPM</th><th class="num">Cost for 57.8M impressions</th></tr></thead>
-      <tbody>
-        <tr class="ok"><td><strong>TikTok creators</strong> — the wave-1 pack</td><td class="num">$0.08</td><td class="num"><strong>$4,625</strong></td></tr>
-        <tr><td>Meta — India</td><td class="num">$1.36</td><td class="num">$78,625</td></tr>
-        <tr><td>Meta — Philippines</td><td class="num">$3.40</td><td class="num">$196,562</td></tr>
-        <tr><td>Meta — Brazil</td><td class="num">$4.20</td><td class="num">$242,812</td></tr>
-        <tr class="no"><td>Meta — US</td><td class="num">$20.48</td><td class="num">$1,183,996</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="callout warn">
-    <div class="h">Creators are 256× cheaper than Meta US, and 17× cheaper than the cheapest Meta market</div>
-    <p>I said earlier that Meta should be your volume engine, following your own Boom Match research. On these numbers that's wrong for <em>reach</em>. Use creators to buy attention and Meta only for what creators can't do: precise targeting, retargeting people who played but didn't sign up, and always-on delivery between creator waves.</p>
-    <p style="margin-top:.7em">Budget Meta as a <strong>$1–5k/month targeting tool</strong>, not as the thing that buys the audience.</p>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">C — infrastructure</div>
-    <h2>The line nobody has mentioned</h2>
-    <p class="dek">100,000 signups · 30% ever record · 4 recordings/month · 150MB each · watched 3× → 18 TB/month added storage, 54 TB/month egress.</p>
-  </div>
-  <div class="tablewrap">
-    <table style="min-width:640px">
-      <thead><tr><th>Provider</th><th class="num">$/GB egress</th><th class="num">Egress/mo</th><th class="num">Storage at mo 6</th><th class="num">Total</th></tr></thead>
-      <tbody>
-        <tr class="ok"><td><strong>Cloudflare R2</strong></td><td class="num">$0.000</td><td class="num">$0</td><td class="num">$1,620</td><td class="num"><strong>$1,620</strong></td></tr>
-        <tr class="ok"><td>Bunny (volume)</td><td class="num">$0.005</td><td class="num">$270</td><td class="num">$1,080</td><td class="num"><strong>$1,350</strong></td></tr>
-        <tr><td>Bunny (standard)</td><td class="num">$0.010</td><td class="num">$540</td><td class="num">$1,080</td><td class="num">$1,620</td></tr>
-        <tr class="no"><td>AWS CloudFront + S3</td><td class="num">$0.085</td><td class="num">$4,590</td><td class="num">$2,484</td><td class="num">$7,074</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="callout warn">
-    <div class="h">Check which one you're on before wave 1</div>
-    <p>CloudFront costs <strong>4–5× more than R2 or Bunny</strong> at this scale, and the gap widens with every successful campaign. A viral hit on the wrong CDN is a bill, not a win. This is worth an hour of someone's time this week.</p>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">D — the total</div>
-    <h2>Six months, everything in</h2>
-  </div>
-  <div class="tablewrap">
-    <table style="min-width:600px">
-      <thead><tr><th>Line</th><th class="num">Low</th><th class="num">High</th></tr></thead>
-      <tbody>
-        <tr><td>Build — 12 dev-weeks</td><td class="num">$18,000</td><td class="num">$42,000</td></tr>
-        <tr><td>TikTok creator waves 1 + 3</td><td class="num">$4,550</td><td class="num">$19,812</td></tr>
-        <tr><td>Meta — targeting &amp; retargeting only, 3 months</td><td class="num">$3,000</td><td class="num">$15,000</td></tr>
-        <tr><td>CDN + storage, 6 months</td><td class="num">$3,200</td><td class="num">$33,000</td></tr>
-        <tr><td>Transcoding / encoding</td><td class="num">$600</td><td class="num">$3,000</td></tr>
-        <tr><td>Affiliate bounties — paid only on revenue</td><td class="num">$0</td><td class="num">$8,000</td></tr>
-        <tr><td>Prize pool — your lever, not a cost I can estimate</td><td class="num">—</td><td class="num">—</td></tr>
-        <tr class="ok"><td><strong>Total</strong></td><td class="num"><strong>$29,350</strong></td><td class="num"><strong>$120,812</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="grid" style="margin-top:24px">
+  <div class="grid">
     <div class="col">
+      <p>I've been modelling one funnel and getting bad cross-device numbers. That's because I was pushing everyone through the same pipe.</p>
+      <p><strong>Someone who clicked an ad about losing a client recording already wants a recorder on their work machine.</strong> For them, "get it on desktop" isn't a chore you have to bribe them through — it's the thing they came for. The 8% click-to-install rate doesn't apply.</p>
+      <p><strong>Someone who clicked a memory game does not want your software.</strong> Pushing them to a desktop install is where the funnel dies. Don't. Take their $5–20 on credits, on the phone, where they already are.</p>
+    </div>
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">So the rule is</div>
+        <p><strong>Recorder-intent traffic → desktop is the destination.</strong> Say it immediately and clearly.</p>
+        <p style="margin-top:.7em"><strong>Game traffic → the phone is the destination.</strong> Never mention desktop in the first session. Monetise on credits, and let desktop happen later, unpaid, if at all.</p>
+        <p style="margin-top:.7em">Mixing them is what produced the $22 CAC. Separated, one pond is cheap and the other doesn't need the step.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">pond A</div>
+    <h2>Loom refugees — smallest, hottest, desktop-native</h2>
+    <p class="dek">~2M reachable. Highest intent in the whole plan. These people are actively angry right now.</p>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <p><strong>Target:</strong> Atlassian <code>6003325467980</code> (1.9M) · JIRA <code>6003702871891</code> (707k) · Confluence <code>6003288382876</code> (149k) · Wistia <code>6005965434351</code> (127k) — all OR.</p>
+      <p>Loom is an Atlassian product now. These are the people Atlassian is cross-selling it to, and the people whose bill changed in February.</p>
       <div class="callout">
-        <div class="h">How to land at the low end</div>
-        <ul class="tight">
-          <li>Build tier 0 only first — 3 dev-weeks, not 12. Wave 1 doesn't need the mobile app.</li>
-          <li>Creators for reach; cap Meta at $1k/month.</li>
-          <li>R2 or Bunny, never CloudFront.</li>
-          <li>Affiliates cost nothing until they earn.</li>
-        </ul>
-        <p style="margin-top:.8em"><strong>That path is roughly $12–15k to find out whether any of this works.</strong></p>
+        <div class="h">Desktop is the ask, from the first frame</div>
+        <p>No game, no detour. Ad → landing page → download. They came for a recorder; give them one.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="dm">
+        <div class="dm-h"><span class="t">Bait — the billing shock</span><span class="w">cold ad</span></div>
+<pre>"Your Loom bill changed in February.
+ Ours doesn't charge for people who watch."
+
+ <b>[Download Boom — free]</b></pre>
+      </div>
+      <p style="margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
+        FROM: <em>"After Atlassian acquired Loom, navigating user subscriptions and billing seems impossible. I keep getting overcharged without my consent and I can't figure out how to downgrade my team."</em>
+      </p>
+      <div class="dm">
+        <div class="dm-h"><span class="t">Bait — the cap</span><span class="w">variant</span></div>
+<pre>"25 videos. Then it stops.
+ That's Loom's free plan. Not ours."</pre>
+      </div>
+      <p style="margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
+        FROM: <em>"I would give it 5 stars if it wasn't for the 5-minute time limit on the free version"</em> — 46 upvotes
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">pond B</div>
+    <h2>Freelancers &amp; small business — biggest commercial pool</h2>
+    <p class="dek">~48M reachable via behaviour. 96% of them talk about <em>sending</em>, which is what feeds the loop.</p>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <p><strong>Target:</strong> behaviour Small business owners <code>6002714898572</code> (48.1M) <strong>AND</strong> any of — Freelancer <code>6003374632277</code> (34.3M) · Advertising agency <code>6003702887891</code> (28.4M) · Telecommuting <code>6003343813828</code> (20.7M) · Fiverr <code>6003439911912</code> (6.0M).</p>
+      <p style="margin-top:1em"><strong>Never</strong> <code>6002714895372</code> — that's Frequent Travelers, 2.6 billion. It's the ID that broke Recepte.</p>
+      <div class="callout note">
+        <div class="h">Route: Click-to-WhatsApp</div>
+        <p>$0.27 per conversation on your own data. The conversation captures contact at the moment of click — no email form, no landing-page drop.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="dm">
+        <div class="dm-h"><span class="t">Bait — lost work</span><span class="w">cold ad · highest emotion in the corpus</span></div>
+<pre>"Recorded a 15-minute walkthrough for a client.
+ It failed to upload. Had to do the whole thing again."
+
+ That's the review that made us build Boom.
+ <b>[Chat with us on WhatsApp]</b></pre>
+      </div>
+      <p style="margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
+        FROM: <em>"i recorded a 15 minute presentation and in the end what happened? Everything i recorded failed to upload... So I had to re-record it again."</em> — 37 upvotes
+      </p>
+      <div class="dm">
+        <div class="dm-h"><span class="t">Message 1 — same minute</span><span class="w">WhatsApp, free in the 72h window</span></div>
+<pre>Boom records your screen and gives you a link.
+Your client doesn't need an account to watch it.
+
+Free, no time limit. Works on Mac and Windows.
+
+<b>[Get it on my computer]</b>   <b>[What is this?]</b></pre>
+      </div>
+      <p style="margin-top:10px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
+        Desktop link in message 1. They already want it — don't make them wait for it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">pond C</div>
+    <h2>The game — biggest reach, and the one that must stay on the phone</h2>
+    <p class="dek">Puzzle video games <code>6003668975718</code> (288M) · Casual game <code>6003102728434</code> (74.9M) · Tile-matching <code>6007698456652</code> (5.5M).</p>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <div class="dm">
+        <div class="dm-h"><span class="t">Bait — no product at all</span><span class="w">cold ad</span></div>
+<pre>"This screen was on display for 5 seconds.
+ What was on it?"
+
+ <b>[Play]</b>   — 15 seconds, no signup</pre>
+      </div>
+      <div class="dm">
+        <div class="dm-h"><span class="t">After the score</span><span class="w">on the phone, same session</span></div>
+<pre>You were off by 4.
+Beat your friends: <b>[Send a challenge]</b>
+Daily prize draw: <b>[Enter — free]</b></pre>
       </div>
     </div>
     <div class="col">
       <div class="callout warn">
-        <div class="h">What's missing and why</div>
-        <p><strong>The prize pool.</strong> Daily cash prizes are already live in your product and I have no idea what you're paying out. It could be the largest line here or a rounding error — and unlike everything above, it scales directly with success.</p>
-        <p style="margin-top:.7em">Also excluded: your own time, App Store fees, payment processing on credits, and any legal review — the App Store 5.1.3 read and the camera-roll privacy check both need one.</p>
+        <div class="h">What NOT to say in this pond</div>
+        <p>No "download our desktop app." No "screen recorder." No mention of work. Every one of those is where the funnel leaked $22 a head.</p>
+        <p style="margin-top:.7em">The desktop mention comes on <strong>day 7+</strong>, by WhatsApp, and only to people who came back and played twice. By then they're a user, not a click.</p>
+      </div>
+      <div class="callout">
+        <div class="h">And when you do say it, say it as money</div>
+<pre style="font-family:var(--mono);font-size:12px;line-height:1.6;background:var(--rule-soft);padding:12px;margin-top:8px;white-space:pre-wrap">You've got 3 prize entries waiting.
+Claim them on your computer: [link]</pre>
+        <p style="margin-top:.7em">"Install our software" converts at 8%. "Collect your winnings" converts at something much closer to 45%. Same click, different sentence.</p>
       </div>
     </div>
   </div>
 </section>
 
+<section>
+  <div class="sec-head">
+    <div class="sec-num">the sequence</div>
+    <h2>When to say what</h2>
+  </div>
+  <div class="tablewrap">
+    <table style="min-width:820px">
+      <thead><tr><th>When</th><th>Pond A — Loom refugees</th><th>Pond B — freelancers</th><th>Pond C — game</th></tr></thead>
+      <tbody>
+        <tr><td class="num"><strong>Ad</strong></td><td>"Your Loom bill changed in February."</td><td>"It failed to upload. Had to do it again."</td><td>"What was on this screen?"</td></tr>
+        <tr><td class="num"><strong>Click lands</strong></td><td>Download page</td><td>WhatsApp conversation</td><td>Game, playing in 2 seconds</td></tr>
+        <tr><td class="num"><strong>Minute 1</strong></td><td>Download. That's it.</td><td>"Your client doesn't need an account to watch." + desktop link</td><td>Score. Then: challenge a friend.</td></tr>
+        <tr><td class="num"><strong>Day 1</strong></td><td>"Your first recording — want the link shortener?"</td><td>"Did it work? Anything broken?"</td><td>"New board today."</td></tr>
+        <tr><td class="num"><strong>Day 3</strong></td><td>Team invite prompt</td><td>"Most people here record client updates. Want the template?"</td><td>Prize draw reminder</td></tr>
+        <tr class="ok"><td class="num"><strong>Day 7</strong></td><td>Premium: 4K, dubbing, unlimited</td><td>Premium, priced against Loom's $180/user</td><td><strong>First desktop mention</strong> — and only as "claim your entries"</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warn">
+    <div class="h">One rule that overrides all of this</div>
+    <p>Every ad above sends people to a pricing page that currently says <strong>25 videos</strong> — the exact number Loom uses and the loudest complaint in the corpus. Pond A's entire ad is <em>"25 videos, then it stops. That's Loom's free plan, not ours"</em> and it is presently untrue.</p>
+    <p style="margin-top:.7em">Fix the cap before a single ad runs, or you're paying to show people your weakest screen.</p>
+  </div>
+</section>
+
 <footer>
-  <b>Sources:</b> Meta CPM benchmarks by country 2026 · CDN egress pricing 2026 (Bunny, Cloudflare R2, CloudFront) · creator fees from the <a href="./roster.html">roster</a> at observed view counts<br>
-  <b>Companions:</b> <a href="./engines.html">three engines</a> · <a href="./funnel.html">funnel model</a> · <a href="./recall.html">screen recall</a><br>
+  <b>Sources:</b> all hooks quoted from the <a href="./comments.html">1,795-comment corpus</a> with upvote counts · all interest and behaviour IDs queried live from the Boom ad account, 19 Aug 2026 · CTWA cost from the Recepte campaign<br>
+  <b>Companions:</b> <a href="./engines.html">three engines</a> · <a href="./costs.html">budget</a> · <a href="./funnel.html">funnel model</a><br>
   <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
 </footer>
 
