@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Boom Match works on mobile: screenshots instead of live screen capture, a three-tier personalisation ladder, six game formats, and the privacy rules.">
+<title>The Screen Is a Screenshot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --paper:#F2F5F6; --card:#FFFFFF; --ink:#101A1F; --ink-soft:#2C3B42; --muted:#5A6B72;
+  --rule:#D6E0E3; --rule-soft:#E6EDEF;
+  --rec:#C0332A; --rec-wash:#F7E7E4;
+  --boom:#0B6F79; --boom-wash:#E0EFF0;
+  --warm:#9A6B1F; --warm-wash:#F6EDDC;
+  --shadow:0 1px 2px rgba(16,26,31,.05), 0 8px 24px -16px rgba(16,26,31,.22);
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 110px}
+a{color:var(--boom)}
+
+.masthead{padding:58px 0 34px;border-bottom:2px solid var(--ink)}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--boom);flex:none;box-shadow:0 0 0 3px var(--boom-wash)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.3rem,5.8vw,4.1rem);
+  line-height:1;letter-spacing:-.025em;margin:20px 0 0;text-wrap:balance}
+.standfirst{font-size:clamp(1.04rem,1.8vw,1.26rem);line-height:1.5;color:var(--ink-soft);
+  max-width:46ch;margin:20px 0 0}
+.standfirst b{font-weight:600;color:var(--ink);box-shadow:inset 0 -.42em 0 var(--boom-wash)}
+
+.sitenav{display:flex;gap:0;flex-wrap:wrap;border:1px solid var(--rule);background:var(--card);
+  margin:28px 0 0;box-shadow:var(--shadow)}
+.sitenav a{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  padding:11px 12px;color:var(--muted);text-decoration:none;border-right:1px solid var(--rule);
+  display:flex;align-items:center;gap:7px;flex:1 1 auto;justify-content:center;white-space:nowrap}
+.sitenav a:last-child{border-right:none}
+.sitenav a:hover{color:var(--ink);background:var(--rule-soft)}
+.sitenav a[aria-current="page"]{color:var(--ink);background:var(--rule-soft);font-weight:600}
+.sitenav a[aria-current="page"]::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--boom);flex:none}
+@media (max-width:820px){.sitenav a{flex:1 1 100%;justify-content:flex-start;border-right:none;
+  border-bottom:1px solid var(--rule)}.sitenav a:last-child{border-bottom:none}}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:30px 0 0}
+.st{background:var(--card);padding:15px 17px}
+.st .n{font-family:var(--mono);font-weight:600;font-size:1.4rem;display:block;line-height:1.1;
+  font-variant-numeric:tabular-nums}
+.st .l{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--muted);margin-top:5px;display:block}
+
+section{padding:66px 0 0}
+.sec-head{border-top:1px solid var(--rule);padding-top:18px;margin-bottom:28px}
+.sec-num{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3vw,2.3rem);
+  line-height:1.07;letter-spacing:-.02em;margin:10px 0 0;text-wrap:balance;max-width:26ch}
+.dek{color:var(--muted);max-width:66ch;margin:13px 0 0;font-size:1rem}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:40px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:1fr;gap:26px}}
+p{margin:0 0 1.05em} p:last-child{margin-bottom:0}
+.col p{max-width:62ch}
+strong{font-weight:600}
+
+.callout{border-left:3px solid var(--boom);background:var(--boom-wash);padding:17px 21px;margin:22px 0 0}
+.callout .h{font-family:var(--display);font-weight:600;font-size:1.04rem;margin-bottom:6px;letter-spacing:-.01em}
+.callout p{font-size:.96rem;color:var(--ink-soft)}
+.callout.warn{border-left-color:var(--rec);background:var(--rec-wash)}
+.callout.note{border-left-color:var(--warm);background:var(--warm-wash)}
+
+/* creator table */
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+.fb{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  padding:7px 12px;background:transparent;color:var(--muted);border:1px solid var(--rule);cursor:pointer}
+.fb:hover{color:var(--ink);border-color:var(--muted)}
+.fb[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.fb:focus-visible{outline:2px solid var(--boom);outline-offset:2px}
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:860px}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;background:var(--paper);position:sticky;top:0;z-index:2}
+td{font-size:.9rem}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tbody tr:hover td{background:var(--rule-soft)}
+.nm{font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:2px}
+.bio{color:var(--ink-soft);max-width:330px;font-size:.86rem;line-height:1.45}
+.tools{max-width:170px}
+.tool{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+  text-transform:uppercase;padding:2px 6px;border:1px solid var(--rule);color:var(--boom);
+  margin:0 3px 3px 0;white-space:nowrap}
+.tool.dim{color:var(--muted)}
+
+/* DM blocks */
+.dm{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);margin-top:14px}
+.dm-h{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:12px 18px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.dm-h .t{font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:-.01em}
+.dm-h .w{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.dm pre{margin:0;padding:18px;font-family:var(--mono);font-size:12.5px;line-height:1.7;
+  white-space:pre-wrap;color:var(--ink-soft);overflow-x:auto}
+.dm pre b{color:var(--ink);font-weight:600}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:13px;margin-top:20px}
+.cardx{background:var(--card);border:1px solid var(--rule);padding:18px 20px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:8px}
+.cardx h3{font-family:var(--display);font-weight:600;font-size:1.1rem;margin:0;letter-spacing:-.015em}
+.cardx p{font-size:.94rem;color:var(--ink-soft);margin:0}
+.tagline{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--boom)}
+.why{margin-top:auto;padding-top:10px;border-top:1px dashed var(--rule);
+  font-family:var(--mono);font-size:11px;line-height:1.55;color:var(--muted)}
+
+.steps{display:flex;flex-direction:column;gap:11px;margin-top:20px}
+.step{background:var(--card);border:1px solid var(--rule);padding:16px 19px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:80px 1fr;gap:15px;align-items:start}
+@media (max-width:640px){.step{grid-template-columns:1fr;gap:7px}}
+.when{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--boom);padding-top:3px}
+.step h4{font-family:var(--display);font-weight:600;font-size:1.03rem;margin:0 0 5px;letter-spacing:-.01em}
+.step p{font-size:.94rem;color:var(--ink-soft);margin:0}
+
+ul.tight{margin:.4em 0 0;padding-left:1.15em}
+ul.tight li{margin-bottom:.42em;font-size:.94rem;color:var(--ink-soft)}
+ul.tight li:last-child{margin-bottom:0}
+code{font-family:var(--mono);font-size:.87em;background:var(--rule-soft);padding:1px 5px}
+
+.cpm{font-family:var(--mono);padding:2px 7px;border:1px solid var(--rule);white-space:nowrap}
+.cpm.good{color:var(--boom);border-color:var(--boom);background:var(--boom-wash)}
+.cpm.ok{color:var(--warm);border-color:var(--warm)}
+.cpm.bad{color:var(--rec);border-color:var(--rec)}
+.packs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:13px;margin-top:20px}
+.pk{background:var(--card);border:1px solid var(--rule);padding:18px 20px;box-shadow:var(--shadow)}
+.pk.rec{border:2px solid var(--boom)}
+.pk .lab{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.pk .big{font-family:var(--display);font-weight:700;font-size:2.1rem;line-height:1;margin:9px 0 2px;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.pk.rec .big{color:var(--boom)}
+.pk .sub{font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.6}
+.pk .tag{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;
+  background:var(--boom);color:var(--paper);padding:2px 7px;margin-top:9px}
+.wave{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);margin-top:13px}
+.wave-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;
+  padding:14px 20px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.wave-h .n{font-family:var(--display);font-weight:600;font-size:1.08rem;letter-spacing:-.01em}
+.wave-h .c{font-family:var(--mono);font-size:11px;color:var(--boom);letter-spacing:.08em;text-transform:uppercase}
+.wave-b{padding:16px 20px;font-size:.95rem;color:var(--ink-soft)}
+.wave-b b{color:var(--ink)}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;margin-top:22px;
+  background:var(--card);border:1px solid var(--rule);padding:24px;box-shadow:var(--shadow)}
+@media(max-width:700px){.vs{grid-template-columns:1fr;text-align:center}}
+.vs .side .lab{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.vs .side .big{font-family:var(--display);font-weight:700;font-size:2.6rem;line-height:1;margin:8px 0 4px;letter-spacing:-.03em}
+.vs .side .sub{font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.5}
+.vs .a .big{color:var(--rec)} .vs .b .big{color:var(--boom)}
+.vs .mid{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  border-left:1px solid var(--rule);border-right:1px solid var(--rule);padding:0 18px}
+@media(max-width:700px){.vs .mid{border:none;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0}}
+.fmt{background:var(--card);border:1px solid var(--rule);box-shadow:var(--shadow);padding:20px 22px;
+  display:flex;flex-direction:column;gap:9px}
+.fmt .no{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--boom)}
+.fmt h3{font-family:var(--display);font-weight:600;font-size:1.16rem;margin:0;letter-spacing:-.015em}
+.fmt .hook{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--ink);
+  padding:11px 14px;background:var(--rule-soft);margin:2px 0}
+.fmt p{font-size:.94rem;color:var(--ink-soft);margin:0}
+figure{margin:26px 0 0;background:var(--card);border:1px solid var(--rule);
+  padding:24px 22px 18px;box-shadow:var(--shadow)}
+figure svg{display:block;width:100%;max-width:100%;height:auto}
+figcaption{font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--muted);
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
+.steps{display:flex;flex-direction:column;gap:11px;margin-top:20px}
+.step{background:var(--card);border:1px solid var(--rule);padding:16px 19px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:74px 1fr;gap:15px;align-items:start}
+@media (max-width:640px){.step{grid-template-columns:1fr;gap:7px}}
+.when{font-family:var(--mono);font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--boom);padding-top:3px}
+.step h4{font-family:var(--display);font-weight:600;font-size:1.03rem;margin:0 0 5px;letter-spacing:-.01em}
+.step p{font-size:.94rem;color:var(--ink-soft);margin:0}
+ul.tight{margin:.4em 0 0;padding-left:1.15em}
+ul.tight li{margin-bottom:.45em;font-size:.95rem;color:var(--ink-soft)}
+footer{margin-top:80px;border-top:2px solid var(--ink);padding-top:20px;
+  font-family:var(--mono);font-size:11px;line-height:1.75;color:var(--muted)}
+footer b{color:var(--ink-soft);font-weight:500}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="kicker"><span class="dot"></span> product design &middot; boom match on mobile &middot; 19 aug 2026</div>
+  <h1>The Screen<br>Is a Screenshot</h1>
+  <p class="standfirst">Live screen capture doesn't port to phones — iOS and Android both fight it. But the mobile analogue is sitting right there: <b>everyone's phone already has a Screenshots album, and reading it needs no permission at all.</b></p>
+
+  <nav class="sitenav" aria-label="Sections of this research">
+    <a href="./">The Complaint Ledger</a>
+    <a href="./playbook.html">Acquisition Playbook</a>
+    <a href="./strategy.html">Strategy Memo</a>
+    <a href="./recall.html">Screen Recall Campaign</a>
+    <a href="./mobile.html" aria-current="page">Mobile Design</a>
+    <a href="./roster.html">The Roster</a>
+    <a href="./memo.html">Team Memo</a>
+    <a href="./creators.html">The 50 Creators</a>
+    <a href="./comments.html">1,795 Raw Comments</a>
+  </nav>
+</header>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">1 — the problem, stated properly</div>
+    <h2>The campaign is 100% mobile. The game is desktop-only.</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <p>TikTok traffic is phones. Every one of the 57.8 million views in wave 1 arrives on a phone, taps a link on a phone, and decides in about three seconds. If what they land on is “download our desktop app”, the entire campaign leaks out before anyone plays anything.</p>
+      <p>So this has to be solved before wave 1 ships, not after. It's a wave 0 item.</p>
+    </div>
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">Why the desktop mechanic can't just be ported</div>
+        <p>Both platforms deliberately make ambient screen access impossible. On iOS, ReplayKit needs a user-initiated recording with a system prompt every session. On Android, MediaProjection throws a consent dialog every time. Neither can run in the background, and neither is something a person will do to play a 15-second game.</p>
+        <p style="margin-top:.7em">It isn't a build problem you can engineer around. It's the platform's position, and it isn't changing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">2 — your option 1</div>
+    <h2>Pulling from desktop is a good feature and the wrong answer</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <p>Using their desktop-captured screens inside the phone app works technically, and it's worth building — <em>eventually</em>.</p>
+      <p>But it can't be the mobile entry point, for one reason: <strong>a person arriving from TikTok has never opened the desktop app.</strong> There is no data to pull. Option 1 requires the user to already be a user, so it solves retention, not acquisition — and acquisition is the entire point of the campaign.</p>
+      <p>Ship it as tier 3, after the loop works.</p>
+    </div>
+    <div class="col">
+      <div class="callout">
+        <div class="h">Where it does earn its place</div>
+        <p>Once someone records on desktop, their real work screens become the best possible puzzle material — a Figma file, a codebase, a Slack thread. That's genuinely personal and impossible for any competitor to copy.</p>
+        <p style="margin-top:.7em">It's also the natural bridge between the two funnels: game player installs desktop → becomes recorder user. Just don't put it first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">3 — the answer</div>
+    <h2>On a phone, the screen you play with is a screenshot</h2>
+    <p class="dek">This is the whole design in one line. Screenshots <em>are</em> screens. Every phone has hundreds of them in a dedicated album. And getting at them costs nothing.</p>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <div class="callout note">
+        <div class="h">The permission situation is better than you'd expect</div>
+        <p>Apple's <code>PHPickerViewController</code> requires <strong>no photo-library permission and shows no allow-access dialog at all</strong>. It runs out of process; the app only ever receives the images the user taps. Apple calls it the gold standard for privacy and now pushes every developer to use it. Android's system photo picker behaves the same way.</p>
+        <p style="margin-top:.7em">So the most personal, most emotionally loaded material on the device is also the <em>least</em> gated. No prompt, no scary dialog, no drop-off.</p>
+      </div>
+      <div class="callout warn">
+        <div class="h">What is genuinely blocked — don't plan around it</div>
+        <p><strong>App-usage data is out on iOS.</strong> The Screen Time API deliberately never exposes usage figures to the developer — the data can only be rendered inside a system extension, and reading it into your app returns nothing.</p>
+        <p style="margin-top:.7em">On Android, <code>UsageStatsManager</code> needs <code>PACKAGE_USAGE_STATS</code>, a system-level permission that isn't granted to third-party apps; the user must go into Settings and turn it on manually. That is far too much friction for a game.</p>
+      </div>
+    </div>
+    <div class="col">
+      <p><strong>But here's the trick that gets you the same content anyway.</strong> You can't read someone's Screen Time. You <em>can</em> ask them to screenshot it — which takes one gesture everybody already knows — and then play the game on that image.</p>
+      <p>That generalises. Anything on a phone that a person can see, they can screenshot in a second. So the input to Screen Recall on mobile is never an API. It's a picture the user took, handed over through a picker that needs no permission. Same on iOS and Android, no platform fights, no consent dialogs, and it is still literally a screen.</p>
+      <div class="callout">
+        <div class="h">And it keeps the brand honest</div>
+        <p>Boom is a screen-recording company. On mobile, the thing people record is a screenshot. The mechanic doesn't get watered down to reach phones — it gets translated into the phone's own native version of itself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">4 — the ladder</div>
+    <h2>Three tiers, each unlocking more personal material</h2>
+    <p class="dek">The rule: friction rises only after fun is proven. A cold viewer plays before they install; installing buys personalisation; linking desktop buys their real work.</p>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 860 430" role="img" aria-label="A three-tier ladder for Boom Match on mobile. Tier zero is a curated screen played in the browser with no install and no permission. Tier one uses the phone's own screenshots through the system photo picker, which requires no permission dialog. Tier two uses desktop-captured work screens and requires the desktop app. Live screen capture and app usage data are shown as blocked by the platforms.">
+      <defs>
+        <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--boom)"/>
+        </marker>
+        <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+
+      <text x="20" y="22" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.5" fill="currentColor" opacity=".6">57.8M TIKTOK VIEWS — ALL ON PHONES</text>
+      <line x1="20" y1="34" x2="840" y2="34" stroke="currentColor" stroke-width="1" opacity=".25"/>
+
+      <!-- tier 0 -->
+      <rect x="20" y="58" width="250" height="128" fill="none" stroke="var(--boom)" stroke-width="2"/>
+      <text x="36" y="82" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="var(--boom)">TIER 0 · COLD</text>
+      <text x="36" y="106" font-family="Familjen Grotesk, sans-serif" font-size="15" font-weight="600" fill="currentColor">Curated screen</text>
+      <text x="36" y="128" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">Plays in the browser</text>
+      <text x="36" y="146" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">No install · no account</text>
+      <text x="36" y="170" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--boom)">0 permissions</text>
+
+      <!-- tier 1 -->
+      <rect x="305" y="58" width="250" height="128" fill="none" stroke="var(--boom)" stroke-width="2"/>
+      <text x="321" y="82" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="var(--boom)">TIER 1 · APP</text>
+      <text x="321" y="106" font-family="Familjen Grotesk, sans-serif" font-size="15" font-weight="600" fill="currentColor">Your screenshots</text>
+      <text x="321" y="128" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">System photo picker</text>
+      <text x="321" y="146" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">Processed on device</text>
+      <text x="321" y="170" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--boom)">0 permission dialogs</text>
+
+      <!-- tier 2 -->
+      <rect x="590" y="58" width="250" height="128" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".55"/>
+      <text x="606" y="82" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.4" fill="currentColor" opacity=".65">TIER 2 · LINKED</text>
+      <text x="606" y="106" font-family="Familjen Grotesk, sans-serif" font-size="15" font-weight="600" fill="currentColor">Your work screens</text>
+      <text x="606" y="128" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">Pulled from desktop</text>
+      <text x="606" y="146" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">Retention, not entry</text>
+      <text x="606" y="170" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="currentColor" opacity=".65">needs desktop app</text>
+
+      <line x1="270" y1="122" x2="299" y2="122" stroke="var(--boom)" stroke-width="2" marker-end="url(#a1)"/>
+      <line x1="555" y1="122" x2="584" y2="122" stroke="currentColor" stroke-width="1.3" opacity=".55" marker-end="url(#a2)"/>
+      <text x="284" y="112" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="var(--boom)" text-anchor="middle">installs</text>
+      <text x="569" y="112" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="currentColor" opacity=".6" text-anchor="middle">links</text>
+
+      <!-- blocked lane -->
+      <line x1="20" y1="228" x2="840" y2="228" stroke="currentColor" stroke-width="1" opacity=".25"/>
+      <text x="20" y="256" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.5" fill="var(--rec)">BLOCKED BY THE PLATFORMS — DO NOT DESIGN AROUND THESE</text>
+
+      <rect x="20" y="272" width="395" height="76" fill="none" stroke="var(--rec)" stroke-width="1.3" stroke-dasharray="6 5"/>
+      <text x="36" y="298" font-family="Familjen Grotesk, sans-serif" font-size="14" font-weight="600" fill="var(--rec)">Live screen capture</text>
+      <text x="36" y="320" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">ReplayKit / MediaProjection — a consent</text>
+      <text x="36" y="337" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">prompt every session, no background use</text>
+
+      <rect x="445" y="272" width="395" height="76" fill="none" stroke="var(--rec)" stroke-width="1.3" stroke-dasharray="6 5"/>
+      <text x="461" y="298" font-family="Familjen Grotesk, sans-serif" font-size="14" font-weight="600" fill="var(--rec)">App-usage data</text>
+      <text x="461" y="320" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">iOS returns nothing to the app at all;</text>
+      <text x="461" y="337" font-family="Source Serif 4, serif" font-size="12.5" fill="currentColor" opacity=".78">Android needs a Settings-level grant</text>
+
+      <line x1="20" y1="376" x2="840" y2="376" stroke="currentColor" stroke-width="1" opacity=".25"/>
+      <text x="20" y="402" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="var(--boom)">THE WORKAROUND — anything a person can see, they can screenshot in one gesture.</text>
+      <text x="20" y="420" font-family="IBM Plex Mono, monospace" font-size="11.5" fill="currentColor" opacity=".7">So the input is never an API. It is an image the user hands over through a picker that needs no permission.</text>
+    </svg>
+    <figcaption>The ladder only moves left to right, and each step is paid for with fun already delivered. Tier 0 is the one that matters for the campaign — it is what 99% of viral traffic will ever touch, and it must run with no install, no account and no permission.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">5 — the material</div>
+    <h2>What on a phone is actually fun to be tested on</h2>
+    <p class="dek">Ranked by how strong the emotional reaction is, because that is what gets a video reposted. All of these are screenshots the user takes and picks — no API, no permission.</p>
+  </div>
+
+  <div class="cards">
+    <div class="fmt">
+      <span class="no">01 · the shock</span>
+      <h3>Guess your own screen time</h3>
+      <div class="hook">“How many hours did you spend on your phone this week? Now look.”</div>
+      <p>People are genuinely, reliably horrified by their own number, and horror is the most shareable emotion there is. They screenshot the Screen Time page, guess first, then reveal. The gap between guess and truth <em>is</em> the content.</p>
+      <p style="margin-top:.5em"><strong>Why it wins:</strong> universal, self-incriminating, and the reveal is a number — which makes it trivially comparable between friends.</p>
+    </div>
+    <div class="fmt">
+      <span class="no">02 · the embarrassment</span>
+      <h3>Rebuild your home screen</h3>
+      <div class="hook">“Your home screen, 5 seconds. Now put the apps back.”</div>
+      <p>Nobody can do it. People look at that screen a hundred times a day and still cannot place their own icons. The failure is the joke, and everyone fails the same way.</p>
+      <p style="margin-top:.5em"><strong>Why it wins:</strong> zero setup, works on any phone on earth, and being bad at it is more fun than being good.</p>
+    </div>
+    <div class="fmt">
+      <span class="no">03 · the nostalgia</span>
+      <h3>Your screenshots from last month</h3>
+      <div class="hook">“What were you screenshotting in July?”</div>
+      <p>The Screenshots album is a diary nobody knows they're keeping — memes, flight prices, arguments, recipes, things you meant to come back to. Flash one, ask what was in it.</p>
+      <p style="margin-top:.5em"><strong>Why it wins:</strong> this is the closest thing to the desktop mechanic, and it is unlimited, free, and different for every single person.</p>
+    </div>
+    <div class="fmt">
+      <span class="no">04 · the count</span>
+      <h3>How many unread?</h3>
+      <div class="hook">“Guess your unread email badge. Off by 12,000?”</div>
+      <p>One screenshot of a home screen with badges. Guess each one. The people with 40,000 unread emails will post it themselves, because that's a personality now.</p>
+      <p style="margin-top:.5em"><strong>Why it wins:</strong> instantly legible in a thumbnail, which matters more on TikTok than the game itself.</p>
+    </div>
+    <div class="fmt">
+      <span class="no">05 · the order</span>
+      <h3>Which came first?</h3>
+      <div class="hook">“Four of your photos. Put them in order.”</div>
+      <p>Photos from the camera roll, ordered by date. Personal, warm, and it works for people who have no interest in tech at all — which is most of the audience wave 1 reaches.</p>
+      <p style="margin-top:.5em"><strong>Why it wins:</strong> broadest possible appeal, and it makes the app feel like it knows them.</p>
+    </div>
+    <div class="fmt">
+      <span class="no">06 · the crossover</span>
+      <h3>Beat the creator's screen</h3>
+      <div class="hook">“This is @creator's actual phone. Can you recall it?”</div>
+      <p>The creator's own screenshot becomes the board everyone plays. Their audience competes against <em>them</em>, on a leaderboard, with a prize.</p>
+      <p style="margin-top:.5em"><strong>Why it wins:</strong> this is what makes a paid post keep working after it's paid for — the board outlives the ad.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">6 — the part that could destroy us</div>
+    <h2>Screenshots are the most dangerous data on a phone</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">Say the risk plainly</div>
+        <p>People's Screenshots album contains DMs, bank balances, medical results, addresses, other people's faces and messages, and things they have forgotten are in there. If Boom uploads any of that to a server to render a public leaderboard, one bad incident ends the company. Not damages it — ends it.</p>
+        <p style="margin-top:.7em">This is the single highest-risk thing in the entire plan, and it is worth more engineering care than the game itself.</p>
+      </div>
+    </div>
+    <div class="col">
+      <p><strong>The rules I'd write into the spec before anyone builds it:</strong></p>
+      <ul class="tight">
+        <li><strong>On-device only by default.</strong> The image never leaves the phone. The game runs locally; only the score is a network call.</li>
+        <li><strong>User-picked, always.</strong> Never enumerate the library. The system picker enforces this for you — lean on it rather than asking for full access.</li>
+        <li><strong>Share the score, not the screen.</strong> The default shareable artifact is a number and a blurred thumbnail. Sharing the actual image is a separate, explicit, per-image action.</li>
+        <li><strong>Redact before any share.</strong> Run on-device text detection and blur anything that looks like an email, phone number, card, address or balance — and show the user what you blurred so they can check.</li>
+        <li><strong>No cloud copy for prizes.</strong> If a leaderboard entry needs verification, verify the score, not the image.</li>
+      </ul>
+      <p style="margin-top:1em">Done this way, “we never see your screenshots” becomes a marketing line rather than a liability — and it is the exact opposite of what people fear about a company that records screens.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">7 — what to build for wave 1</div>
+    <h2>The minimum that makes the campaign work</h2>
+    <p class="dek">Only tier 0 is genuinely required before the creators post. Everything else can land after — but tier 0 has to be perfect, because it is the three seconds the whole $4,550 is buying.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><span class="when">must</span><div>
+      <h4>A web game that plays in the TikTok in-app browser</h4>
+      <p>No install, no account, no permission. A curated screen — a messy desktop, a famous app UI, a fake home screen — flashed for five seconds, then three questions. Score at the end. This is the only thing wave 1 strictly needs.</p>
+    </div></div>
+    <div class="step"><span class="when">must</span><div>
+      <h4>Score screen that asks for one thing</h4>
+      <p>After the score, a single offer: “play with your own screen” → app install, or “make one for your friends” → the share loop. One choice, not a menu.</p>
+    </div></div>
+    <div class="step"><span class="when">must</span><div>
+      <h4>Instrument it end to end</h4>
+      <p>Play started, play finished, share tapped, install tapped, credit purchased. Wave 1 exists to produce the credit-conversion number — if this isn't wired, the $4,550 buys nothing but views.</p>
+    </div></div>
+    <div class="step"><span class="when">next</span><div>
+      <h4>Tier 1 in the app: photo picker + on-device play</h4>
+      <p>Screenshots album, formats 01–05 above, all local. Ship with the privacy rules from section 6 built in from the first commit, not bolted on later.</p>
+    </div></div>
+    <div class="step"><span class="when">later</span><div>
+      <h4>Tier 2: pull from desktop — your option 1</h4>
+      <p>Once someone records on desktop, their real work screens become boards on their phone. Best material in the product, and the bridge from game player to recorder user. It just can't come first.</p>
+    </div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">8 — honesty</div>
+    <h2>What's verified and what's design</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <p><strong>Verified today:</strong> that <code>PHPickerViewController</code> needs no permission and shows no dialog, and that Apple now recommends it for all photo-picking. That the iOS Screen Time API never exposes usage data to the developer. That Android's <code>UsageStatsManager</code> requires a system-level permission users must grant in Settings. That live capture on both platforms requires per-session consent.</p>
+    </div>
+    <div class="col">
+      <p><strong>Design, not fact:</strong> the three-tier ladder, all six formats, and the claim that a screenshot is a satisfying substitute for a live screen. Nobody has tested whether guessing your own screen time is actually fun for more than one round — that's what tier 0 finds out. The privacy rules in section 6 are my recommendations, not a legal review; get one before shipping anything that touches a camera roll.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Verified against:</b> Apple PHPickerViewController &amp; Screen Time API documentation and developer guidance · Android UsageStatsManager reference · platform screen-capture APIs — all checked 19 Aug 2026<br>
+  <b>Companions:</b> <a href="./recall.html">Screen Recall campaign</a> · <a href="./memo.html">team memo</a> · <a href="./roster.html">creator roster</a><br>
+  <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
+</footer>
+
+</div>
+
+</body>
+</html>
