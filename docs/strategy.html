@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Why Boom's uncontested ground is the paid distribution loop Loom killed - with the social and Boom Match angles worked through.">
+<title>The Loop Loom Killed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --paper:#F2F5F6; --card:#FFFFFF; --ink:#101A1F; --ink-soft:#2C3B42; --muted:#5A6B72;
+  --rule:#D6E0E3; --rule-soft:#E6EDEF;
+  --rec:#C0332A; --rec-wash:#F7E7E4;
+  --boom:#0B6F79; --boom-wash:#E0EFF0;
+  --warm:#9A6B1F; --warm-wash:#F6EDDC;
+  --shadow:0 1px 2px rgba(16,26,31,.05), 0 8px 24px -16px rgba(16,26,31,.22);
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px 110px}
+a{color:var(--boom)}
+
+.masthead{padding:60px 0 38px;border-bottom:2px solid var(--ink)}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--warm);flex:none;box-shadow:0 0 0 3px var(--warm-wash)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,6vw,4.3rem);
+  line-height:.99;letter-spacing:-.025em;margin:22px 0 0;text-wrap:balance}
+.standfirst{font-size:clamp(1.06rem,1.9vw,1.3rem);line-height:1.5;color:var(--ink-soft);
+  max-width:44ch;margin:22px 0 0}
+.standfirst b{font-weight:600;color:var(--ink);box-shadow:inset 0 -.42em 0 var(--boom-wash)}
+
+.sitenav{display:flex;gap:0;flex-wrap:wrap;border:1px solid var(--rule);background:var(--card);
+  margin:30px 0 0;box-shadow:var(--shadow)}
+.sitenav a{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  padding:11px 14px;color:var(--muted);text-decoration:none;border-right:1px solid var(--rule);
+  display:flex;align-items:center;gap:8px;flex:1 1 auto;justify-content:center;white-space:nowrap}
+.sitenav a:last-child{border-right:none}
+.sitenav a:hover{color:var(--ink);background:var(--rule-soft)}
+.sitenav a[aria-current="page"]{color:var(--ink);background:var(--rule-soft);font-weight:600}
+.sitenav a[aria-current="page"]::before{content:"";width:7px;height:7px;border-radius:50%;
+  background:var(--boom);flex:none}
+.sitenav a:focus-visible{outline:2px solid var(--boom);outline-offset:-2px}
+@media (max-width:700px){.sitenav a{flex:1 1 100%;justify-content:flex-start;border-right:none;
+  border-bottom:1px solid var(--rule)}.sitenav a:last-child{border-bottom:none}}
+
+section{padding:72px 0 0}
+.sec-head{border-top:1px solid var(--rule);padding-top:18px;margin-bottom:32px}
+.sec-num{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(1.65rem,3.2vw,2.4rem);
+  line-height:1.06;letter-spacing:-.02em;margin:10px 0 0;text-wrap:balance;max-width:26ch}
+.dek{color:var(--muted);max-width:64ch;margin:14px 0 0;font-size:1.01rem}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:42px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:1fr;gap:28px}}
+p{margin:0 0 1.05em} p:last-child{margin-bottom:0}
+.col p{max-width:62ch}
+strong{font-weight:600}
+
+.callout{border-left:3px solid var(--boom);background:var(--boom-wash);padding:18px 22px;margin:24px 0 0}
+.callout .h{font-family:var(--display);font-weight:600;font-size:1.05rem;margin-bottom:6px;letter-spacing:-.01em}
+.callout p{font-size:.97rem;color:var(--ink-soft)}
+.callout.warn{border-left-color:var(--rec);background:var(--rec-wash)}
+.callout.note{border-left-color:var(--warm);background:var(--warm-wash)}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:500px}
+th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;background:var(--paper)}
+td{font-size:.94rem}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr.empty td{background:var(--boom-wash)}
+tr.busy td{background:var(--rec-wash)}
+
+figure{margin:26px 0 0;background:var(--card);border:1px solid var(--rule);
+  padding:24px 22px 18px;box-shadow:var(--shadow)}
+figure svg{display:block;width:100%;max-width:100%;height:auto}
+figcaption{font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--muted);
+  margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px;margin-top:22px}
+.cardx{background:var(--card);border:1px solid var(--rule);padding:19px 21px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:9px}
+.cardx h3{font-family:var(--display);font-weight:600;font-size:1.12rem;margin:0;letter-spacing:-.015em}
+.cardx p{font-size:.95rem;color:var(--ink-soft);margin:0}
+.tagline{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--boom)}
+.why{margin-top:auto;padding-top:11px;border-top:1px dashed var(--rule);
+  font-family:var(--mono);font-size:11.5px;line-height:1.55;color:var(--muted)}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+.aud{background:var(--card);border:1px solid var(--rule);padding:20px 22px;box-shadow:var(--shadow)}
+.aud.a{border-top:3px solid var(--boom)}
+.aud.b{border-top:3px solid var(--warm)}
+.aud .who{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+.aud h3{font-family:var(--display);font-weight:600;font-size:1.25rem;margin:8px 0 10px;letter-spacing:-.015em}
+.aud .say{font-family:var(--display);font-weight:600;font-size:1.02rem;color:var(--ink);
+  padding:11px 14px;background:var(--rule-soft);margin:0 0 10px}
+.aud p{font-size:.94rem;color:var(--ink-soft);margin:0}
+
+ul.tight{margin:.4em 0 0;padding-left:1.15em}
+ul.tight li{margin-bottom:.45em;font-size:.95rem;color:var(--ink-soft)}
+ul.tight li:last-child{margin-bottom:0}
+
+.steps{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.step{background:var(--card);border:1px solid var(--rule);padding:17px 20px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:88px 1fr;gap:16px;align-items:start}
+@media (max-width:640px){.step{grid-template-columns:1fr;gap:8px}}
+.when{font-family:var(--mono);font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--boom);padding-top:3px}
+.step h4{font-family:var(--display);font-weight:600;font-size:1.05rem;margin:0 0 5px;letter-spacing:-.01em}
+.step p{font-size:.95rem;color:var(--ink-soft);margin:0}
+
+footer{margin-top:84px;border-top:2px solid var(--ink);padding-top:22px;
+  font-family:var(--mono);font-size:11.5px;line-height:1.75;color:var(--muted)}
+footer b{color:var(--ink-soft);font-weight:500}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="kicker"><span class="dot"></span> Strategy memo &middot; Boom Share &times; Boom Match &middot; 19 August 2026</div>
+  <h1>The Loop<br>Loom Killed</h1>
+  <p class="standfirst">You're right that SEO is the crowded lane. But the uncontested ground isn't social — it's the thing every competitor is structurally unable to do: <b>pay the people who distribute you.</b></p>
+
+  <nav class="sitenav" aria-label="Sections of this research">
+    <a href="./">The Complaint Ledger</a>
+    <a href="./playbook.html">Acquisition Playbook</a>
+    <a href="./strategy.html" aria-current="page">Strategy Memo</a>
+    <a href="./comments.html">1,795 Raw Comments</a>
+  </nav>
+</header>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">01 — checking your hypothesis</div>
+    <h2>Social is contested at the top and empty in your lane</h2>
+    <p class="dek">I pulled subscriber counts before agreeing with you. The answer splits cleanly along one line: video-editing companies invest heavily in video. Screen recorders don't invest at all.</p>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Brand</th><th class="num">YouTube subs</th><th>Lane</th></tr></thead>
+          <tbody>
+            <tr class="busy"><td>Veed</td><td class="num">159,000</td><td>Video editor</td></tr>
+            <tr class="busy"><td>Descript</td><td class="num">50,800</td><td>Video editor</td></tr>
+            <tr><td>Vidyard</td><td class="num">5,110</td><td>Sales video</td></tr>
+            <tr class="empty"><td>Tella</td><td class="num">3,510</td><td>Screen recorder</td></tr>
+            <tr class="empty"><td>Screen Studio</td><td class="num">1,020</td><td>Screen recorder</td></tr>
+            <tr class="empty"><td>Cap</td><td class="num">~0</td><td>Screen recorder</td></tr>
+            <tr class="empty"><td><strong>Boom Share</strong></td><td class="num">9</td><td>Screen recorder</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px;font-family:var(--mono);font-size:11px;color:var(--muted)">
+        Read 19 Aug 2026. Loom has no findable brand channel at scale — the incumbent is absent here too.
+      </p>
+    </div>
+    <div class="col">
+      <p><strong>What this means practically.</strong> Do not try to out-publish Veed on “how to edit video” — they have a seven-year head start and a 159,000-person audience, and video content <em>is</em> their product category. You would be fighting on their ground.</p>
+      <p>But in the lane you actually compete in — the Loom replacement — the entire field is asleep. Tella at 3,510 subscribers is the leader, and that is nothing. Screen Studio, the most design-admired product in the category, has a thousand. Cap has effectively none.</p>
+      <div class="callout">
+        <div class="h">So: yes to video, but aimed narrowly</div>
+        <p>Not “video about video.” Video about <strong>Loom failing, teams switching, and what a recording is supposed to do</strong>. That's a lane with real emotional charge, 1,795 documented grievances to draw from, and zero incumbents posting in it.</p>
+      </div>
+      <div class="callout warn">
+        <div class="h">And one correction to my own last memo</div>
+        <p>The playbook was heavy on SEO because that is genuinely what the field does — but you're right that copying the crowded strategy is a losing frame. Keep the comparison pages and the Loom downloader; they're cheap and they compound. Just don't make them the plan. They're the floor, not the wedge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">02 — the actual asymmetry</div>
+    <h2>Everyone else charges the user. You pay the user.</h2>
+    <p class="dek">This is the one thing about Boom that no competitor in the field can copy — not because it's clever, but because their business models forbid it.</p>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <p>Loom's original growth engine was never marketing. It was a loop: you receive a Loom, you watch it, you want to reply the same way, you sign up. The recipient became the next creator, free, and the product spread through ordinary work.</p>
+      <p><strong>In February 2026 Atlassian broke that loop.</strong> Free Creator Lite seats were deleted and auto-converted to paid. The recipient now hits a bill instead of a signup button. That is the single largest strategic event in this category and nobody has moved into the gap.</p>
+      <p>Boom already has the mechanism to rebuild the loop — and to make it stronger than Loom's ever was, because Boom's version puts money on the recipient side of the arrow instead of a paywall.</p>
+    </div>
+    <div class="col">
+      <div class="callout">
+        <div class="h">Why nobody can follow you here</div>
+        <p><strong>Tella, Screen Studio, Cap</strong> are bootstrapped and tiny — $5M ARR, $30k MRR, three-person teams. They cannot fund payouts.</p>
+        <p style="margin-top:.7em"><strong>Veed and Descript</strong> could afford it and never will — paying creators would cannibalise $50M+ subscription businesses built on the user paying them.</p>
+        <p style="margin-top:.7em"><strong>Loom</strong> is inside Atlassian, which just spent a year moving in the exact opposite direction.</p>
+        <p style="margin-top:.7em">Structural immunity is rare. When you find one, you build the whole strategy on it rather than treating it as a feature.</p>
+      </div>
+    </div>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 820 452" role="img" aria-label="Two side-by-side loops. Loom's loop breaks at the point where a recipient must buy a seat, so the cycle never returns. Boom's loop replaces that step with a payment to the creator, so the cycle continues and accelerates.">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
+        </marker>
+        <marker id="ahb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--boom)"/>
+        </marker>
+        <marker id="ahr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--rec)"/>
+        </marker>
+      </defs>
+
+      <g font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.4" fill="currentColor" opacity=".62">
+        <text x="200" y="20" text-anchor="middle">LOOM · SINCE FEBRUARY 2026</text>
+        <text x="620" y="20" text-anchor="middle">BOOM</text>
+      </g>
+
+      <!-- LEFT COLUMN -->
+      <g fill="none" stroke="currentColor" stroke-width="1.2">
+        <rect x="90" y="44" width="220" height="42" opacity=".55"/>
+        <rect x="90" y="134" width="220" height="42" opacity=".55"/>
+        <rect x="90" y="224" width="220" height="42" opacity=".55"/>
+      </g>
+      <rect x="90" y="314" width="220" height="42" fill="none" stroke="var(--rec)" stroke-width="1.8"/>
+      <g font-family="Familjen Grotesk, sans-serif" font-size="13" fill="currentColor" text-anchor="middle">
+        <text x="200" y="70">Creator records</text>
+        <text x="200" y="160">Sends a link</text>
+        <text x="200" y="250">Recipient watches</text>
+      </g>
+      <text x="200" y="340" font-family="Familjen Grotesk, sans-serif" font-size="13" fill="var(--rec)" text-anchor="middle">Recipient must buy a seat</text>
+
+      <g stroke="currentColor" stroke-width="1.2" fill="none" opacity=".55">
+        <line x1="200" y1="86" x2="200" y2="128" marker-end="url(#ah)"/>
+        <line x1="200" y1="176" x2="200" y2="218" marker-end="url(#ah)"/>
+        <line x1="200" y1="266" x2="200" y2="308" marker-end="url(#ah)"/>
+      </g>
+      <!-- broken return -->
+      <path d="M 200 356 L 200 392 L 46 392 L 46 65 L 84 65" fill="none" stroke="var(--rec)"
+            stroke-width="1.6" stroke-dasharray="7 6" marker-end="url(#ahr)" opacity=".85"/>
+      <g stroke="var(--rec)" stroke-width="2.4">
+        <line x1="36" y1="220" x2="56" y2="240"/>
+        <line x1="56" y1="220" x2="36" y2="240"/>
+      </g>
+      <text x="200" y="416" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--rec)" text-anchor="middle">loop broken — recipient never becomes a creator</text>
+
+      <!-- RIGHT COLUMN -->
+      <g fill="none" stroke="currentColor" stroke-width="1.2">
+        <rect x="510" y="44" width="220" height="42" opacity=".55"/>
+        <rect x="510" y="134" width="220" height="42" opacity=".55"/>
+        <rect x="510" y="224" width="220" height="42" opacity=".55"/>
+      </g>
+      <rect x="510" y="314" width="220" height="42" fill="none" stroke="var(--boom)" stroke-width="1.8"/>
+      <g font-family="Familjen Grotesk, sans-serif" font-size="13" fill="currentColor" text-anchor="middle">
+        <text x="620" y="70">Creator records</text>
+        <text x="620" y="160">Sends a link</text>
+        <text x="620" y="250">Recipient watches</text>
+      </g>
+      <text x="620" y="340" font-family="Familjen Grotesk, sans-serif" font-size="13" fill="var(--boom)" text-anchor="middle">The view pays the creator</text>
+
+      <g stroke="currentColor" stroke-width="1.2" fill="none" opacity=".55">
+        <line x1="620" y1="86" x2="620" y2="128" marker-end="url(#ah)"/>
+        <line x1="620" y1="176" x2="620" y2="218" marker-end="url(#ah)"/>
+        <line x1="620" y1="266" x2="620" y2="308" marker-end="url(#ah)"/>
+      </g>
+      <path d="M 620 356 L 620 392 L 776 392 L 776 65 L 736 65" fill="none" stroke="var(--boom)"
+            stroke-width="2.2" marker-end="url(#ahb)"/>
+      <text x="620" y="416" font-family="IBM Plex Mono, monospace" font-size="10.5" fill="var(--boom)" text-anchor="middle">paid to send more — and the recipient signs up to earn too</text>
+    </svg>
+    <figcaption>The two loops are identical for three steps. Everything turns on the fourth: Loom put a bill where the loop should close, Boom puts a payment. That one reversed edge is the whole strategy — it converts distribution from a cost centre into a payout line.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">03 — the reframe</div>
+    <h2>Stop buying clicks. Buy views from the people who make them.</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">The same $13.35, two ways</div>
+        <p>Spent on Google, $13.35 buys <strong>one visitor</strong> to your site, once, and you find out afterwards whether they mattered.</p>
+        <p style="margin-top:.7em">Spent as creator credits, $13.35 buys <strong>a creator who then distributes your links to their own audience</strong> — and you only pay once the views already happened. The spend is downstream of the result instead of a bet placed before it.</p>
+      </div>
+    </div>
+    <div class="col">
+      <p>This is the part worth being precise about, because it's also where the idea can go wrong. Paying for raw views buys you view-farming, not customers. The unit you pay on has to be the unit you actually want.</p>
+      <ul class="tight">
+        <li><strong>Don't pay per view.</strong> Pay per <em>distinct authenticated viewer</em>, or per viewer who returns, or per referred signup that activates.</li>
+        <li><strong>Cap per creator per period</strong> so the ceiling is knowable and the fraud incentive stays small.</li>
+        <li><strong>Weight by watch-through</strong> — which also happens to be the metric nobody else in the category can even report on.</li>
+      </ul>
+      <p style="margin-top:1em">Get that right and your acquisition line becomes performance-based by construction. Get it wrong and you've built a bot farm with a nice UI.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">04 — the message problem</div>
+    <h2>Two audiences. One product. Do not mix the copy.</h2>
+    <p class="dek">This resolves the tension I flagged in the first memo — that nobody in 1,795 complaints asked to be paid. Both things are true, because there are two different people involved.</p>
+  </div>
+
+  <div class="split">
+    <div class="aud a">
+      <div class="who">Audience A — the buyer</div>
+      <h3>The Loom refugee</h3>
+      <div class="say">“It will not lose your recording.”</div>
+      <p>Founders, agencies, course creators, support and product teams. They arrived because Loom capped them, billed them for viewers, or ate a 15-minute presentation. They want reliability, no caps, their own MP4, and no login wall for the person watching. <strong>Money never appears in this message.</strong> This is who retains and, eventually, who pays for a team tier.</p>
+    </div>
+    <div class="aud b">
+      <div class="who">Audience B — the distributor</div>
+      <h3>The earner</h3>
+      <div class="say">“You already record. Now it pays.”</div>
+      <p>Creators, students, side-hustle audiences, makers building in public. They don't care about async work culture — they care that a thing they already do now returns something. <strong>They are not the customer; they are the channel.</strong> Their posts, their links, and their payout screenshots are what bring Audience A in.</p>
+    </div>
+  </div>
+
+  <div class="callout warn">
+    <div class="h">What's wrong with the homepage today</div>
+    <p>“Pay Loom to record — or record and get paid with Boom” is Audience B's line, served to Audience A's traffic. Someone who just lost a client recording reads it and concludes Boom is a rewards app, not a tool. Split the surfaces: <code>boomshare.ai</code> speaks to A, and a separate earn surface — plus all of social — speaks to B.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">05 — the content engine</div>
+    <h2>Five formats where the product makes the marketing</h2>
+    <p class="dek">You asked for a lot of video. The advantage here is that Boom's output is natively the format — so marginal cost per asset is close to zero, which is exactly what a high-volume posting strategy needs.</p>
+  </div>
+
+  <div class="cards">
+    <div class="cardx">
+      <span class="tagline">Format 01 · highest confidence</span>
+      <h3>“Loom lost it”</h3>
+      <p>Read a real one-star review aloud over a screen recording of the thing failing. You have <strong>1,795 of them</strong>, already collected, many with hundreds of upvotes and genuine stakes — lost job applications, lost lessons, lost client work. This is the rarest thing in content: an infinite supply of true, emotional, on-topic scripts nobody else has.</p>
+      <div class="why">Zero scripting cost · zero incumbents in this lane · every clip ends on a product answer</div>
+    </div>
+    <div class="cardx">
+      <span class="tagline">Format 02 · the multiplier</span>
+      <h3>One record, twelve languages</h3>
+      <p>Boom already dubs. Every clip becomes twelve clips for twelve language markets at no extra shoot. Competitors would have to pay for translation and re-voicing; you press a button. This is the only place where a product feature converts directly into a posting-volume advantage.</p>
+      <div class="why">Also aims at the cheap-CPC markets: BR $1.08 · IN $0.91 · PH $1.25 · PL $1.23</div>
+    </div>
+    <div class="cardx">
+      <span class="tagline">Format 03 · the loop's own content</span>
+      <h3>Payout receipts</h3>
+      <p>“Here's what I earned” is the most reliably viral format on the internet, and it is the one piece of content your model produces automatically. Every payout is a post. Boom Match generates the identical asset, so the two products feed one content stream.</p>
+      <div class="why">Requires the anti-fraud work first — fake receipts would poison the brand fast</div>
+    </div>
+    <div class="cardx">
+      <span class="tagline">Format 04 · the POV</span>
+      <h3>“Nobody watched your demo”</h3>
+      <p>Own the contrarian finding from the corpus: a 15-second median view on a two-minute walkthrough. Post the teardown of someone's long demo next to the 40-second cut. It's useful, it's arguable, it travels — and it sells the AI editing without ever being an ad.</p>
+      <div class="why">Nobody in the category is making this argument; it's unclaimed territory</div>
+    </div>
+    <div class="cardx">
+      <span class="tagline">Format 05 · borrowed audience</span>
+      <h3>Pay the vibe coders</h3>
+      <p>Indie makers, Cursor/Claude Code/Lovable demo posters, course creators — their output already <em>is</em> screen recordings. You don't have to convince them to make content; you have to make the tool they use to make it, and pay them for the views it earns. Their existing audience becomes yours.</p>
+      <div class="why">Highest-fit creator segment in the market; the loop pays them, so no upfront sponsorship</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">06 — Boom Match</div>
+    <h2>What actually transfers, and what doesn't</h2>
+    <p class="dek">Worth being blunt here, because forcing two products together is a common way to weaken both.</p>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <p style="font-family:var(--display);font-weight:600;font-size:1.05rem;margin-bottom:.6em">Transfers — and it's the expensive part</p>
+      <ul class="tight">
+        <li><strong>Payout rails.</strong> Paying individuals real money at scale — KYC, tax, disbursement, dispute handling — is the hardest and slowest part of “we pay the user.” Boom Match has already paid for it.</li>
+        <li><strong>Anti-fraud.</strong> Skill-cash gaming forces you to build serious abuse detection. Pay-per-view has <em>exactly</em> the same failure mode. This is the least obvious and most valuable overlap.</li>
+        <li><strong>The Meta playbook.</strong> “Get paid for something you already do” is one creative thesis serving both products — same account, same audience-testing learnings, same proof formats.</li>
+        <li><strong>Trust positioning.</strong> The post-Papaya credibility work applies verbatim the moment Boom Share promises payouts.</li>
+      </ul>
+      <div class="callout" style="margin-top:20px">
+        <div class="h">The one genuinely new idea: a shared wallet</div>
+        <p>One Boom balance. Earn it recording, spend or play it in Boom Match, cash out from either. Neither product has a retention loop that strong on its own, and it's a reason to open Boom on a day you have nothing to record.</p>
+      </div>
+    </div>
+    <div class="col">
+      <p style="font-family:var(--display);font-weight:600;font-size:1.05rem;margin-bottom:.6em">Does not transfer — don't pretend otherwise</p>
+      <ul class="tight">
+        <li><strong>The audience.</strong> Boom Match is US skill-cash gamers. Boom Share is makers and teams. The overlap isn't a demographic, it's a <em>moment</em> — a person at a desk, at a computer, during a workday. That's real but thin. Don't build one funnel and expect both to convert.</li>
+        <li><strong>The brand promise.</strong> “Your work is the puzzle” and “skip the meeting” are different products solving different needs. Shared wallet, shared rails, shared ad account — separate stories.</li>
+        <li><strong>The channel mix.</strong> Boom Match's own research said Meta must be primary because search intent doesn't match product intent. Boom Share has the opposite problem: enormous search volume with the wrong intent. Same conclusion, different reason — but the campaigns aren't interchangeable.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">07 — the hole</div>
+    <h2>The question this plan does not yet answer</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">If everything is free forever and you also pay users, what pays for it?</div>
+        <p>This is the load-bearing unknown, and I don't have your numbers so I can't resolve it. Every other item in this memo is downstream of the answer, because the payout rate you can sustain determines whether the loop spins or bleeds.</p>
+      </div>
+      <p style="margin-top:20px">The plausible answers, roughly in order of how well they fit what exists today:</p>
+    </div>
+    <div class="col">
+      <ul class="tight">
+        <li><strong>A team tier.</strong> Audience A pays for shared workspaces, admin, retention, SSO. Free stays free for individuals; the payout is a customer-acquisition cost funded by team revenue. This is the most conventional and most likely correct answer.</li>
+        <li><strong>Boom Match rake.</strong> Gaming revenue subsidises recording payouts, and recording brings the players. The shared wallet makes this mechanically clean.</li>
+        <li><strong>Attention on the watch page.</strong> You'd be monetising the viewer, which is the same place Loom now extracts a seat fee — with the difference that yours pays the creator instead of charging the viewer. Risky for the work-tool audience; fine for the creator audience.</li>
+      </ul>
+      <p style="margin-top:1em">My recommendation is the first, with the second as the bridge. But this is the one decision I'd want settled before scaling payouts, rather than after.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">08 — what I'd do</div>
+    <h2>The sequence</h2>
+    <p class="dek">Opinionated. The ordering matters more than any individual item — each step de-risks the next.</p>
+  </div>
+
+  <div class="steps">
+    <div class="step"><span class="when">First</span><div>
+      <h4>Settle the money question</h4>
+      <p>Decide what funds payouts, and derive a payout rate you can defend at 100× current volume. Everything below assumes a number here.</p>
+    </div></div>
+    <div class="step"><span class="when">Then</span><div>
+      <h4>Port Boom Match's anti-fraud onto Boom Share views</h4>
+      <p>Before a single payout ad runs. Pay on distinct authenticated viewers with per-creator caps, not raw views. This is the difference between a growth loop and a bot farm, and you already own the hard part.</p>
+    </div></div>
+    <div class="step"><span class="when">Then</span><div>
+      <h4>Split the two messages</h4>
+      <p>Reliability-first hero on <code>boomshare.ai</code> for Audience A. A separate earn surface, and all of social, for Audience B. Stop serving B's copy to A's traffic.</p>
+    </div></div>
+    <div class="step"><span class="when">Weeks 1–4</span><div>
+      <h4>Run the “Loom lost it” series daily, in four languages</h4>
+      <p>One clip a day from the corpus, dubbed. Cheapest, most differentiated content you will ever make, and it tests the reliability message and the video channel at the same time. Nobody in your lane is posting; 3,510 subscribers is the bar.</p>
+    </div></div>
+    <div class="step"><span class="when">In parallel</span><div>
+      <h4>Keep the cheap SEO floor</h4>
+      <p>The Loom downloader and 25 comparison pages only. They compound quietly, they cost a week, and they catch the people already searching. Don't expand past that until the loop is proven.</p>
+    </div></div>
+    <div class="step"><span class="when">Month 2</span><div>
+      <h4>Recruit 50 vibe-coder creators onto the paid loop</h4>
+      <p>People whose output is already screen recordings. Give them the tool, pay them per verified viewer, let their audience be the distribution. If the loop works at 50 creators, it works at 5,000 — and if it doesn't, you've learned it for the price of 50.</p>
+    </div></div>
+  </div>
+
+  <div class="callout note">
+    <div class="h">The one-line version</div>
+    <p>Everyone in this category is buying attention. Boom is the only one that can afford to <strong>pay for distribution instead</strong> — because it's the only one whose model already sends money in that direction. Social is how you announce it; the loop is the actual business.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">09 — honesty note</div>
+    <h2>What here is measured and what is judgement</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <p><strong>Measured:</strong> the YouTube subscriber counts, the sitemap page counts, the CPC and volume figures, the 1,795-comment corpus and every quote drawn from it, and the February 2026 Atlassian seat change.</p>
+    </div>
+    <div class="col">
+      <p><strong>Judgement, not fact:</strong> that competitors are structurally unable to match payouts, that the paid loop will out-perform paid search, that the shared wallet improves retention, and the entire sequencing above. These are arguments from the evidence, not findings — worth arguing with, and worth testing at 50 creators before betting the company on.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Built on:</b> the 1,795-comment corpus · competitor sitemaps &amp; YouTube channels read 19 Aug 2026 · DataForSEO Google Ads data · Boom Match keyword research (2026-05-18)<br>
+  <b>Companion documents:</b> <a href="./">The Complaint Ledger</a> · <a href="./playbook.html">Acquisition Playbook</a> · <a href="./comments.html">1,795 raw comments</a><br>
+  <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
+</footer>
+
+</div>
+
+</body>
+</html>
