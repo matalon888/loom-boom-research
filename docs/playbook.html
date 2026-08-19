@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How every Loom competitor actually acquires users - sitemap evidence, CPC economics, and nine plays Boom Share can run without Google Ads.">
+<title>Nobody Here Buys Their Growth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --paper:#F2F5F6; --card:#FFFFFF; --ink:#101A1F; --ink-soft:#2C3B42; --muted:#5A6B72;
+  --rule:#D6E0E3; --rule-soft:#E6EDEF;
+  --rec:#C0332A; --rec-wash:#F7E7E4;
+  --boom:#0B6F79; --boom-wash:#E0EFF0;
+  --warm:#9A6B1F; --warm-wash:#F6EDDC;
+  --shadow:0 1px 2px rgba(16,26,31,.05), 0 8px 24px -16px rgba(16,26,31,.22);
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px 110px}
+a{color:var(--boom)}
+
+.masthead{padding:60px 0 38px;border-bottom:2px solid var(--ink)}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--boom);flex:none;box-shadow:0 0 0 3px var(--boom-wash)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.4rem,6vw,4.3rem);
+  line-height:.99;letter-spacing:-.025em;margin:22px 0 0;text-wrap:balance}
+.standfirst{font-size:clamp(1.06rem,1.9vw,1.3rem);line-height:1.5;color:var(--ink-soft);
+  max-width:42ch;margin:22px 0 0}
+.standfirst b{font-weight:600;color:var(--ink);box-shadow:inset 0 -.42em 0 var(--boom-wash)}
+
+section{padding:72px 0 0}
+.sec-head{border-top:1px solid var(--rule);padding-top:18px;margin-bottom:32px}
+.sec-num{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(1.65rem,3.2vw,2.4rem);
+  line-height:1.06;letter-spacing:-.02em;margin:10px 0 0;text-wrap:balance;max-width:26ch}
+.dek{color:var(--muted);max-width:64ch;margin:14px 0 0;font-size:1.01rem}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:42px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:1fr;gap:28px}}
+p{margin:0 0 1.05em} p:last-child{margin-bottom:0}
+.col p{max-width:62ch}
+strong{font-weight:600}
+
+.callout{border-left:3px solid var(--boom);background:var(--boom-wash);padding:18px 22px;margin:24px 0 0}
+.callout .h{font-family:var(--display);font-weight:600;font-size:1.05rem;margin-bottom:6px;letter-spacing:-.01em}
+.callout p{font-size:.97rem;color:var(--ink-soft)}
+.callout.warn{border-left-color:var(--rec);background:var(--rec-wash)}
+.callout.note{border-left-color:var(--warm);background:var(--warm-wash)}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;min-width:540px}
+th,td{text-align:left;padding:11px 15px;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;background:var(--paper)}
+td{font-size:.94rem}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+tr.hl td{background:var(--rec-wash)}
+tr.us td{background:var(--boom-wash)}
+
+/* footprint bars */
+.bars{display:flex;flex-direction:column;gap:2px;background:var(--card);border:1px solid var(--rule);
+  padding:6px;box-shadow:var(--shadow)}
+.bar{display:grid;grid-template-columns:132px 1fr 66px;gap:12px;align-items:center;
+  padding:9px 12px;position:relative;isolation:isolate}
+.bar .who{font-family:var(--display);font-weight:600;font-size:.93rem;letter-spacing:-.005em}
+.bar .track{height:11px;background:var(--rule-soft);position:relative;overflow:hidden}
+.bar .fill{position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--boom)}
+.bar.loom .fill{background:var(--rec)}
+.bar.boom .fill{background:var(--warm)}
+.bar .n{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;text-align:right;color:var(--muted)}
+.bar .what{grid-column:1 / -1;font-family:var(--mono);font-size:10.5px;color:var(--muted);
+  padding-left:0;margin-top:-2px}
+@media (max-width:640px){.bar{grid-template-columns:1fr 66px}.bar .track{grid-column:1 / -1;order:3}}
+
+/* competitor cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.cardx{background:var(--card);border:1px solid var(--rule);padding:19px 21px;box-shadow:var(--shadow);
+  display:flex;flex-direction:column;gap:9px}
+.cardx h3{font-family:var(--display);font-weight:600;font-size:1.15rem;margin:0;letter-spacing:-.015em;
+  display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.cardx h3 .sz{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--muted);font-weight:400}
+.cardx .tac{font-size:.95rem;color:var(--ink-soft);margin:0}
+.cardx .tac b{font-weight:600;color:var(--ink)}
+.steal{margin-top:auto;padding-top:11px;border-top:1px dashed var(--rule);
+  font-family:var(--mono);font-size:11.5px;line-height:1.55;color:var(--muted)}
+.steal b{color:var(--boom);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:10px}
+code{font-family:var(--mono);font-size:.88em;background:var(--rule-soft);padding:1px 5px;
+  overflow-wrap:anywhere}
+
+/* plays */
+.play{background:var(--card);border:1px solid var(--rule);padding:18px 20px;box-shadow:var(--shadow);
+  display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.plays{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.rank{font-family:var(--display);font-weight:700;font-size:1.7rem;line-height:1;color:var(--boom);
+  font-variant-numeric:tabular-nums}
+.play h4{font-family:var(--display);font-weight:600;font-size:1.08rem;margin:0 0 6px;letter-spacing:-.01em}
+.play p{font-size:.96rem;color:var(--ink-soft);margin:0 0 .6em}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.pill{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  padding:3px 8px;border:1px solid var(--rule);color:var(--muted)}
+.pill.now{color:var(--boom);border-color:var(--boom)}
+.pill.cost{color:var(--warm);border-color:var(--warm)}
+
+ul.tight{margin:.3em 0 0;padding-left:1.15em}
+ul.tight li{margin-bottom:.4em;font-size:.95rem;color:var(--ink-soft)}
+ul.tight li:last-child{margin-bottom:0}
+
+footer{margin-top:84px;border-top:2px solid var(--ink);padding-top:22px;
+  font-family:var(--mono);font-size:11.5px;line-height:1.75;color:var(--muted)}
+footer b{color:var(--ink-soft);font-weight:500}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="kicker"><span class="dot"></span> Acquisition teardown &middot; Boom Share &middot; 19 August 2026</div>
+  <h1>Nobody Here<br>Buys Their Growth</h1>
+  <p class="standfirst">I pulled the sitemap of every Loom competitor named in the review corpus. <b>Not one of them is winning on paid search.</b> They are all running the same four content machines — and Loom itself has stopped defending its own brand.</p>
+</header>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">01 — why your CAC hurts</div>
+    <h2>The keyword you want costs $13.35 and barely exists</h2>
+    <p class="dek">US Google Ads data from the Boom Share keyword pull. The problem isn't your bidding — it's that this category's demand is shaped wrong for paid.</p>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Keyword</th><th class="num">US vol/mo</th><th class="num">CPC</th></tr></thead>
+          <tbody>
+            <tr class="hl"><td>loom alternative</td><td class="num">1,000</td><td class="num">$13.35</td></tr>
+            <tr class="hl"><td>loom competitor</td><td class="num">260</td><td class="num">$13.52</td></tr>
+            <tr class="hl"><td>free loom alternative</td><td class="num">210</td><td class="num">$12.68</td></tr>
+            <tr class="hl"><td>product demo video</td><td class="num">210</td><td class="num">$18.54</td></tr>
+            <tr class="hl"><td>best screen recorder</td><td class="num">1,300</td><td class="num">$8.88</td></tr>
+            <tr class="us"><td>how to screen record on mac</td><td class="num">135,000</td><td class="num">$9.41</td></tr>
+            <tr class="us"><td>screen recorder</td><td class="num">90,500</td><td class="num">$3.92</td></tr>
+            <tr class="us"><td>how to screen record on windows</td><td class="num">60,500</td><td class="num">$2.79</td></tr>
+            <tr class="us"><td>how to screen record</td><td class="num">40,500</td><td class="num">$1.24</td></tr>
+            <tr class="us"><td>screen recorder mac</td><td class="num">22,200</td><td class="num">$5.44</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:14px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
+        Red = buying intent, unaffordable and tiny. Teal = the real volume, but informational.<br>
+        43 category keywords, 506,580 US searches/mo, volume-weighted mean CPC $5.27.
+      </p>
+    </div>
+
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">Run the arithmetic on “loom alternative”</div>
+        <p>$13.35 a click. Assume a generous 20% of clicks sign up — that's <strong>$67 per signup</strong>. Assume a generous 5% of free signups ever pay — that's <strong>$1,335 per paying customer</strong>. Against a product priced anywhere near the category's $5–18/month, you lose money on every single one, forever. And the entire term is only 1,000 searches a month in the US, so even at a loss it can't scale.</p>
+      </div>
+      <div class="callout note">
+        <div class="h">The volume is in the wrong intent</div>
+        <p>Four informational queries — <em>how to screen record on mac / windows / generally</em>, plus <em>screen recorder</em> — carry <strong>326,500 searches a month</strong> between them. People typing those want an answer, not a signup. Ads convert terribly against them and cost $1.24–$9.41 a click anyway.</p>
+        <p style="margin-top:.7em">That single fact explains every competitor's strategy below: they gave up on buying this traffic and built pages to earn it instead.</p>
+      </div>
+      <div class="callout">
+        <div class="h">Where paid could still work</div>
+        <p>Same keyword, different markets: <strong>India $0.91 · Brazil $1.08 · Philippines $1.25 · Poland $1.23 · South Africa $1.33</strong> versus $13.35 in the US. That's a 10–15× cost difference on identical intent. If you want any paid at all, it belongs in cheap-CPC markets with localized landing pages — which is exactly what Veed built.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">02 — the evidence</div>
+    <h2>Indexed pages, pulled from each company's own sitemap</h2>
+    <p class="dek">This is the whole argument in one chart. It is not an estimate — it is a count of the URLs each company publishes in its sitemap, fetched today.</p>
+  </div>
+
+  <div class="bars">
+    <div class="bar"><span class="who">Veed</span><span class="track"><span class="fill" style="--w:100%"></span></span><span class="n">17,372</span>
+      <span class="what">1,101 free-tool pages × ~20 localized languages (pl-PL, pt-BR, es-MX, ru-RU, ms-MY, el-GR…)</span></div>
+    <div class="bar"><span class="who">Guidde</span><span class="track"><span class="fill" style="--w:18%"></span></span><span class="n">3,134</span>
+      <span class="what">1,563 knowledge-hub + <strong>553 tool-comparison pages</strong> + 399 gallery</span></div>
+    <div class="bar"><span class="who">Descript</span><span class="track"><span class="fill" style="--w:11.5%"></span></span><span class="n">1,999</span>
+      <span class="what">934 free-tool pages (converters, generators, makers) + 940 blog</span></div>
+    <div class="bar"><span class="who">Supademo</span><span class="track"><span class="fill" style="--w:11.3%"></span></span><span class="n">1,970</span>
+      <span class="what">812 blog + 741 tutorials + 165 product-demo + 34 compare</span></div>
+    <div class="bar"><span class="who">Zight</span><span class="track"><span class="fill" style="--w:10%"></span></span><span class="n">1,743</span>
+      <span class="what">1,215 blog + 148 tools + 91 integrations</span></div>
+    <div class="bar"><span class="who">Tella</span><span class="track"><span class="fill" style="--w:7.6%"></span></span><span class="n">1,328</span>
+      <span class="what">491 use-case + 99 device how-to + <strong>45 /alternatives/</strong> + 74 chatgpt-prompt</span></div>
+    <div class="bar"><span class="who">Vidyard</span><span class="track"><span class="fill" style="--w:4.8%"></span></span><span class="n">834</span>
+      <span class="what">204 blog + 85 glossary + 67 partner directory + 51 case studies</span></div>
+    <div class="bar"><span class="who">Arcade</span><span class="track"><span class="fill" style="--w:2.9%"></span></span><span class="n">501</span>
+      <span class="what">269 posts + 125 guides + 18 tools</span></div>
+    <div class="bar loom"><span class="who">Loom</span><span class="track"><span class="fill" style="--w:2.1%"></span></span><span class="n">372</span>
+      <span class="what">265 of those are /community — the incumbent has essentially no content moat</span></div>
+    <div class="bar"><span class="who">Cap</span><span class="track"><span class="fill" style="--w:0.7%"></span></span><span class="n">123</span>
+      <span class="what">Docs + changelog. Its channel is GitHub, not Google — 18k stars</span></div>
+    <div class="bar"><span class="who">Screen Studio</span><span class="track"><span class="fill" style="--w:0.5%"></span></span><span class="n">82</span>
+      <span class="what">68 guides + an affiliate page. Its channel is X and affiliates</span></div>
+    <div class="bar boom"><span class="who">Boom Share</span><span class="track"><span class="fill" style="--w:0.24%"></span></span><span class="n">42</span>
+      <span class="what">29 blog + 6 use-cases + 7 utility pages. This is the gap.</span></div>
+  </div>
+
+  <div class="grid" style="margin-top:30px">
+    <div class="col">
+      <div class="callout warn">
+        <div class="h">Read the Loom line again</div>
+        <p>The category leader — 25 million users, $975M acquisition — publishes <strong>372 pages</strong>, and 265 of them are community forum threads. Guidde, a company most of your buyers have never heard of, publishes <strong>3,134</strong>. Loom is not defending its own brand terms, which is why every search I ran for “Loom pricing” or “Loom free plan” returned a competitor's blog post instead of Loom.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="callout">
+        <div class="h">I watched this work on myself</div>
+        <p>While researching the teardown I searched things like <em>“Loom free plan removed 2026”</em> and <em>“Loom pricing”</em>. The first page came back almost entirely competitor-owned: Supademo, Arcade, ScreenKite, Screenify, Vyds, Clipy, useCarly, Puppydog, YoRecord. Nine different Loom competitors, each ranking for Loom's own brand name, none of them paying a cent per click.</p>
+        <p style="margin-top:.7em">That is the tactic. It is unglamorous, it compounds, and it is completely open to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">03 — tactic by tactic</div>
+    <h2>What each one actually does, and the piece worth stealing</h2>
+  </div>
+
+  <div class="cards">
+    <div class="cardx">
+      <h3>Tella <span class="sz">1,328 pages · ~$5M ARR</span></h3>
+      <p class="tac">The sharpest programmatic operator in the category. Four separate page factories running at once: <b>491 <code>/record/{use-case}</code></b> pages (screen-recorder-bug-report-video, -all-hands-video-update, -churn-video, -account-managers); <b>99 <code>/how-to/screen-record-on-a-{brand}-{model}-laptop</code></b> pages — one per Acer, Alienware, Aftershock model; <b>45 <code>/alternatives/{competitor}</code></b> pages including one aimed straight at Loom; and 74 <code>/chatgpt-prompt/</code> pages farming AI search demand that has nothing to do with screen recording.</p>
+      <p class="tac">They also ship <b><code>/loom-downloader</code></b> — a free tool that does the exact thing Loom took away from paying users.</p>
+      <div class="steal"><b>Steal this</b><br>The device how-to farm. You cannot afford $9.41/click on “how to screen record on mac” but you can own 200 long-tail variants of it for the cost of a weekend.</div>
+    </div>
+
+    <div class="cardx">
+      <h3>Veed <span class="sz">17,372 pages · $50M ARR, 25k customers</span></h3>
+      <p class="tac">The biggest machine here, and the simplest idea: <b>1,101 free-tool pages</b> (subtitle generator, video compressor, converter) multiplied by <b>~20 localized language folders</b> — Polish, Brazilian Portuguese, Mexican Spanish, Colombian Spanish, Russian, Malay, Greek, Danish, Traditional Chinese, each with 500–650 of its own pages.</p>
+      <p class="tac">Every tool page is genuinely usable without an account. You use the free tool, you hit a limit, you sign up. No ad ever ran.</p>
+      <div class="steal"><b>Steal this</b><br>Localization as a volume multiplier. Boom already has a language switcher and dubbing built in — the same 60 pages in 12 languages is 720 pages.</div>
+    </div>
+
+    <div class="cardx">
+      <h3>Descript <span class="sz">1,999 pages · $55M ARR</span></h3>
+      <p class="tac"><b>934 free-tool pages</b> — mp4-converter, audio-to-mp3, hashtag-generator, gif-maker, video-converter, plus a growing set of AI generator pages. Half of them barely relate to Descript's actual product; they exist to catch the enormous long tail of “convert / generate / make” searches and funnel it into one signup.</p>
+      <p class="tac">Paired with 940 blog posts and heavy creator/YouTube sponsorship, which is the one paid channel in this category that does work — because you buy attention from an audience, not a click from an auction.</p>
+      <div class="steal"><b>Steal this</b><br>Every AI capability you already ship is a free-tool page: caption generator, filler-word remover, video dubber, transcript maker, silence trimmer.</div>
+    </div>
+
+    <div class="cardx">
+      <h3>Guidde <span class="sz">3,134 pages</span></h3>
+      <p class="tac"><b>553 <code>/tool-comparison/</code> pages.</b> Not five. Five hundred and fifty-three. A page for every plausible “X vs Y” in and around the category, plus 1,563 knowledge-hub articles and a 399-page gallery.</p>
+      <p class="tac">This is brand conquest as an industrial process — it captures people who already have a tool in mind and are checking one last time before they commit.</p>
+      <div class="steal"><b>Steal this</b><br>Comparison pages are the highest-intent free traffic that exists. Boom has zero. Even 25 would be a start.</div>
+    </div>
+
+    <div class="cardx">
+      <h3>Screen Studio <span class="sz">82 pages · 8,000 customers, ~$30k MRR</span></h3>
+      <p class="tac">The opposite strategy, and it works. Almost no SEO. The founder built in public on X — daily progress posts to 0–2 likes for months, until one went to ~1,000 likes and produced the first sales. Then a <b>strong affiliate programme</b>: over $17,000 in affiliate-driven sales in a single month off 50,000 clicks.</p>
+      <p class="tac">A $229 one-time licence, three people, no funding, profitable.</p>
+      <div class="steal"><b>Steal this</b><br>Affiliates are CAC you only pay after revenue arrives. For a free product, pay on the paid conversion or on verified activated teams.</div>
+    </div>
+
+    <div class="cardx">
+      <h3>Cap <span class="sz">123 pages · 18k GitHub stars</span></h3>
+      <p class="tac">Distribution through open source. The most-starred open-source screen recorder on GitHub, which puts it permanently on Trending, in every “open source alternatives” listicle, and inside the privacy/self-host conversation that Loom cannot answer. Site is mostly docs and changelog — <b>the repo is the landing page</b>.</p>
+      <p class="tac">Monetised with a hosted tier at $8.16/user/mo, plus a student discount page.</p>
+      <div class="steal"><b>Steal this</b><br>Open-source one real component — the recorder core or the caption burner. Stars are a permanent, compounding, zero-CAC distribution asset.</div>
+    </div>
+
+    <div class="cardx">
+      <h3>Supademo &amp; Arcade <span class="sz">1,970 / 501 pages</span></h3>
+      <p class="tac">Adjacent products (interactive demos) that farm Loom's audience anyway. Supademo runs 741 tutorials + 812 blog + 34 compare pages; Arcade runs 269 posts + 125 guides. Both rank on “Loom pricing” despite not being screen recorders.</p>
+      <p class="tac">Their trick is writing the article the buyer actually searches for — <em>“Loom pricing in 2026: is it still worth it”</em> — and answering it honestly, then mentioning themselves at the end.</p>
+      <div class="steal"><b>Steal this</b><br>Write the honest Loom pricing explainer. You already have better source material than they do: 1,795 real user complaints.</div>
+    </div>
+
+    <div class="cardx">
+      <h3>Vidyard <span class="sz">834 pages</span></h3>
+      <p class="tac">Sales-led, but the free tier is the wedge: a free video tool for sales reps, plus <b>85 glossary pages</b> and a 67-entry partner directory that generates inbound links from every partner's site.</p>
+      <p class="tac">1,000 enterprise accounts producing $47.7M — the inverse of Loom's model, and proof you don't need volume if you land teams.</p>
+      <div class="steal"><b>Steal this</b><br>Glossary pages and a partner directory are the cheapest legitimate backlink engine available.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">04 — do this</div>
+    <h2>Nine plays, ordered by payoff per hour</h2>
+    <p class="dek">Every one is copied from something above that is already working, and every one is free or near-free. Boom starts at 42 pages, so the early wins are large.</p>
+  </div>
+
+  <div class="plays">
+    <div class="play"><span class="rank">1</span><div>
+      <h4>Ship the Loom video downloader</h4>
+      <p>Tella has <code>/loom-downloader</code> for a reason. “I can't download my own video” is the fourth-biggest complaint in your corpus — <strong>89 negative reviews</strong> — and Loom removed the ability even on paid plans, which is generating switch posts right now. A free downloader ranks for a real query, solves a real grievance, and puts your brand in front of someone at the exact moment they are angry at Loom.</p>
+      <div class="meta"><span class="pill now">This week</span><span class="pill cost">One page + a worker</span><span class="pill">Copied from Tella</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">2</span><div>
+      <h4>Build <code>/alternatives/{competitor}</code> — 25 pages</h4>
+      <p>The highest-intent free traffic in existence, and you have none of it. Start with loom, tella, screen-studio, cap, veed, descript, vidyard, zight, camtasia, obs, quicktime, screenpal, clipchamp, bombbomb, neetorecord. Write them honestly — say where Boom loses — because the honest ones are the ones that rank and convert.</p>
+      <div class="meta"><span class="pill now">Week 1–2</span><span class="pill cost">~25 pages</span><span class="pill">Copied from Tella &amp; Guidde</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">3</span><div>
+      <h4>Farm the informational head you can't buy</h4>
+      <p>326,500 US searches a month sit on “how to screen record on {device}”. At $1.24–$9.41 a click you will never buy it. Tella built 99 pages — one per laptop brand and model. Do 200: every Mac model, Windows laptop line, Chromebook, iPhone, Android, iPad, plus “with audio”, “with face cam”, “without watermark” variants. Each page answers the question properly and ends with Boom as the easy way.</p>
+      <div class="meta"><span class="pill">Week 2–4</span><span class="pill cost">Templated, 200 pages</span><span class="pill">Copied from Tella</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">4</span><div>
+      <h4>Turn every AI feature into a free-tool page</h4>
+      <p>Descript has 934 of these. You already ship the features — caption generator, filler-word remover, silence trimmer, video dubber, transcript maker, voice changer, thumbnail generator. Each becomes a standalone page usable without an account, with the signup at the export step. This is the same funnel Veed used to reach $50M ARR.</p>
+      <div class="meta"><span class="pill">Month 2</span><span class="pill cost">~20 tools, reuses existing backend</span><span class="pill">Copied from Descript &amp; Veed</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">5</span><div>
+      <h4>Launch an affiliate programme before you spend another ad dollar</h4>
+      <p>Screen Studio did $17k in affiliate sales in one month off 50,000 clicks it never paid for upfront. Affiliates convert your CAC from a bet into a commission — you pay after the money arrives. For a free product, pay on the paid upgrade or on a verified activated team, not on signups.</p>
+      <div class="meta"><span class="pill now">This week</span><span class="pill cost">Zero upfront</span><span class="pill">Copied from Screen Studio</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">6</span><div>
+      <h4>Multiply everything by language</h4>
+      <p>Veed's 17,372 pages are really ~800 pages × 20 languages. Boom already has a language switcher and built-in dubbing — you are better equipped for this than anyone in the table. And the cheap-CPC markets double as the only places paid still makes sense: Brazil, India, Philippines, Poland, South Africa all sit at $0.91–$1.33 versus $13.35 in the US.</p>
+      <div class="meta"><span class="pill">Month 2–3</span><span class="pill cost">Translation of existing pages</span><span class="pill">Copied from Veed</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">7</span><div>
+      <h4>Open-source one real component</h4>
+      <p>Cap turned 18,000 GitHub stars into permanent distribution — Trending placement, every “open source alternative” listicle, and ownership of the privacy conversation Loom structurally cannot enter. Open-sourcing the recorder core or the caption burner costs you no moat and buys a channel that never stops working.</p>
+      <div class="meta"><span class="pill">Month 2</span><span class="pill cost">Engineering time only</span><span class="pill">Copied from Cap</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">8</span><div>
+      <h4>Answer properly on Reddit, on a schedule</h4>
+      <p>Boom already surfaces organically 5–7 times in the corpus — level with Screen Studio and NeetoRecord. The threads that convert are long, specific and admit trade-offs; the one-line plugs get downvoted. Six subreddits carry almost all of it: r/SaaS, r/Entrepreneur, r/ProductivityApps, r/software, r/macapps, r/smallbusiness.</p>
+      <div class="meta"><span class="pill now">Ongoing</span><span class="pill cost">Two hours a week</span><span class="pill">Observed in the corpus</span></div>
+    </div></div>
+
+    <div class="play"><span class="rank">9</span><div>
+      <h4>Build in public, and relaunch on Product Hunt repeatedly</h4>
+      <p>Screen Studio's first ten customers came from daily build-in-public posts that got 0–2 likes for months before one broke through. Product Hunt is not a one-shot: projects in this space relaunch every few months, each time reaching people who missed the last one, and a top-3 day converts into hundreds of GitHub stars or signups.</p>
+      <div class="meta"><span class="pill">Ongoing</span><span class="pill cost">Free</span><span class="pill">Copied from Screen Studio &amp; Cap</span></div>
+    </div></div>
+  </div>
+
+  <div class="callout warn" style="margin-top:28px">
+    <div class="h">What to do with the ad budget in the meantime</div>
+    <p>Not zero — but not US search. Two places it still earns: <strong>cheap-CPC markets</strong> (BR, IN, PH, PL, ZA at roughly a tenth of US cost, against localized pages), and <strong>creator sponsorships</strong>, which is the one paid channel Descript leans on, because you are buying an audience's attention rather than a click in an auction against nine competitors. Everything else goes into the nine plays above.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">05 — method</div>
+    <h2>How this was verified</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <ul class="tight">
+        <li><strong>Page counts</strong> — fetched each company's <code>robots.txt</code> and <code>sitemap.xml</code> (following sitemap indexes), then counted URLs by first path segment. These are counts of published URLs, not of indexed-and-ranking pages, so treat them as the size of the machine rather than its output.</li>
+        <li><strong>Keyword volume and CPC</strong> — the existing Boom Share Google Ads pull (DataForSEO, Keyword Planner data), 43 category keywords across 12 markets. The live account is out of credit, so no fresh pull was possible; these figures are from that dataset.</li>
+        <li><strong>Revenue and customer figures</strong> — Sacra, Latka, ARR Club, Starter Story, Indie Hackers, dated inline.</li>
+        <li><strong>The SERP observation</strong> — first-hand: nine competitor-owned pages returned across searches for Loom's own brand and pricing terms during this research.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <p><strong>Where this is soft.</strong> Sitemap counts include pages that may be thin or unranked; a 17,000-page sitemap is evidence of intent and scale, not of traffic. The CAC arithmetic in section 01 uses stated, deliberately generous assumptions (20% click-to-signup, 5% signup-to-paid) — swap in Boom's real funnel numbers and the conclusion gets worse, not better.</p>
+      <p>Screen Studio's $30k MRR is an October 2024 figure and is likely higher now. Cap's star count and Tella's page count were read today and will drift.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>Sources:</b> company sitemaps fetched 19 Aug 2026 · DataForSEO Google Ads keyword data · Sacra · Latka · ARR Club · Starter Story · Indie Hackers<br>
+  <b>Companion documents:</b> <a href="./">The Loom Complaint Ledger</a> · <a href="./comments.html">all 1,795 raw comments</a><br>
+  <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
+</footer>
+
+</div>
+
+</body>
+</html>
