@@ -9,6 +9,7 @@ A competitive teardown of **Loom**, built from 4,500 first-party user comments, 
 | 📄 **[The Complaint Ledger](https://matalon888.github.io/loom-boom-research/)** | The teardown: what Loom's users complain about, ranked, turned into a backlog |
 | 🧲 **[Acquisition Playbook](https://matalon888.github.io/loom-boom-research/playbook.html)** | How every competitor grows *without* paid search — sitemap evidence + nine plays |
 | 💰 **[Budget](https://matalon888.github.io/loom-boom-research/costs.html)** | What the mobile approach actually costs — build, media, CDN — $29k to $121k for six months |
+| 📱 **[UI Flow](https://matalon888.github.io/loom-boom-research/flow.html)** | Every screen of the funnel, in order, with the real copy in place |
 | 🎣 **[Ads & Funnel](https://matalon888.github.io/loom-boom-research/fishing.html)** | Three audiences, three baits from real complaints, verified Meta IDs, and when to say what |
 | ⚙️ **[Three Engines](https://matalon888.github.io/loom-boom-research/engines.html)** | SEO is not the only game — what actually built each competitor, and which engine Boom should pick |
 | 🧭 **[Strategy Memo](https://matalon888.github.io/loom-boom-research/strategy.html)** | Where the uncontested ground actually is — the paid distribution loop, social, and Boom Match |

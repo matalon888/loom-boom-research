@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Every screen of the Boom funnel, in order, with the real copy in place - the game flow, the freelancer flow, and the watch page.">
+<title>The Flow, On Screens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --paper:#F2F5F6; --card:#FFFFFF; --ink:#101A1F; --ink-soft:#2C3B42; --muted:#5A6B72;
+  --rule:#D6E0E3; --rule-soft:#E6EDEF;
+  --rec:#C0332A; --rec-wash:#F7E7E4;
+  --boom:#0B6F79; --boom-wash:#E0EFF0;
+  --warm:#9A6B1F; --warm-wash:#F6EDDC;
+  --wa:#25D366; --wa-bg:#E7FFDB;
+  --shadow:0 1px 2px rgba(16,26,31,.05), 0 8px 24px -16px rgba(16,26,31,.22);
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --screen:#0E1417; --screen-ink:#F4F7F8;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213; --wa-bg:#123024;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --paper:#0C1316; --card:#131E22; --ink:#E7EFF1; --ink-soft:#C3D2D6; --muted:#8DA2A9;
+  --rule:#22343A; --rule-soft:#1A2A2F;
+  --rec:#F0796A; --rec-wash:#2A1613; --boom:#48BFC7; --boom-wash:#0E2A2C;
+  --warm:#D9A75A; --warm-wash:#2A2213; --wa-bg:#123024;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 30px -18px rgba(0,0,0,.8);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px 110px}
+a{color:var(--boom)}
+
+.masthead{padding:56px 0 32px;border-bottom:2px solid var(--ink)}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--boom);flex:none;box-shadow:0 0 0 3px var(--boom-wash)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2.3rem,5.6vw,4rem);
+  line-height:1;letter-spacing:-.025em;margin:20px 0 0;text-wrap:balance}
+.standfirst{font-size:clamp(1.03rem,1.8vw,1.24rem);line-height:1.5;color:var(--ink-soft);max-width:48ch;margin:20px 0 0}
+.standfirst b{font-weight:600;color:var(--ink);box-shadow:inset 0 -.42em 0 var(--boom-wash)}
+
+.sitenav{display:flex;gap:0;flex-wrap:wrap;border:1px solid var(--rule);background:var(--card);margin:28px 0 0;box-shadow:var(--shadow)}
+.sitenav a{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  padding:11px 12px;color:var(--muted);text-decoration:none;border-right:1px solid var(--rule);
+  display:flex;align-items:center;gap:7px;flex:1 1 auto;justify-content:center;white-space:nowrap}
+.sitenav a:last-child{border-right:none}
+.sitenav a:hover{color:var(--ink);background:var(--rule-soft)}
+.sitenav a[aria-current="page"]{color:var(--ink);background:var(--rule-soft);font-weight:600}
+.sitenav a[aria-current="page"]::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--boom);flex:none}
+@media (max-width:820px){.sitenav a{flex:1 1 100%;justify-content:flex-start;border-right:none;border-bottom:1px solid var(--rule)}.sitenav a:last-child{border-bottom:none}}
+
+section{padding:62px 0 0}
+.sec-head{border-top:1px solid var(--rule);padding-top:18px;margin-bottom:26px}
+.sec-num{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h2{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3vw,2.3rem);
+  line-height:1.07;letter-spacing:-.02em;margin:10px 0 0;text-wrap:balance;max-width:28ch}
+.dek{color:var(--muted);max-width:68ch;margin:13px 0 0;font-size:1rem}
+p{margin:0 0 1.05em} p:last-child{margin-bottom:0}
+strong{font-weight:600}
+
+.callout{border-left:3px solid var(--boom);background:var(--boom-wash);padding:17px 21px;margin:24px 0 0}
+.callout .h{font-family:var(--display);font-weight:600;font-size:1.04rem;margin-bottom:6px;letter-spacing:-.01em}
+.callout p{font-size:.96rem;color:var(--ink-soft)}
+.callout.warn{border-left-color:var(--rec);background:var(--rec-wash)}
+.callout.note{border-left-color:var(--warm);background:var(--warm-wash)}
+
+/* ---- the flow strip ---- */
+.strip{display:flex;gap:26px;overflow-x:auto;padding:8px 4px 26px;scroll-snap-type:x proximity}
+.strip::-webkit-scrollbar{height:8px}
+.strip::-webkit-scrollbar-thumb{background:var(--rule);border-radius:4px}
+.step{flex:0 0 auto;width:250px;scroll-snap-align:start}
+.step .num{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--boom);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.step .num i{font-style:normal;width:20px;height:20px;border:1px solid var(--boom);border-radius:50%;
+  display:grid;place-items:center;font-size:10px;font-weight:600}
+.cap{margin-top:12px}
+.cap h4{font-family:var(--display);font-weight:600;font-size:.98rem;margin:0 0 4px;letter-spacing:-.01em}
+.cap p{font-family:var(--mono);font-size:10.5px;line-height:1.55;color:var(--muted);margin:0}
+
+/* ---- phone ---- */
+.phone{width:250px;height:512px;background:#05090B;border-radius:32px;padding:9px;
+  box-shadow:0 2px 4px rgba(0,0,0,.18), 0 20px 44px -22px rgba(0,0,0,.55);position:relative}
+.scr{width:100%;height:100%;border-radius:24px;overflow:hidden;background:var(--screen);
+  color:var(--screen-ink);display:flex;flex-direction:column;position:relative}
+.notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:74px;height:19px;
+  background:#05090B;border-radius:0 0 11px 11px;z-index:5}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:7px 14px 3px;
+  font-family:var(--mono);font-size:8.5px;color:#8FA3AA;flex:none}
+.body{flex:1;overflow:hidden;display:flex;flex-direction:column}
+
+/* feed ad */
+.feed{background:#000;height:100%;display:flex;flex-direction:column}
+.feed .vid{flex:1;background:linear-gradient(160deg,#1b2a30,#0b1114 60%);position:relative;
+  display:grid;place-items:center;padding:18px;text-align:center}
+.feed .q{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.2;color:#fff;letter-spacing:-.02em}
+.feed .sub{font-family:var(--mono);font-size:9.5px;color:#9BB;margin-top:10px;letter-spacing:.06em}
+.feed .cta{background:#fff;color:#000;font-family:var(--display);font-weight:600;font-size:12px;
+  padding:11px;text-align:center;margin:0}
+.feed .meta{padding:9px 12px;font-family:var(--mono);font-size:9px;color:#8FA3AA;display:flex;gap:10px}
+
+/* generic game screen */
+.gm{flex:1;display:flex;flex-direction:column;padding:14px}
+.gm .top{font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:#7E939B;display:flex;justify-content:space-between}
+.timer{height:3px;background:#22343A;margin-top:8px;border-radius:2px;overflow:hidden}
+.timer i{display:block;height:100%;background:var(--boom)}
+.mockscreen{flex:1;margin:12px 0;border-radius:6px;background:#101A1E;border:1px solid #22343A;
+  padding:8px;display:flex;flex-direction:column;gap:5px;overflow:hidden}
+.mockbar{height:14px;background:#1A282D;border-radius:3px;display:flex;align-items:center;gap:3px;padding:0 5px;flex:none}
+.mockbar span{width:5px;height:5px;border-radius:50%;background:#33474E}
+.tab{height:11px;border-radius:2px;background:#1A282D;flex:1}
+.tab.on{background:#24383F}
+.tabs{display:flex;gap:3px;flex:none}
+.rowline{height:6px;border-radius:2px;background:#18262B}
+.rowline.w70{width:70%} .rowline.w45{width:45%} .rowline.w85{width:85%} .rowline.w30{width:30%}
+.blk{flex:1;border-radius:4px;background:#142126;border:1px solid #1E2E34;position:relative}
+.badge{position:absolute;top:5px;right:5px;background:var(--rec);color:#fff;font-family:var(--mono);
+  font-size:8px;padding:1px 5px;border-radius:8px;font-weight:600}
+
+.qtext{font-family:var(--display);font-weight:600;font-size:15px;line-height:1.25;margin:4px 0 10px;letter-spacing:-.01em}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.opt{border:1px solid #2A3D44;border-radius:7px;padding:11px 6px;text-align:center;
+  font-family:var(--mono);font-size:13px;color:#CFE0E4}
+.opt.pick{border-color:var(--boom);background:rgba(11,111,121,.22);color:#8FE3EA}
+.opt.right{border-color:#3FBF7F;background:rgba(63,191,127,.18);color:#8CF0BC}
+.opt.wrong{border-color:var(--rec);background:rgba(192,51,42,.18);color:#F5A79E}
+
+/* score */
+.score{flex:1;display:grid;place-items:center;text-align:center;padding:20px}
+.score .big{font-family:var(--display);font-weight:700;font-size:46px;line-height:1;letter-spacing:-.03em;color:#fff}
+.score .lbl{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;color:#7E939B;margin-top:8px}
+.score .beat{font-family:var(--display);font-size:13px;color:#8FE3EA;margin-top:14px;font-weight:600}
+.btnstack{padding:0 14px 16px;display:flex;flex-direction:column;gap:7px}
+.btn{border-radius:9px;padding:11px;text-align:center;font-family:var(--display);font-weight:600;font-size:12.5px}
+.btn.pri{background:var(--boom);color:#04191B}
+.btn.sec{border:1px solid #2A3D44;color:#CFE0E4}
+
+/* whatsapp */
+.wa{flex:1;background:#0B1418;display:flex;flex-direction:column}
+.wahead{background:#152329;padding:9px 12px;font-family:var(--display);font-weight:600;font-size:12px;
+  display:flex;align-items:center;gap:8px;flex:none;color:#E7EFF1}
+.waav{width:22px;height:22px;border-radius:50%;background:var(--boom);display:grid;place-items:center;
+  font-size:9px;color:#04191B;font-weight:700}
+.wabody{flex:1;padding:12px;display:flex;flex-direction:column;gap:8px;justify-content:flex-end}
+.bub{background:#1D2C33;border-radius:9px 9px 9px 2px;padding:9px 11px;font-size:11.5px;line-height:1.45;
+  color:#DDE9EC;max-width:88%;font-family:var(--body)}
+.bub.me{background:#134D3C;align-self:flex-end;border-radius:9px 9px 2px 9px}
+.wabtn{border-top:1px solid #2A3D44;margin-top:7px;padding-top:7px;text-align:center;
+  font-family:var(--display);font-weight:600;font-size:11.5px;color:#53BDEB}
+.watime{font-family:var(--mono);font-size:8px;color:#6E858D;text-align:right;margin-top:3px}
+
+/* desktop */
+.mac{width:100%;max-width:720px;margin:0 auto;background:#05090B;border-radius:12px;padding:9px 9px 0;
+  box-shadow:0 2px 4px rgba(0,0,0,.18), 0 26px 52px -26px rgba(0,0,0,.6)}
+.macscr{border-radius:7px;overflow:hidden;background:var(--screen);color:var(--screen-ink);aspect-ratio:16/10;
+  display:flex;flex-direction:column}
+.macbar{background:#152329;padding:7px 11px;display:flex;align-items:center;gap:6px;flex:none}
+.macbar u{width:9px;height:9px;border-radius:50%;background:#33474E;display:block}
+.macbar .t{font-family:var(--mono);font-size:9px;color:#8FA3AA;margin-left:8px}
+.macbody{flex:1;display:grid;place-items:center;text-align:center;padding:26px}
+.macfoot{font-family:var(--mono);font-size:9px;color:#6E858D;text-align:center;padding:0 0 10px}
+
+.legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--rule);
+  border:1px solid var(--rule);margin-top:26px}
+.lg{background:var(--card);padding:14px 16px}
+.lg .n{font-family:var(--mono);font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--boom)}
+.lg p{font-size:.9rem;color:var(--ink-soft);margin:6px 0 0}
+
+footer{margin-top:78px;border-top:2px solid var(--ink);padding-top:20px;
+  font-family:var(--mono);font-size:11px;line-height:1.75;color:var(--muted)}
+footer b{color:var(--ink-soft);font-weight:500}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="kicker"><span class="dot"></span> ui flow &middot; screen recall &middot; 19 aug 2026</div>
+  <h1>The Flow,<br>On Screens</h1>
+  <p class="standfirst">Twelve documents about a funnel and I never showed you one. Here it is — <b>every screen, in order, with the real copy in place.</b> Scroll the strips sideways.</p>
+
+  <nav class="sitenav" aria-label="Sections">
+    <a href="./">The Complaint Ledger</a>
+    <a href="./flow.html" aria-current="page">UI Flow</a>
+    <a href="./fishing.html">Ads &amp; Funnel</a>
+    <a href="./recall.html">Screen Recall</a>
+    <a href="./engines.html">Three Engines</a>
+    <a href="./costs.html">Budget</a>
+    <a href="./roster.html">The Roster</a>
+    <a href="./memo.html">Team Memo</a>
+  </nav>
+</header>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">pond C — the game &middot; 288M reachable</div>
+    <h2>Cold scroll to paying player, seven screens</h2>
+    <p class="dek">Nothing here mentions a screen recorder until screen 7 — and by then they've played twice and won something.</p>
+  </div>
+
+  <div class="strip">
+
+    <div class="step">
+      <div class="num"><i>1</i> the bait</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="feed">
+          <div class="vid">
+            <div>
+              <div class="q">This screen was up<br>for 5 seconds.</div>
+              <div class="q" style="color:#8FE3EA;margin-top:6px">What was on it?</div>
+              <div class="sub">15 SECONDS · NO SIGNUP</div>
+            </div>
+          </div>
+          <div class="cta">Play now</div>
+          <div class="meta"><span>Sponsored</span><span>Boom</span></div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>Meta / TikTok feed</h4><p>No product. No logo-first. A question you can't scroll past. Puzzle video games 6003668975718.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>2</i> memorise</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="gm">
+          <div class="top"><span>ROUND 1 OF 5</span><span>00:03</span></div>
+          <div class="timer"><i style="width:60%"></i></div>
+          <div class="mockscreen">
+            <div class="mockbar"><span></span><span></span><span></span></div>
+            <div class="tabs"><div class="tab on"></div><div class="tab"></div><div class="tab"></div><div class="tab"></div></div>
+            <div class="rowline w70"></div><div class="rowline w45"></div>
+            <div class="blk"><span class="badge">12</span></div>
+            <div class="rowline w85"></div><div class="rowline w30"></div>
+          </div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>Look at the screen</h4><p>Three seconds left. It plays instantly in the in-app browser — no install, no account.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>3</i> the question</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="gm">
+          <div class="top"><span>ROUND 1 OF 5</span><span>ANSWER</span></div>
+          <div class="timer"><i style="width:0%"></i></div>
+          <div style="flex:1;display:flex;flex-direction:column;justify-content:center">
+            <div class="qtext">How many browser tabs were open?</div>
+            <div class="opts">
+              <div class="opt">2</div><div class="opt pick">4</div>
+              <div class="opt">6</div><div class="opt">9</div>
+            </div>
+          </div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>One question, four taps</h4><p>Under two seconds to answer. The whole round is under 45 seconds.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>4</i> the reveal</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="gm">
+          <div class="top"><span>ROUND 1 OF 5</span><span style="color:#F5A79E">MISSED IT</span></div>
+          <div class="timer"><i style="width:100%;background:var(--rec)"></i></div>
+          <div class="mockscreen" style="border-color:#3FBF7F">
+            <div class="mockbar"><span></span><span></span><span></span></div>
+            <div class="tabs"><div class="tab on"></div><div class="tab on"></div><div class="tab on"></div><div class="tab on"></div></div>
+            <div class="rowline w70"></div><div class="rowline w45"></div>
+            <div class="blk"></div>
+          </div>
+          <div class="opts"><div class="opt wrong">You said 4</div><div class="opt right">It was 9</div></div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>Show them the answer</h4><p>Being wrong is the fun. The reveal is what makes them play round two.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>5</i> the score</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body">
+          <div class="score"><div>
+            <div class="lbl">YOU WERE OFF BY</div>
+            <div class="big">17</div>
+            <div class="lbl">ACROSS 5 SCREENS</div>
+            <div class="beat">Better than 41% of players</div>
+          </div></div>
+          <div class="btnstack">
+            <div class="btn pri">Challenge a friend</div>
+            <div class="btn sec">Enter today's prize draw — free</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="cap"><h4>The shareable is a number</h4><p>No screenshot of anything private. "Off by 17" is the whole artifact — and it's a number people want to beat.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>6</i> day 7</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="wa">
+          <div class="wahead"><span class="waav">B</span> Boom</div>
+          <div class="wabody">
+            <div class="bub">Nice run yesterday — you're 4th on this week's board 👀</div>
+            <div class="bub">You've got <b>3 prize entries</b> waiting.<div class="wabtn">Claim on my computer →</div></div>
+            <div class="watime">09:41 ✓✓</div>
+          </div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>The desktop ask, finally</h4><p>Day 7, only to people who came back. Phrased as money, not software. "Install our app" converts at 8% — "claim your entries" nearer 45%.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>7</i> desktop</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="gm" style="justify-content:center">
+          <div style="text-align:center;padding:20px 6px">
+            <div style="font-family:var(--display);font-weight:700;font-size:17px;line-height:1.2">Your entries are on<br>the big screen.</div>
+            <p style="font-family:var(--mono);font-size:9.5px;color:#7E939B;line-height:1.6;margin-top:12px">
+              Bigger boards. The weekly leaderboard.<br>And the recorder that makes them.</p>
+          </div>
+          <div class="btnstack" style="padding:0">
+            <div class="btn pri">Get Boom for Mac</div>
+            <div class="btn sec">Windows</div>
+          </div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>And only here, the recorder</h4><p>Mentioned last, in one clause. They came for entries; the recorder arrives as the thing that makes boards.</p></div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">pond B — freelancers &amp; SMB &middot; 48M reachable</div>
+    <h2>Four screens. Desktop in message one.</h2>
+    <p class="dek">Completely different funnel. These people already want a recorder — no game, no waiting, no seven-day nurture.</p>
+  </div>
+
+  <div class="strip">
+
+    <div class="step">
+      <div class="num"><i>1</i> the bait</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="feed">
+          <div class="vid" style="background:linear-gradient(160deg,#2A1613,#0b1114 65%)">
+            <div>
+              <div class="q" style="font-size:16px">“I recorded a 15-minute walkthrough for a client.</div>
+              <div class="q" style="font-size:16px;color:#F5A79E;margin-top:6px">It failed to upload. I had to do the whole thing again.”</div>
+              <div class="sub">★☆☆☆☆ — A REAL REVIEW OF LOOM</div>
+            </div>
+          </div>
+          <div class="cta">That's why we built Boom</div>
+          <div class="meta"><span>Sponsored</span><span>Boom</span></div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>Their words, not ours</h4><p>37 upvotes on the Play Store. Behaviour 6002714898572 AND Freelancer 6003374632277.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>2</i> whatsapp opens</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="wa">
+          <div class="wahead"><span class="waav">B</span> Boom</div>
+          <div class="wabody">
+            <div class="bub me">Hi</div>
+            <div class="bub">Boom records your screen and gives you a link.<br><br>Your client doesn't need an account to watch it. No 5-minute limit. Mac and Windows.
+              <div class="wabtn">Get it on my computer →</div></div>
+            <div class="watime">09:41 ✓✓</div>
+          </div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>$0.27 a conversation</h4><p>Your own Recepte number. Contact captured at the click — no form. Desktop link in the first message.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>3</i> the download</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="gm" style="justify-content:center">
+          <div style="text-align:center;padding:14px 6px">
+            <div style="font-family:var(--display);font-weight:700;font-size:19px;line-height:1.15">It will not lose<br>your recording.</div>
+            <p style="font-family:var(--mono);font-size:9.5px;color:#7E939B;line-height:1.7;margin-top:14px">
+              Saved to your machine the second you stop.<br>
+              No sign-in for people who watch.<br>
+              Unlimited length. Download the MP4.</p>
+          </div>
+          <div class="btnstack" style="padding:0">
+            <div class="btn pri">Download for Mac</div>
+            <div class="btn sec">Windows</div>
+          </div>
+          <p style="font-family:var(--mono);font-size:8.5px;color:#6E858D;text-align:center;margin-top:12px">
+            $71.99/yr Pro · Loom Business is $180/user/yr</p>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>Answer the complaint directly</h4><p>Every line here is a top-voted grievance from the corpus, inverted.</p></div>
+    </div>
+
+    <div class="step">
+      <div class="num"><i>4</i> first share</div>
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="bar"><span>9:41</span><span>▮▮▮ ᯤ ▮</span></div>
+        <div class="body"><div class="gm" style="justify-content:center">
+          <div style="text-align:center">
+            <div style="font-family:var(--display);font-weight:700;font-size:15px">Link copied.</div>
+            <div style="font-family:var(--mono);font-size:11px;color:#8FE3EA;margin:12px 0;padding:9px;
+              border:1px dashed #2A3D44;border-radius:6px">boom.new/k3f9</div>
+            <p style="font-family:var(--mono);font-size:9px;color:#7E939B;line-height:1.7">
+              Short. Plays instantly.<br>They don't need an account.</p>
+          </div>
+        </div></div>
+      </div></div>
+      <div class="cap"><h4>This screen is the growth engine</h4><p>Short link, no login wall, plays instantly. Every one of those is a K-factor input — see Three Engines.</p></div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">the watch page</div>
+    <h2>The single most important screen you own</h2>
+    <p class="dek">This is what the recipient sees. Get it right and K goes above 1 and you stop paying for growth. Get it wrong and every other page on this site is irrelevant.</p>
+  </div>
+
+  <div class="mac">
+    <div class="macscr">
+      <div class="macbar"><u></u><u></u><u></u><span class="t">boom.new/k3f9</span></div>
+      <div class="macbody">
+        <div style="width:100%">
+          <div style="aspect-ratio:16/9;background:#101A1E;border:1px solid #22343A;border-radius:6px;
+            display:grid;place-items:center;margin-bottom:16px">
+            <div style="width:44px;height:44px;border-radius:50%;background:var(--boom);display:grid;place-items:center;
+              color:#04191B;font-size:16px">▶</div>
+          </div>
+          <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+            <div class="btn pri" style="padding:9px 16px;font-size:12px">Reply with your own Boom</div>
+            <div class="btn sec" style="padding:9px 16px;font-size:12px">Download MP4</div>
+            <div class="btn sec" style="padding:9px 16px;font-size:12px">Read the summary</div>
+          </div>
+          <p style="font-family:var(--mono);font-size:9px;color:#6E858D;margin-top:14px">
+            No account needed · Nobody is charged for watching this</p>
+        </div>
+      </div>
+    </div>
+    <div class="macfoot">the watch page</div>
+  </div>
+
+  <div class="legend">
+    <div class="lg"><div class="n">Plays immediately</div><p>No sign-in wall. Loom's most-quoted grievance, and you can simply not do it.</p></div>
+    <div class="lg"><div class="n">"Reply with your own Boom"</div><p>The entire loop in one button. This is the control that decides whether K is 0.2 or 1.05.</p></div>
+    <div class="lg"><div class="n">Download MP4</div><p>89 complaints in the corpus. Loom removed it even on paid plans.</p></div>
+    <div class="lg"><div class="n">Read the summary</div><p>For the r/sysadmin crowd who don't want to watch a video at all. Answers the anti-video objection.</p></div>
+    <div class="lg"><div class="n">"Nobody is charged for watching"</div><p>Said out loud, next to Atlassian's seat billing. It's the one line competitors can't copy.</p></div>
+  </div>
+
+  <div class="callout warn">
+    <div class="h">Still the blocker</div>
+    <p>Every download button above lands on a pricing page that says <strong>25 videos</strong> — Loom's exact number and the loudest complaint in the corpus. The Pond A ad literally reads <em>"25 videos, then it stops. That's Loom's free plan, not ours."</em> Fix the cap or don't run the ad.</p>
+  </div>
+</section>
+
+<footer>
+  <b>Copy source:</b> every headline quoted from the <a href="./comments.html">1,795-comment corpus</a> · <b>Targeting:</b> IDs queried live from the Boom ad account · <b>Costs:</b> $0.27/conversation from the Recepte CTWA campaign<br>
+  <b>Companions:</b> <a href="./fishing.html">ads &amp; funnel</a> · <a href="./engines.html">three engines</a> · <a href="./costs.html">budget</a><br>
+  <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
+</footer>
+
+</div>
+
+</body>
+</html>
