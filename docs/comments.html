@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="All 1,795 raw Loom user comments from the Google Play Store, Apple App Store, Reddit and Hacker News — searchable and filterable.">
+<meta name="description" content="All 1,795 raw Loom user comments from the Google Play Store, Apple App Store, Reddit and Hacker News - searchable and filterable.">
 <title>Loom Reviews, Unfiltered</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,6 +123,20 @@ footer{margin-top:70px;border-top:2px solid var(--ink);padding-top:20px;
 footer b{color:var(--ink-soft);font-weight:500}
 footer a{color:var(--boom)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.sitenav{display:flex;gap:0;flex-wrap:wrap;border:1px solid var(--rule);background:var(--card);
+  margin:30px 0 0;box-shadow:var(--shadow)}
+.sitenav a{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  padding:11px 16px;color:var(--muted);text-decoration:none;border-right:1px solid var(--rule);
+  display:flex;align-items:center;gap:8px;flex:1 1 auto;justify-content:center;white-space:nowrap}
+.sitenav a:last-child{border-right:none}
+.sitenav a:hover{color:var(--ink);background:var(--rule-soft)}
+.sitenav a[aria-current="page"]{color:var(--ink);background:var(--rule-soft);font-weight:600}
+.sitenav a[aria-current="page"]::before{content:"";width:7px;height:7px;border-radius:50%;
+  background:var(--boom);flex:none}
+.sitenav a:focus-visible{outline:2px solid var(--boom);outline-offset:-2px}
+@media (max-width:640px){.sitenav a{flex:1 1 100%;justify-content:flex-start;border-right:none;
+  border-bottom:1px solid var(--rule)}.sitenav a:last-child{border-bottom:none}}
 </style>
 </head>
 <body>
@@ -139,6 +153,11 @@ footer a{color:var(--boom)}
     <div class="cnt"><span class="n">308</span><span class="l">Hacker News</span></div>
     <div class="cnt"><span class="n">1,795</span><span class="l">Total</span></div>
   </div>
+  <nav class="sitenav" aria-label="Sections of this research">
+    <a href="./">The Complaint Ledger</a>
+    <a href="./playbook.html">Acquisition Playbook</a>
+    <a href="./comments.html" aria-current="page">1,795 Raw Comments</a>
+  </nav>
 </header>
 
 <div class="controls">
@@ -341,5 +360,6 @@ footer a{color:var(--boom)}
   render();
 })();
 </script>
+
 </body>
 </html>

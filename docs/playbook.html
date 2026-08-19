@@ -130,6 +130,20 @@ ul.tight li:last-child{margin-bottom:0}
 footer{margin-top:84px;border-top:2px solid var(--ink);padding-top:22px;
   font-family:var(--mono);font-size:11.5px;line-height:1.75;color:var(--muted)}
 footer b{color:var(--ink-soft);font-weight:500}
+
+.sitenav{display:flex;gap:0;flex-wrap:wrap;border:1px solid var(--rule);background:var(--card);
+  margin:30px 0 0;box-shadow:var(--shadow)}
+.sitenav a{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  padding:11px 16px;color:var(--muted);text-decoration:none;border-right:1px solid var(--rule);
+  display:flex;align-items:center;gap:8px;flex:1 1 auto;justify-content:center;white-space:nowrap}
+.sitenav a:last-child{border-right:none}
+.sitenav a:hover{color:var(--ink);background:var(--rule-soft)}
+.sitenav a[aria-current="page"]{color:var(--ink);background:var(--rule-soft);font-weight:600}
+.sitenav a[aria-current="page"]::before{content:"";width:7px;height:7px;border-radius:50%;
+  background:var(--boom);flex:none}
+.sitenav a:focus-visible{outline:2px solid var(--boom);outline-offset:-2px}
+@media (max-width:640px){.sitenav a{flex:1 1 100%;justify-content:flex-start;border-right:none;
+  border-bottom:1px solid var(--rule)}.sitenav a:last-child{border-bottom:none}}
 </style>
 
 </head>
@@ -140,6 +154,11 @@ footer b{color:var(--ink-soft);font-weight:500}
   <div class="kicker"><span class="dot"></span> Acquisition teardown &middot; Boom Share &middot; 19 August 2026</div>
   <h1>Nobody Here<br>Buys Their Growth</h1>
   <p class="standfirst">I pulled the sitemap of every Loom competitor named in the review corpus. <b>Not one of them is winning on paid search.</b> They are all running the same four content machines — and Loom itself has stopped defending its own brand.</p>
+  <nav class="sitenav" aria-label="Sections of this research">
+    <a href="./">The Complaint Ledger</a>
+    <a href="./playbook.html" aria-current="page">Acquisition Playbook</a>
+    <a href="./comments.html">1,795 Raw Comments</a>
+  </nav>
 </header>
 
 <section>

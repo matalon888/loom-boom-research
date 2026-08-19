@@ -2,7 +2,13 @@
 
 A competitive teardown of **Loom**, built from 4,500 first-party user comments, and turned into a product backlog and go-to-market plan for [Boom Share](https://boomshare.ai).
 
-📄 **[Read the report →](https://matalon888.github.io/loom-boom-research/)**
+## Three public pages
+
+| | |
+|---|---|
+| 📄 **[The Complaint Ledger](https://matalon888.github.io/loom-boom-research/)** | The teardown: what Loom's users complain about, ranked, turned into a backlog |
+| 🧲 **[Acquisition Playbook](https://matalon888.github.io/loom-boom-research/playbook.html)** | How every competitor grows *without* paid search — sitemap evidence + nine plays |
+| 💬 **[1,795 Raw Comments](https://matalon888.github.io/loom-boom-research/comments.html)** | Every user comment behind it, searchable and filterable |
 
 ---
 
@@ -10,7 +16,9 @@ A competitive teardown of **Loom**, built from 4,500 first-party user comments, 
 
 | Path | What it is |
 |---|---|
-| `docs/index.html` | The full report (self-contained, served by GitHub Pages) |
+| `docs/index.html` | The teardown report |
+| `docs/playbook.html` | The competitor acquisition playbook |
+| `docs/comments.html` | The searchable raw-comment explorer |
 | `data/` | The raw scraped corpora as JSON — see `data/README.md` |
 | `scripts/` | Every scraper and analysis script used, so the numbers are reproducible |
 
