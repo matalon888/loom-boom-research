@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="21 photo memory questions built from EXIF metadata and on-device vision, with the scoring, the share-card rule and the caveats.">
-<title>How Long Ago Was This</title>
+<meta name="description" content="Five competitors, five different growth engines - and why the product loop Loom abandoned in February beats both SEO and social for Boom.">
+<title>SEO Is Not The Only Game</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -208,27 +208,23 @@ footer{margin-top:80px;border-top:2px solid var(--ink);padding-top:20px;
   font-family:var(--mono);font-size:11px;line-height:1.75;color:var(--muted)}
 footer b{color:var(--ink-soft);font-weight:500}
 </style>
-
 </head>
 <body>
 <div class="wrap">
 
 <header class="masthead">
-  <div class="kicker"><span class="dot"></span> question bank &middot; photo recall &middot; 19 aug 2026</div>
-  <h1>How Long Ago<br>Was This?</h1>
-  <p class="standfirst">Agreed — photos is the strongest one. Zero permission, infinite supply, and everyone's camera roll is different. Here is what a picked photo actually gives you, and <b>21 questions you can build from it.</b></p>
+  <div class="kicker"><span class="dot"></span> strategy correction &middot; 19 aug 2026</div>
+  <h1>SEO Is Not<br>The Only Game</h1>
+  <p class="standfirst">Five companies in this category, five different engines. SEO built one of them. <b>The biggest outcome — Loom's $975M — was built on a product loop, and Atlassian broke that loop in February.</b> That's the opening I've been under-weighting while writing about channels.</p>
 
   <nav class="sitenav" aria-label="Sections of this research">
     <a href="./">The Complaint Ledger</a>
-    <a href="./playbook.html">Acquisition Playbook</a>
-    <a href="./engines.html">Three Engines</a>
+    <a href="./engines.html" aria-current="page">Three Engines</a>
     <a href="./strategy.html">Strategy Memo</a>
-    <a href="./recall.html">Screen Recall Campaign</a>
-    <a href="./mobile.html">Mobile Design</a>
+    <a href="./playbook.html">Acquisition Playbook</a>
+    <a href="./recall.html">Screen Recall</a>
     <a href="./mask.html">The Work Mask</a>
     <a href="./funnel.html">Funnel Model</a>
-    <a href="./photos.html" aria-current="page">Photo Questions</a>
-    <a href="./access.html">Data Access</a>
     <a href="./roster.html">The Roster</a>
     <a href="./memo.html">Team Memo</a>
   </nav>
@@ -236,90 +232,59 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">1 — the raw materials</div>
-    <h2>What one picked photo actually hands you</h2>
-    <p class="dek">Three separate sources, all available on-device, none requiring a permission dialog beyond the picker itself.</p>
-  </div>
-
-  <div class="cards">
-    <div class="fmt">
-      <span class="no">source 01 · exif</span>
-      <h3>Metadata</h3>
-      <p>Date and exact time taken. Day of week. Device model. Orientation. Flash fired or not. Whether it's a Live Photo or part of a burst. Camera settings — focal length, ISO, exposure.</p>
-      <p style="margin-top:.5em">Free, instant, and precise. This is where the best questions come from, because <strong>time is the thing people are most wrong about.</strong></p>
-    </div>
-    <div class="fmt">
-      <span class="no">source 02 · on-device vision</span>
-      <h3>What's in the picture</h3>
-      <p>Apple's Vision framework and Android's ML Kit both run locally: face detection and count, scene and object classification, text recognition, pet detection, dominant colours, and saliency — which region of the image the eye goes to.</p>
-      <p style="margin-top:.5em">Nothing is uploaded. The model ships with the OS. Face <em>count</em> is highly reliable; object labels are decent; scene classification is rough.</p>
-    </div>
-    <div class="fmt">
-      <span class="no">source 03 · the set</span>
-      <h3>Relationships between photos</h3>
-      <p>If they pick four, you get the gaps between them, the order, the spread, which was the outlier, whether two were taken seconds apart or years apart.</p>
-      <p style="margin-top:.5em">This is the cheapest source and it powers the most reliable game — ordering. No vision model, no risk, works on any photo that has a date.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">2 — the bank</div>
-    <h2>21 questions, by what they need</h2>
-    <p class="dek">Difficulty is how hard it is to build, not how hard it is to play. Everything marked EXIF is essentially free.</p>
+    <div class="sec-num">1 — the evidence</div>
+    <h2>What actually built each of them</h2>
+    <p class="dek">Page counts from their own sitemaps; revenue from published figures. Notice how little the two columns have to do with each other.</p>
   </div>
 
   <div class="tablewrap">
-    <table style="min-width:800px">
-      <thead><tr><th>#</th><th>Question</th><th>Needs</th><th>Why it lands</th><th>Build</th></tr></thead>
+    <table style="min-width:760px">
+      <thead><tr><th>Company</th><th class="num">Pages</th><th class="num">Outcome</th><th>The engine that built it</th></tr></thead>
       <tbody>
-        <tr class="ok"><td class="num">1</td><td><strong>"How long ago was this?"</strong><br><span class="nm">guess the years/months since</span></td><td class="num">EXIF</td><td>People are catastrophically wrong about their own timeline. The reveal genuinely lands.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">2</td><td><strong>"Which came first?"</strong><br><span class="nm">order 4 photos</span></td><td class="num">EXIF</td><td>Simplest scoreable game in the set. Works on literally any photos.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">3</td><td>"What month was this?"</td><td class="num">EXIF</td><td>The picture usually hints — season, light, clothing. Feels solvable.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">4</td><td>"What time of day?"</td><td class="num">EXIF</td><td>Shadows and light give it away. Satisfying to reason about.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">5</td><td>"What day of the week?"</td><td class="num">EXIF</td><td>Nearly impossible, so it's pure luck — good as a tiebreaker, bad as a round.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">6</td><td>"How big is the gap?"<br><span class="nm">days between two photos</span></td><td class="num">EXIF</td><td>Two photos that look adjacent can be years apart. Nice twist.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">7</td><td>"Which is the odd one out?"<br><span class="nm">3 same day, 1 not</span></td><td class="num">EXIF</td><td>Deduction rather than memory — varies the rhythm.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">8</td><td>"Portrait or landscape?"<br><span class="nm">after a 2-second flash</span></td><td class="num">EXIF</td><td>Trivially easy to build, surprisingly hard to answer.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">9</td><td><strong>"How many people?"</strong><br><span class="nm">flash 2s, then count</span></td><td class="num">vision</td><td>The purest memory test here. Face count is the most reliable thing the model does.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">10</td><td>"Was anyone smiling?"</td><td class="num">vision</td><td>Face landmarks give it. Warm, low-stakes, always a talking point.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">11</td><td>"Indoors or outdoors?"</td><td class="num">vision</td><td>Scene classification. Easy round to open with.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">12</td><td>"Was there a dog in this?"</td><td class="num">vision</td><td>Pet detection is solid, and pets are the most reposted category on the internet.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">13</td><td>"What was the dominant colour?"</td><td class="num">vision</td><td>Nobody remembers. Four swatches, pick one. Visually great in a thumbnail.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">14</td><td><strong>"What did the sign say?"</strong><br><span class="nm">OCR text recall</span></td><td class="num">vision</td><td>Text in a photo is the thing people least expect to be quizzed on. Very strong when it hits.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">15</td><td>"How many [detected object]?"<br><span class="nm">chairs, cars, plates</span></td><td class="num">vision</td><td>Object counting. Reliability varies by class — whitelist the ones that work.</td><td class="num"><span class="cpm bad">harder</span></td></tr>
-        <tr class="ok"><td class="num">16</td><td><strong>"What was here?"</strong><br><span class="nm">one region blurred out</span></td><td class="num">vision</td><td>Saliency picks the interesting region, you blur it, they recall it. The most "game-like" of the set.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
-        <tr><td class="num">17</td><td>"Which photo is this crop from?"</td><td class="num">none</td><td>Zoom to 10%, show four candidates. Pure visual memory, zero model needed.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr class="ok"><td class="num">18</td><td><strong>"What changed?"</strong><br><span class="nm">altered version of their own photo</span></td><td class="num">vision</td><td>Spot-the-difference, but it's <em>your</em> life. Highest comment rate of anything here.</td><td class="num"><span class="cpm bad">harder</span></td></tr>
-        <tr><td class="num">19</td><td>"Which one is missing?"<br><span class="nm">show 4, hide 1</span></td><td class="num">none</td><td>Classic memory mechanic, works with any four images.</td><td class="num"><span class="cpm good">easy</span></td></tr>
-        <tr><td class="num">20</td><td>"Where was this?"<br><span class="nm">guess the city</span></td><td class="num">EXIF GPS</td><td>Strong if available — but see the caveat below, location is often stripped and is the one genuinely sensitive field.</td><td class="num"><span class="cpm bad">check first</span></td></tr>
-        <tr><td class="num">21</td><td>"Guess your friend's life"<br><span class="nm">their board, your guesses</span></td><td class="num">any</td><td>The share loop. You play someone else's photos and find out how well you know them.</td><td class="num"><span class="cpm ok">medium</span></td></tr>
+        <tr class="ok"><td><strong>Loom</strong></td><td class="num">372</td><td class="num">$975M exit</td><td><strong>A product loop.</strong> You receive a Loom, you watch it, you want to reply the same way, you sign up. Almost no SEO.</td></tr>
+        <tr><td>Veed</td><td class="num">17,372</td><td class="num">$50M ARR</td><td>Industrial SEO — but it's a <em>video editor</em>, a far larger search category than screen recording.</td></tr>
+        <tr><td>Descript</td><td class="num">1,999</td><td class="num">$55M ARR</td><td>SEO plus heavy creator sponsorship. Also a broader category.</td></tr>
+        <tr><td>Vidyard</td><td class="num">834</td><td class="num">$47.7M</td><td>Enterprise sales. 1,000 accounts, no consumer motion at all.</td></tr>
+        <tr class="ok"><td><strong>Screen Studio</strong></td><td class="num">82</td><td class="num">8,000 customers<br>profitable, 3 people</td><td><strong>Build-in-public on X plus affiliates.</strong> Essentially zero SEO.</td></tr>
+        <tr class="ok"><td><strong>Cap</strong></td><td class="num">123</td><td class="num">18k GitHub stars</td><td><strong>Open-source distribution.</strong> The repo is the landing page.</td></tr>
       </tbody>
     </table>
   </div>
+
+  <div class="callout warn">
+    <div class="h">So the answer to your question is no</div>
+    <p>SEO is the engine for the <em>mid-tier</em> of this market, and it's the engine for companies in adjacent, higher-volume categories. It is not how the category's only billion-dollar outcome happened, and it's not how the profitable three-person company happened either.</p>
+    <p style="margin-top:.7em">It looks like the only game because it's the most <em>visible</em> one — you can count a competitor's pages. You can't count their product loop from the outside, which is exactly why I kept writing about channels.</p>
+  </div>
 </section>
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">3 — the one to build first</div>
-    <h2>"How long ago was this?" is the whole game</h2>
+    <div class="sec-num">2 — and it's getting worse</div>
+    <h2>The SEO I told you to build is the SEO that's dying</h2>
   </div>
   <div class="grid">
     <div class="col">
-      <p>If you only ship one question, ship number 1. It has a property none of the others do: <strong>the owner of the photo cannot win.</strong></p>
-      <p>You took the picture. You were there. And you will still guess "about a year ago" about something from 2021. That gap between certainty and reality is the entire emotional payload, and it fires every single time, on every photo, forever. There is no content to run out of.</p>
-      <p>It's also the safest. The answer is a number of months. No faces, no objects, no location, no model that might be wrong — just a date subtraction that is always correct.</p>
+      <p>I recommended 200 device how-to pages to farm the 326,500 monthly searches on "how to screen record on X". I should retract most of that.</p>
+      <ul class="tight">
+        <li>Zero-click searches hit <strong>68% of US queries</strong> in early 2026, up from 60% two years ago.</li>
+        <li>When an AI Overview appears, organic CTR falls <strong>58–61%</strong>.</li>
+        <li><strong>82% of B2B tech queries</strong> now trigger one.</li>
+        <li>Informational queries take the worst of it — they're the easiest for a machine to answer outright.</li>
+        <li>Small publishers lost <strong>60% of search referral traffic</strong> in two years.</li>
+      </ul>
+      <p style="margin-top:1em">"How to screen record on a Dell laptop" is the single most AI-answerable question imaginable. Building 200 pages of that in 2026 is building for a channel in structural decline.</p>
     </div>
     <div class="col">
       <div class="callout note">
-        <div class="h">The scoring that makes it shareable</div>
-        <p>Don't score right or wrong. Score <strong>how wrong</strong> — "you were off by 3 years and 2 months." Sum the error across five photos and that total is the score.</p>
-        <p style="margin-top:.7em">Lower is better, it's comparable between any two people regardless of which photos they used, and it produces a single number that means something instantly: <em>"I was off by 11 years total."</em></p>
+        <div class="h">What survives — and it's a different discipline</div>
+        <p>Being <em>cited</em> rather than clicked. Brands quoted inside an AI Overview earn <strong>120% more clicks per impression</strong> than uncited ones, and referrals from ChatGPT convert at <strong>15.9% against 1.76%</strong> for Google organic — nine times better, on far smaller volume.</p>
+        <p style="margin-top:.7em">That's a real opportunity, but it isn't "publish more pages." It's being the source an AI reaches for on a specific question — which favours a small number of genuinely authoritative pages over a large number of thin ones.</p>
       </div>
       <div class="callout">
-        <div class="h">Round structure I'd use</div>
-        <p>Five photos. Each: show it, ask "how long ago", they drag a slider, reveal the true date with the error. Then a final card with the total. Whole thing under 45 seconds.</p>
+        <div class="h">What I'd still build, and it's small</div>
+        <p>Roughly 25 pages, all high-intent, none informational: <strong>the Loom video downloader, <code>/alternatives/{competitor}</code>, and honest pricing comparisons.</strong> These catch people at the moment of switching, they're the queries AI can't satisfy with a summary because the searcher wants a tool, and they cost a week.</p>
+        <p style="margin-top:.7em">That's the floor. It is not a strategy.</p>
       </div>
     </div>
   </div>
@@ -327,24 +292,31 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">4 — the share card</div>
-    <h2>The shareable artifact is your wrongness, not your photo</h2>
+    <div class="sec-num">3 — the thing I under-weighted</div>
+    <h2>The engine that actually built this category is sitting unguarded</h2>
   </div>
   <div class="grid">
     <div class="col">
-      <p>This is the design decision that makes the whole thing safe, and it happens to make it more viral rather than less.</p>
-      <p>A score card that says <strong>"off by 11 years, 4 months"</strong> contains no image, no face, no location, no name. Nothing to redact, nothing to leak, nothing anyone can regret posting. And it is <em>more</em> compelling than the photo would have been, because it's a number people want to beat.</p>
-      <p>Same logic for every question in the bank: the output is the error, the streak, the score — never the input.</p>
+      <p>You're right that Screen Recall is largely a different app. It's a real build, and it doesn't make the recorder better at recording. The Work Mask argument is the honest defence — the game is what turns a weekly utility into a daily habit — but that's a bet, not a fact.</p>
+      <p><strong>Meanwhile there is a third engine that is neither SEO nor social, requires no new product, and is the only one with a billion-dollar precedent in this exact category.</strong></p>
+      <p>Loom's growth was never marketing. Every recording sent was an advert delivered by a colleague, with a built-in reason to sign up: you wanted to reply the same way. The product distributed itself through ordinary work.</p>
+      <p><strong>In February 2026 Atlassian deleted the free Creator seats.</strong> The recipient now hits a bill instead of a signup. The loop that built the category's biggest company is broken, and nobody has moved into it.</p>
     </div>
     <div class="col">
+      <div class="callout">
+        <div class="h">What rebuilding it actually costs</div>
+        <p>Not media spend. Product work, and not much of it:</p>
+        <ul class="tight" style="margin-top:.5em">
+          <li><strong>No login to watch.</strong> Loom's top complaint; you can just not do it.</li>
+          <li><strong>Instant playback, short URLs.</strong> Both are named failures in the corpus.</li>
+          <li><strong>A "reply with your own Boom" button on every watch page.</strong> This is the entire loop in one control — and it's the one Loom never built well.</li>
+          <li><strong>Never charge for viewers.</strong> Then say so, loudly, next to Loom's seat billing.</li>
+        </ul>
+        <p style="margin-top:.8em">Every one of those is cheaper than a week of the creator campaign, and each one compounds with every recording your existing users already send.</p>
+      </div>
       <div class="callout warn">
-        <div class="h">Rules for whoever builds it</div>
-        <ul class="tight">
-          <li><strong>Never render a picked photo into a share image.</strong> Not blurred, not cropped, not as a thumbnail. If it's shareable, it has no photo in it.</li>
-          <li><strong>Never upload the photo.</strong> EXIF read and vision run on-device; only the score is a network call.</li>
-          <li><strong>Drop location by default.</strong> Question 20 is the one field that can expose a home address. Ship without it, add it later behind an explicit opt-in if it tests well.</li>
-          <li><strong>Discard on exit.</strong> No cache, no temp directory that survives the session.</li>
-        </ul>
+        <div class="h">Why this beats both other engines on paper</div>
+        <p>SEO costs years and is declining. Social costs $4,550 to find out whether low-intent traffic converts at all. <strong>The loop is paid for by users you already have</strong>, needs no channel, and every competitor is structurally unable to copy it — because charging for viewers is where their revenue comes from.</p>
       </div>
     </div>
   </div>
@@ -352,53 +324,56 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">5 — the bridge</div>
-    <h2>Why a photo game sells a screen recorder</h2>
+    <div class="sec-num">4 — the honest ranking</div>
+    <h2>If I had to order the three</h2>
   </div>
-  <div class="grid">
-    <div class="col">
-      <p>Worth being explicit about this, because it's the obvious hole: a photo memory game does not obviously have anything to do with recording screens.</p>
-      <p>The link is the engine. <strong>Flash → recall → score → share</strong> is one mechanic, and it doesn't care what the image is. Photos are the mass-market on-ramp because everyone has them and nobody needs an explanation. Screens are the same game with different material — and that version is the one that sells the recorder.</p>
+  <div class="cards">
+    <div class="fmt">
+      <span class="no">first · highest confidence</span>
+      <h3>Fix the loop</h3>
+      <p>No login to watch, instant playback, short links, a reply button on every watch page, viewers never billed. Product work, days not months, funded by users you already have.</p>
+      <p style="margin-top:.5em"><strong>Why first:</strong> it's the only engine with a proven billion-dollar outcome in this exact category, it needs no new app and no channel, and the incumbent just abandoned it.</p>
     </div>
-    <div class="col">
-      <div class="callout">
-        <div class="h">The progression</div>
-        <ul class="tight">
-          <li><strong>Your photos</strong> — anyone can play, no explanation needed. This is the TikTok version.</li>
-          <li><strong>Your screenshots</strong> — same engine, funnier, more "how did you know that about me".</li>
-          <li><strong>A product demo</strong> — now it's a watch-through test, and now it's a work tool.</li>
-        </ul>
-        <p style="margin-top:.8em">One engine, three materials, increasing commercial value. Build it once for photos and the other two are content, not code.</p>
-      </div>
+    <div class="fmt">
+      <span class="no">second · cheap floor</span>
+      <h3>25 high-intent pages</h3>
+      <p>The Loom downloader, competitor alternatives, honest pricing comparisons. One week of work. Skip the 200 how-to pages entirely — that traffic is being eaten by AI answers.</p>
+      <p style="margin-top:.5em"><strong>Why second:</strong> it costs almost nothing and catches people at the exact moment they're switching. But it will never be a differentiator.</p>
     </div>
+    <div class="fmt">
+      <span class="no">third · a bet, not a plan</span>
+      <h3>Screen Recall</h3>
+      <p>Real reach, genuinely uncontested, and the Work Mask gives it a mechanism. But it is a second product, aimed at low-intent traffic, and the funnel model says it can't be justified on recorder subscriptions.</p>
+      <p style="margin-top:.5em"><strong>Why third:</strong> you're right that it's a different app. Test it at $4,550 because the information is worth that. Don't commit the company to it before the number comes back.</p>
+    </div>
+  </div>
+
+  <div class="callout note">
+    <div class="h">What I got wrong across these documents</div>
+    <p>I spent most of this project analysing <em>channels</em>, because channels are what you can measure from the outside — sitemaps, CPCs, follower counts. That produced good data and a slightly wrong emphasis.</p>
+    <p style="margin-top:.7em">The strategy memo did identify the broken loop as the structural opening, and then I let it sit behind two campaign documents. Your question put it back where it belongs.</p>
   </div>
 </section>
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">6 — caveats</div>
-    <h2>Things to check before building</h2>
+    <div class="sec-num">5 — honesty</div>
+    <h2>Evidence versus argument</h2>
   </div>
   <div class="grid">
     <div class="col">
-      <ul class="tight">
-        <li><strong>Location metadata may not arrive.</strong> The system pickers are designed to hand over as little as possible, and location handling has changed repeatedly across OS versions. Verify what you actually receive before designing question 20 — and my recommendation is to skip it regardless.</li>
-        <li><strong>Not every photo has a date.</strong> Screenshots, saved WhatsApp images, downloads and anything re-encoded may have no EXIF at all. Since questions 1–8 all depend on it, you need a graceful fallback — detect missing EXIF at pick time and route those photos to the vision questions instead.</li>
-      </ul>
+      <p><strong>Evidence:</strong> the page counts and revenue figures, all sourced. The AI Overview and zero-click data — 68% zero-click, 58–61% CTR loss, 82% of B2B queries, 60% publisher traffic loss. The February 2026 Atlassian seat change. Loom's own complaint corpus naming login-to-watch, slow playback and long URLs.</p>
     </div>
     <div class="col">
-      <ul class="tight">
-        <li><strong>Vision reliability is uneven.</strong> Face count is dependable. Pet detection is good. Generic object counting is not — whitelist the classes that actually work rather than trusting the label.</li>
-        <li><strong>Four photos is a lot to ask.</strong> Each pick is friction. Consider asking for one and generating several questions from it, rather than asking for four and generating one.</li>
-        <li><strong>Nobody has tested whether this is fun twice.</strong> The whole bank is design, not evidence. Question 1 is the one I'd bet on because its emotional payload doesn't decay — but that's an argument, not a result.</li>
-      </ul>
+      <p><strong>Argument:</strong> that fixing the loop outperforms the other two. That's reasoning from precedent — Loom did it once, in this category, and the mechanism is understood — but Boom has a fraction of the sending volume Loom had, and a loop with nothing flowing through it does nothing. If your users aren't already sending recordings, fixing the loop fixes nothing, and social becomes more attractive again by default.</p>
+      <p style="margin-top:.8em"><strong>So the first thing to check is your own send volume.</strong> That number decides which engine is even available to you, and I don't have it.</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <b>Built on:</b> EXIF fields available from the system photo pickers · Apple Vision framework &amp; Android ML Kit on-device capabilities · the access decision in <a href="./access.html">Data Access</a><br>
-  <b>Companions:</b> <a href="./mobile.html">mobile design</a> · <a href="./recall.html">screen recall campaign</a> · <a href="./memo.html">team memo</a><br>
+  <b>Sources:</b> competitor sitemaps &amp; published revenue figures · AI Overview / zero-click search data 2026 · the 1,795-comment corpus · Atlassian Creator seat change, Feb 2026<br>
+  <b>Companions:</b> <a href="./strategy.html">strategy memo</a> · <a href="./playbook.html">acquisition playbook</a> · <a href="./funnel.html">funnel model</a> · <a href="./mask.html">the work mask</a><br>
   <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
 </footer>
 
