@@ -1,0 +1,235 @@
+{
+ "Atlassian": [
+  {
+   "id": "6003325467980",
+   "name": "Atlassian",
+   "audience_size_lower_bound": 1923477,
+   "audience_size_upper_bound": 2262010,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Atlassian"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Technology"
+  },
+  {
+   "id": "6003702871891",
+   "name": "JIRA",
+   "audience_size_lower_bound": 707151,
+   "audience_size_upper_bound": 831610,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "JIRA"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Technology"
+  },
+  {
+   "id": "6003288382876",
+   "name": "Confluence (software)",
+   "audience_size_lower_bound": 148511,
+   "audience_size_upper_bound": 174650,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Confluence (software)"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Technology"
+  }
+ ],
+ "Jira": [
+  {
+   "id": "6003702871891",
+   "name": "JIRA",
+   "audience_size_lower_bound": 707151,
+   "audience_size_upper_bound": 831610,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "JIRA"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Technology"
+  },
+  {
+   "id": "6020058515940",
+   "name": "Jirayu Tangsrisuk",
+   "audience_size_lower_bound": 739600,
+   "audience_size_upper_bound": 869770,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Jirayu Tangsrisuk"
+   ],
+   "description": null,
+   "disambiguation_category": "Artist",
+   "topic": "People"
+  },
+  {
+   "id": "6003352244859",
+   "name": "Jirayu La-ongmanee",
+   "audience_size_lower_bound": 211556,
+   "audience_size_upper_bound": 248790,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Jirayu La-ongmanee"
+   ],
+   "description": null,
+   "disambiguation_category": "Artist",
+   "topic": "People"
+  },
+  {
+   "id": "6861353681235",
+   "name": "Actors",
+   "audience_size_lower_bound": 850340,
+   "audience_size_upper_bound": 1000000,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Actors"
+   ],
+   "description": null,
+   "disambiguation_category": "Artist"
+  },
+  {
+   "id": "6002986566123",
+   "name": "Girard-Perregaux",
+   "audience_size_lower_bound": 424672,
+   "audience_size_upper_bound": 499415,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Girard-Perregaux"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Shopping and fashion"
+  }
+ ],
+ "Confluence": [
+  {
+   "id": "6003288382876",
+   "name": "Confluence (software)",
+   "audience_size_lower_bound": 148511,
+   "audience_size_upper_bound": 174650,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Confluence (software)"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Technology"
+  },
+  {
+   "id": "6003332745294",
+   "name": "Mus\u00e9e des Confluences",
+   "audience_size_lower_bound": 75986,
+   "audience_size_upper_bound": 89360,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Mus\u00e9e des Confluences"
+   ],
+   "description": null,
+   "disambiguation_category": "Tour Agency",
+   "topic": "Hobbies and activities"
+  },
+  {
+   "id": "6003042998915",
+   "name": "Museum",
+   "audience_size_lower_bound": 70650705,
+   "audience_size_upper_bound": 83085230,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Museum"
+   ],
+   "description": null,
+   "topic": "Hobbies and activities"
+  },
+  {
+   "id": "6003388372512",
+   "name": "Business software",
+   "audience_size_lower_bound": 1326717,
+   "audience_size_upper_bound": 1560220,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Business software"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  }
+ ],
+ "Screencast": [],
+ "Camtasia": [],
+ "Wistia": [
+  {
+   "id": "6005965434351",
+   "name": "Wistia",
+   "audience_size_lower_bound": 127202,
+   "audience_size_upper_bound": 149590,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Wistia"
+   ],
+   "description": null,
+   "topic": "Travel, places and events"
+  },
+  {
+   "id": "6002998003644",
+   "name": "Video hosting service",
+   "audience_size_lower_bound": 212826360,
+   "audience_size_upper_bound": 250283800,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Video hosting service"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  }
+ ],
+ "Vidyard": [],
+ "Loom video": [],
+ "Web conferencing": [
+  {
+   "id": "6003339514793",
+   "name": "Web conferencing",
+   "audience_size_lower_bound": 76666828,
+   "audience_size_upper_bound": 90160190,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Web conferencing"
+   ],
+   "description": null,
+   "topic": "Lifestyle and culture"
+  }
+ ],
+ "Videotelephony": [
+  {
+   "id": "6003401495747",
+   "name": "Videotelephony",
+   "audience_size_lower_bound": 99192397,
+   "audience_size_upper_bound": 116650260,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Videotelephony"
+   ],
+   "description": null,
+   "topic": "Technology"
+  }
+ ]
+}

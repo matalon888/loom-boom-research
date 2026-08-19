@@ -1,0 +1,186 @@
+{
+ "Slack (software)": [],
+ "Notion": [
+  {
+   "id": "6011208690029",
+   "name": "Moda Fabrics United Notions",
+   "audience_size_lower_bound": 62525,
+   "audience_size_upper_bound": 73530,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Moda Fabrics United Notions"
+   ],
+   "description": null,
+   "disambiguation_category": "Product/service"
+  },
+  {
+   "id": "6003324427177",
+   "name": "Space",
+   "audience_size_lower_bound": 87154251,
+   "audience_size_upper_bound": 102493400,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Space"
+   ],
+   "description": null,
+   "topic": "Hobbies and activities"
+  },
+  {
+   "id": "6003473921364",
+   "name": "Solidarity",
+   "audience_size_lower_bound": 29762984,
+   "audience_size_upper_bound": 35001270,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Solidarity"
+   ],
+   "description": null,
+   "topic": "Hobbies and activities"
+  },
+  {
+   "id": "6803643107550",
+   "name": "Crafting Retailers",
+   "audience_size_lower_bound": 850340,
+   "audience_size_upper_bound": 1000000,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Crafting Retailers"
+   ],
+   "description": null,
+   "disambiguation_category": "Arts & Crafts Store"
+  }
+ ],
+ "Zoom Video Communications": [],
+ "Asana": [
+  {
+   "id": "6002908703310",
+   "name": "Asana (software)",
+   "audience_size_lower_bound": 445722,
+   "audience_size_upper_bound": 524170,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Asana (software)"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Technology"
+  }
+ ],
+ "Trello": [
+  {
+   "id": "6003766257632",
+   "name": "Trello",
+   "audience_size_lower_bound": 689285,
+   "audience_size_upper_bound": 810600,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Trello"
+   ],
+   "description": null,
+   "disambiguation_category": "Local Business",
+   "topic": "Technology"
+  }
+ ],
+ "Google Workspace": [],
+ "Productivity software": [
+  {
+   "id": "6017268931255",
+   "name": "Productivity software",
+   "audience_size_lower_bound": 5073460,
+   "audience_size_upper_bound": 5966390,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Productivity software"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  }
+ ],
+ "Project management": [
+  {
+   "id": "6003225004145",
+   "name": "Project management",
+   "audience_size_lower_bound": 22843537,
+   "audience_size_upper_bound": 26864000,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Project management"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003117766068",
+   "name": "Project Management Professional",
+   "audience_size_lower_bound": 1637721,
+   "audience_size_upper_bound": 1925960,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Project Management Professional"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003255572488",
+   "name": "Project Management Institute",
+   "audience_size_lower_bound": 1379982,
+   "audience_size_upper_bound": 1622860,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Project Management Institute"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003115662542",
+   "name": "Project management software",
+   "audience_size_lower_bound": 529047,
+   "audience_size_upper_bound": 622160,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Project management software"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003449992775",
+   "name": "Association for Project Management",
+   "audience_size_lower_bound": 97440,
+   "audience_size_upper_bound": 114590,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Association for Project Management"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  },
+  {
+   "id": "6003761247704",
+   "name": "Estimation (project management)",
+   "audience_size_lower_bound": 78809,
+   "audience_size_upper_bound": 92680,
+   "path": [
+    "Interests",
+    "Additional interests",
+    "Estimation (project management)"
+   ],
+   "description": null,
+   "topic": "Business and industry"
+  }
+ ]
+}
