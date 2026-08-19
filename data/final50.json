@@ -40,6 +40,23 @@
     "rank": 2
   },
   {
+    "handle": "mitchellh",
+    "name": "Mitchell Hashimoto",
+    "followers": 222323,
+    "verified": true,
+    "bio": "Co-founder of @Superlogical. Creator of Ghostty. \ud83d\udc7b Prev founded @HashiCorp, created Vagrant, Terraform, Vault, and others.",
+    "posts_found": 1,
+    "videos": 1,
+    "avg_eng": 1151,
+    "views": 119180,
+    "tools": [],
+    "score": 45.1,
+    "url": "https://x.com/mitchellh",
+    "sample": "The macOS unobtrusive update feature is now shipped to tip releases (aka. OpenAI Demogate). Demo shows a real update! Beyond visuals, also mproved functionality, e.g. tip updates will now link to a GH compare view between your com",
+    "sample_url": "https://x.com/mitchellh/status/1976697791151001905",
+    "rank": 3
+  },
+  {
     "handle": "MengTo",
     "name": "Meng To",
     "followers": 177894,
@@ -54,7 +71,7 @@
     "url": "https://x.com/MengTo",
     "sample": "This is how I built my first macOS app. A free 34-min tutorial. https://t.co/6lTgejnBOQ",
     "sample_url": "https://x.com/MengTo/status/1910996478408917070",
-    "rank": 3
+    "rank": 4
   },
   {
     "handle": "BrettFromDJ",
@@ -71,7 +88,7 @@
     "url": "https://x.com/BrettFromDJ",
     "sample": "Holy sh*t. Sound on. \ud83d\udd0a Endless looping, animated Airbnb-style icon with AI generated sound, all in one app. Full tutorial below. https://t.co/l681f8NVmO",
     "sample_url": "https://x.com/BrettFromDJ/status/1923061854747886035",
-    "rank": 4
+    "rank": 5
   },
   {
     "handle": "heynavtoor",
@@ -91,7 +108,7 @@
     "url": "https://x.com/heynavtoor",
     "sample": "\ud83d\udea8 Claude Code costs $200/month. GitHub Copilot costs $19/month. Jack Dorsey's company built a free alternative. 35,000 GitHub stars. It's called Goose. An open source AI agent built by Block that goes beyond code suggestions. It i",
     "sample_url": "https://x.com/heynavtoor/status/2040702196401197358",
-    "rank": 5
+    "rank": 6
   },
   {
     "handle": "dr_cintas",
@@ -111,23 +128,6 @@
     "url": "https://x.com/dr_cintas",
     "sample": "your AI agent can watch any video now - paste a URL and it sees every frame, hears every word, all for free \ud83e\udd2f bradautomates/claude-video gives Claude the ability to watch YouTube, Loom, TikTok, local files - anything yt-dlp suppor",
     "sample_url": "https://x.com/dr_cintas/status/2081094058139918595",
-    "rank": 6
-  },
-  {
-    "handle": "solana_devs",
-    "name": "Solana Developers",
-    "followers": 87837,
-    "verified": true,
-    "bio": "gm Solana Developooooors! Technical news, updates, content, code and job opportunities for Solana developers \ud83e\uddd1\ud83c\udffd\u200d\ud83d\udcbb",
-    "posts_found": 1,
-    "videos": 1,
-    "avg_eng": 739,
-    "views": 138648,
-    "tools": [],
-    "score": 51,
-    "url": "https://x.com/solana_devs",
-    "sample": "Introducing Solana School: Fall Class Spend this fall learning, building, and shipping. Solana School: Fall Class includes: - Seven weeks of hands-on learning and building - Guest lectures from top Solana devs - Open office hours ",
-    "sample_url": "https://x.com/solana_devs/status/2087931073397231752",
     "rank": 7
   },
   {
