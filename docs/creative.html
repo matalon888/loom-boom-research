@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Ad creative and funnel sequence for Boom - three audiences, three baits drawn from real user complaints, with verified Meta interest IDs and message timing.">
-<title>Three Ponds, Three Baits</title>
+<meta name="description" content="Meta creative spec for Boom - five awareness tiers, which format and how many seconds for each, and what to say to which audience.">
+<title>Pre-Search Is The Whole Game</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
@@ -216,25 +216,22 @@ footer{margin-top:80px;border-top:2px solid var(--ink);padding-top:20px;
   font-family:var(--mono);font-size:11px;line-height:1.75;color:var(--muted)}
 footer b{color:var(--ink-soft);font-weight:500}
 </style>
-
 </head>
 <body>
 <div class="wrap">
 
 <header class="masthead">
-  <div class="kicker"><span class="dot"></span> ad &amp; funnel spec &middot; 19 aug 2026</div>
-  <h1>Three Ponds,<br>Three Baits</h1>
-  <p class="standfirst">Every hook below is a real sentence from the 1,795-comment corpus, matched to a verified Meta audience. <b>And the cross-device problem you keep hitting only exists in one of the three ponds — so stop routing the other two through it.</b></p>
+  <div class="kicker"><span class="dot"></span> creative spec &middot; 20 aug 2026</div>
+  <h1>Pre-Search Is<br>The Whole Game</h1>
+  <p class="standfirst">Loom's buying keywords are 1,000 searches a month at $13.35 a click. <b>There is no post-search market worth having — so every format below is built to catch people before they ever search.</b> Five awareness tiers, the format that fits each, and the exact seconds.</p>
 
   <nav class="sitenav" aria-label="Sections">
     <a href="./">The Complaint Ledger</a>
-    <a href="./creative.html">Creative Spec</a>
+    <a href="./creative.html" aria-current="page">Creative Spec</a>
     <a href="./flow.html">UI Flow</a>
-    <a href="./fishing.html" aria-current="page">Ads &amp; Funnel</a>
+    <a href="./fishing.html">Ads &amp; Funnel</a>
     <a href="./engines.html">Three Engines</a>
     <a href="./costs.html">Budget</a>
-    <a href="./recall.html">Screen Recall</a>
-    <a href="./funnel.html">Funnel Model</a>
     <a href="./roster.html">The Roster</a>
     <a href="./memo.html">Team Memo</a>
   </nav>
@@ -242,21 +239,20 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">the insight first</div>
-    <h2>Two of these ponds should never see a desktop ask</h2>
+    <div class="sec-num">1 — your question, answered</div>
+    <h2>Both. But Loom users are the small half.</h2>
   </div>
   <div class="grid">
     <div class="col">
-      <p>I've been modelling one funnel and getting bad cross-device numbers. That's because I was pushing everyone through the same pipe.</p>
-      <p><strong>Someone who clicked an ad about losing a client recording already wants a recorder on their work machine.</strong> For them, "get it on desktop" isn't a chore you have to bribe them through — it's the thing they came for. The 8% click-to-install rate doesn't apply.</p>
-      <p><strong>Someone who clicked a memory game does not want your software.</strong> Pushing them to a desktop install is where the funnel dies. Don't. Take their $5–20 on credits, on the phone, where they already are.</p>
+      <p><strong>Loom users are reachable but tiny.</strong> The only route is Atlassian <code>6003325467980</code> (1.9M), JIRA (707k), Confluence (149k). That's roughly 2M people, hot, and worth every dollar — but it will never be your volume.</p>
+      <p><strong>Fresh audiences are 100× bigger.</strong> Small business owners 48.1M · Freelancer 34.3M · Puzzle games 288M. None of them are searching for a screen recorder. Most don't know they want one.</p>
+      <p>So the answer to "pre-search" is: <strong>that's not one tier, it's three of the five below</strong> — and it's where all the volume lives.</p>
     </div>
     <div class="col">
       <div class="callout warn">
-        <div class="h">So the rule is</div>
-        <p><strong>Recorder-intent traffic → desktop is the destination.</strong> Say it immediately and clearly.</p>
-        <p style="margin-top:.7em"><strong>Game traffic → the phone is the destination.</strong> Never mention desktop in the first session. Monetise on credits, and let desktop happen later, unpaid, if at all.</p>
-        <p style="margin-top:.7em">Mixing them is what produced the $22 CAC. Separated, one pond is cheap and the other doesn't need the step.</p>
+        <div class="h">Why post-search barely exists here</div>
+        <p>"loom alternative" — 1,000 searches/month in the US at $13.35 a click. Even winning it entirely gets you 1,000 visitors. Meanwhile a single TikTok creator post reaches 5.85M.</p>
+        <p style="margin-top:.7em">Search is a rounding error in this category. Everything real happens before anyone types anything.</p>
       </div>
     </div>
   </div>
@@ -264,151 +260,138 @@ footer b{color:var(--ink-soft);font-weight:500}
 
 <section>
   <div class="sec-head">
-    <div class="sec-num">pond A</div>
-    <h2>Loom refugees — smallest, hottest, desktop-native</h2>
-    <p class="dek">~2M reachable. Highest intent in the whole plan. These people are actively angry right now.</p>
-  </div>
-  <div class="grid">
-    <div class="col">
-      <p><strong>Target:</strong> Atlassian <code>6003325467980</code> (1.9M) · JIRA <code>6003702871891</code> (707k) · Confluence <code>6003288382876</code> (149k) · Wistia <code>6005965434351</code> (127k) — all OR.</p>
-      <p>Loom is an Atlassian product now. These are the people Atlassian is cross-selling it to, and the people whose bill changed in February.</p>
-      <div class="callout">
-        <div class="h">Desktop is the ask, from the first frame</div>
-        <p>No game, no detour. Ad → landing page → download. They came for a recorder; give them one.</p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="dm">
-        <div class="dm-h"><span class="t">Bait — the billing shock</span><span class="w">cold ad</span></div>
-<pre>"Your Loom bill changed in February.
- Ours doesn't charge for people who watch."
-
- <b>[Download Boom — free]</b></pre>
-      </div>
-      <p style="margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
-        FROM: <em>"After Atlassian acquired Loom, navigating user subscriptions and billing seems impossible. I keep getting overcharged without my consent and I can't figure out how to downgrade my team."</em>
-      </p>
-      <div class="dm">
-        <div class="dm-h"><span class="t">Bait — the cap</span><span class="w">variant</span></div>
-<pre>"25 videos. Then it stops.
- That's Loom's free plan. Not ours."</pre>
-      </div>
-      <p style="margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
-        FROM: <em>"I would give it 5 stars if it wasn't for the 5-minute time limit on the free version"</em> — 46 upvotes
-      </p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">pond B</div>
-    <h2>Freelancers &amp; small business — biggest commercial pool</h2>
-    <p class="dek">~48M reachable via behaviour. 96% of them talk about <em>sending</em>, which is what feeds the loop.</p>
-  </div>
-  <div class="grid">
-    <div class="col">
-      <p><strong>Target:</strong> behaviour Small business owners <code>6002714898572</code> (48.1M) <strong>AND</strong> any of — Freelancer <code>6003374632277</code> (34.3M) · Advertising agency <code>6003702887891</code> (28.4M) · Telecommuting <code>6003343813828</code> (20.7M) · Fiverr <code>6003439911912</code> (6.0M).</p>
-      <p style="margin-top:1em"><strong>Never</strong> <code>6002714895372</code> — that's Frequent Travelers, 2.6 billion. It's the ID that broke Recepte.</p>
-      <div class="callout note">
-        <div class="h">Route: Click-to-WhatsApp</div>
-        <p>$0.27 per conversation on your own data. The conversation captures contact at the moment of click — no email form, no landing-page drop.</p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="dm">
-        <div class="dm-h"><span class="t">Bait — lost work</span><span class="w">cold ad · highest emotion in the corpus</span></div>
-<pre>"Recorded a 15-minute walkthrough for a client.
- It failed to upload. Had to do the whole thing again."
-
- That's the review that made us build Boom.
- <b>[Chat with us on WhatsApp]</b></pre>
-      </div>
-      <p style="margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
-        FROM: <em>"i recorded a 15 minute presentation and in the end what happened? Everything i recorded failed to upload... So I had to re-record it again."</em> — 37 upvotes
-      </p>
-      <div class="dm">
-        <div class="dm-h"><span class="t">Message 1 — same minute</span><span class="w">WhatsApp, free in the 72h window</span></div>
-<pre>Boom records your screen and gives you a link.
-Your client doesn't need an account to watch it.
-
-Free, no time limit. Works on Mac and Windows.
-
-<b>[Get it on my computer]</b>   <b>[What is this?]</b></pre>
-      </div>
-      <p style="margin-top:10px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">
-        Desktop link in message 1. They already want it — don't make them wait for it.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">pond C</div>
-    <h2>The game — biggest reach, and the one that must stay on the phone</h2>
-    <p class="dek">Puzzle video games <code>6003668975718</code> (288M) · Casual game <code>6003102728434</code> (74.9M) · Tile-matching <code>6007698456652</code> (5.5M).</p>
-  </div>
-  <div class="grid">
-    <div class="col">
-      <div class="dm">
-        <div class="dm-h"><span class="t">Bait — no product at all</span><span class="w">cold ad</span></div>
-<pre>"This screen was on display for 5 seconds.
- What was on it?"
-
- <b>[Play]</b>   — 15 seconds, no signup</pre>
-      </div>
-      <div class="dm">
-        <div class="dm-h"><span class="t">After the score</span><span class="w">on the phone, same session</span></div>
-<pre>You were off by 4.
-Beat your friends: <b>[Send a challenge]</b>
-Daily prize draw: <b>[Enter — free]</b></pre>
-      </div>
-    </div>
-    <div class="col">
-      <div class="callout warn">
-        <div class="h">What NOT to say in this pond</div>
-        <p>No "download our desktop app." No "screen recorder." No mention of work. Every one of those is where the funnel leaked $22 a head.</p>
-        <p style="margin-top:.7em">The desktop mention comes on <strong>day 7+</strong>, by WhatsApp, and only to people who came back and played twice. By then they're a user, not a click.</p>
-      </div>
-      <div class="callout">
-        <div class="h">And when you do say it, say it as money</div>
-<pre style="font-family:var(--mono);font-size:12px;line-height:1.6;background:var(--rule-soft);padding:12px;margin-top:8px;white-space:pre-wrap">You've got 3 prize entries waiting.
-Claim them on your computer: [link]</pre>
-        <p style="margin-top:.7em">"Install our software" converts at 8%. "Collect your winnings" converts at something much closer to 45%. Same click, different sentence.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="sec-head">
-    <div class="sec-num">the sequence</div>
-    <h2>When to say what</h2>
+    <div class="sec-num">2 — format by temperature</div>
+    <h2>Image to find them, video to convince them, carousel to close them</h2>
+    <p class="dek">2026 Meta benchmarks. This is the part most people get backwards — they lead with expensive video on cold traffic.</p>
   </div>
   <div class="tablewrap">
-    <table style="min-width:820px">
-      <thead><tr><th>When</th><th>Pond A — Loom refugees</th><th>Pond B — freelancers</th><th>Pond C — game</th></tr></thead>
+    <table style="min-width:700px">
+      <thead><tr><th>Format</th><th class="num">ROAS</th><th>What it's actually best at</th><th>Use at</th></tr></thead>
       <tbody>
-        <tr><td class="num"><strong>Ad</strong></td><td>"Your Loom bill changed in February."</td><td>"It failed to upload. Had to do it again."</td><td>"What was on this screen?"</td></tr>
-        <tr><td class="num"><strong>Click lands</strong></td><td>Download page</td><td>WhatsApp conversation</td><td>Game, playing in 2 seconds</td></tr>
-        <tr><td class="num"><strong>Minute 1</strong></td><td>Download. That's it.</td><td>"Your client doesn't need an account to watch." + desktop link</td><td>Score. Then: challenge a friend.</td></tr>
-        <tr><td class="num"><strong>Day 1</strong></td><td>"Your first recording — want the link shortener?"</td><td>"Did it work? Anything broken?"</td><td>"New board today."</td></tr>
-        <tr><td class="num"><strong>Day 3</strong></td><td>Team invite prompt</td><td>"Most people here record client updates. Want the template?"</td><td>Prize draw reminder</td></tr>
-        <tr class="ok"><td class="num"><strong>Day 7</strong></td><td>Premium: 4K, dubbing, unlimited</td><td>Premium, priced against Loom's $180/user</td><td><strong>First desktop mention</strong> — and only as "claim your entries"</td></tr>
+        <tr class="ok"><td><strong>Static image</strong></td><td class="num">3.3×</td><td><strong>38% cheaper CPM in cold prospecting</strong> — the cheapest way to find people</td><td>Unaware</td></tr>
+        <tr><td><strong>Video</strong></td><td class="num">3.8×</td><td>27% higher CTR than static — best at making an argument</td><td>Problem &amp; solution aware</td></tr>
+        <tr class="ok"><td><strong>Carousel</strong></td><td class="num">3.7×</td><td><strong>30–50% lower cost per conversion on retargeting</strong></td><td>Product aware</td></tr>
+        <tr><td>Collection</td><td class="num">4.2×</td><td>Highest ROAS but needs a catalogue — not your shape</td><td>skip</td></tr>
       </tbody>
     </table>
   </div>
+  <div class="callout note">
+    <div class="h">The seconds</div>
+    <p><strong>Reels sweet spot is 21–24 seconds.</strong> Under 15s doesn't fit a message; over 30s and completion collapses. <strong>The hook window in Reels is 1.5–2 seconds</strong> — not three. And <strong>85% of Meta video is watched with sound off</strong>, so every one of these has to work muted, with the words on screen.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">3 — the matrix</div>
+    <h2>Five tiers. What to say, in what format, for how long.</h2>
+    <p class="dek">Same awareness structure you already run on Recepte. Every headline is quoted from the 1,795-comment corpus.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table style="min-width:960px">
+      <thead><tr>
+        <th>Tier</th><th>Who</th><th>Targeting</th><th>Format</th><th class="num">Length</th><th>What to say</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>1 · Unaware</strong><br><span class="nm">288M</span></td>
+          <td>Puzzle &amp; casual gamers. Never thought about recording anything.</td>
+          <td class="num">6003668975718<br>6003102728434</td>
+          <td><strong>Static image</strong><br>then 9:16 video</td>
+          <td class="num">image<br>+ 15s</td>
+          <td>"This screen was up for 5 seconds. What was on it?"<br><span class="nm">No product. No logo. A question.</span></td>
+        </tr>
+        <tr>
+          <td><strong>2 · Problem</strong><br><span class="nm">~99M</span></td>
+          <td>Sits in too many meetings. Doesn't know a tool fixes it.</td>
+          <td class="num">6003401495747 Videotelephony<br>6003339514793 Web conferencing</td>
+          <td><strong>Video 9:16</strong></td>
+          <td class="num">21–24s</td>
+          <td>"This meeting could have been 90 seconds of screen."<br><span class="nm">Show the calendar, then the link.</span></td>
+        </tr>
+        <tr class="ok">
+          <td><strong>3 · Solution</strong><br><span class="nm">48M — your best pool</span></td>
+          <td>Freelancers &amp; SMB. Already records client videos. Uses something, tolerates it.</td>
+          <td class="num">6002714898572 AND<br>(6003374632277 OR<br>6003702887891 OR 6003439911912)</td>
+          <td><strong>Video 9:16</strong><br>testimonial style</td>
+          <td class="num">21–24s</td>
+          <td>"I recorded a 15-minute walkthrough for a client. It failed to upload. I had to do the whole thing again."<br><span class="nm">★☆☆☆☆ — a real review. 37 upvotes.</span></td>
+        </tr>
+        <tr class="ok">
+          <td><strong>4 · Product</strong><br><span class="nm">~2M — hot</span></td>
+          <td>Loom users. Knows exactly what this category is. Angry since February.</td>
+          <td class="num">6003325467980 Atlassian<br>6003702871891 JIRA<br>6003288382876 Confluence</td>
+          <td><strong>Carousel</strong><br>4 cards</td>
+          <td class="num">static or<br>4×6s</td>
+          <td>Card 1 "Your Loom bill changed in February."<br>2 "25 videos, then it stops."<br>3 "You can't download your own file."<br>4 "$71.99/yr. Viewers never charged."</td>
+        </tr>
+        <tr>
+          <td><strong>5 · Most aware</strong><br><span class="nm">retargeting</span></td>
+          <td>Visited, played, or downloaded — didn't pay.</td>
+          <td class="num">Custom audiences<br>+ pixel events</td>
+          <td><strong>Carousel</strong><br>30–50% lower CPA here</td>
+          <td class="num">static</td>
+          <td>Feature-by-feature against Loom pricing. One card per objection they didn't clear.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
   <div class="callout warn">
-    <div class="h">One rule that overrides all of this</div>
-    <p>Every ad above sends people to a pricing page that currently says <strong>25 videos</strong> — the exact number Loom uses and the loudest complaint in the corpus. Pond A's entire ad is <em>"25 videos, then it stops. That's Loom's free plan, not ours"</em> and it is presently untrue.</p>
-    <p style="margin-top:.7em">Fix the cap before a single ad runs, or you're paying to show people your weakest screen.</p>
+    <div class="h">Carousel only at tiers 4 and 5</div>
+    <p>Its 30–50% cost advantage is <em>a retargeting effect</em>. On cold traffic a carousel is just an expensive image — people don't swipe ads from brands they've never heard of. Your Recepte carousels work because that campaign is CTWA with a qualifying first card, which is a different mechanic.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">4 — the production list</div>
+    <h2>What to actually make</h2>
+    <p class="dek">Minimum viable set to launch all five tiers. Every asset 9:16, safe zones respected, and legible with the sound off.</p>
+  </div>
+  <div class="tablewrap">
+    <table style="min-width:720px">
+      <thead><tr><th class="num">Qty</th><th>Asset</th><th class="num">Spec</th><th>For</th></tr></thead>
+      <tbody>
+        <tr><td class="num">6</td><td>Static images — the game question, six different screens</td><td class="num">1080×1350 (4:5)<br>+ 1080×1920</td><td>Tier 1 cold prospecting</td></tr>
+        <tr><td class="num">3</td><td>Video — the meeting that should have been a Boom</td><td class="num">9:16 · <strong>22s</strong></td><td>Tier 2</td></tr>
+        <tr><td class="num">4</td><td>Video — real 1-star reviews read aloud over the failure</td><td class="num">9:16 · <strong>22s</strong></td><td>Tier 3 · your best pool</td></tr>
+        <tr><td class="num">1</td><td>Carousel — 4 cards, the Loom bill / cap / download / price</td><td class="num">1080×1080</td><td>Tier 4 Atlassian</td></tr>
+        <tr><td class="num">1</td><td>Carousel — objection-by-objection</td><td class="num">1080×1080</td><td>Tier 5 retargeting</td></tr>
+        <tr class="ok"><td class="num"><strong>15</strong></td><td colspan="3"><strong>assets total.</strong> The 22-second videos are the only real production; everything else is design.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <div class="h">The 22-second structure</div>
+    <p><strong>0:00–0:02</strong> the hook, on screen, no logo — this window decides everything and it's under two seconds in Reels.<br>
+    <strong>0:02–0:12</strong> the failure, shown not described — the upload bar stuck at 33%, the "video not found" screen.<br>
+    <strong>0:12–0:18</strong> the same job done in Boom, one take.<br>
+    <strong>0:18–0:22</strong> price against Loom, and the CTA.</p>
+    <p style="margin-top:.7em">Captions burned in throughout. 85% will never hear it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head">
+    <div class="sec-num">5 — honesty</div>
+    <h2>What's measured, what's mine</h2>
+  </div>
+  <div class="grid">
+    <div class="col">
+      <p><strong>Measured:</strong> the format ROAS figures, the 38% cold-CPM advantage of images, the 30–50% carousel retargeting advantage, the 21–24s Reels window, the 1.5–2s hook window, 85% sound-off. All 2026 Meta benchmarks. Every audience ID queried live from your account. Every headline quoted from the corpus with its upvote count.</p>
+    </div>
+    <div class="col">
+      <p><strong>Mine, not measured:</strong> the tier-to-format mapping, the 22-second structure, and which line belongs to which audience. Those are arguments from the benchmarks, not results. Run three creatives per tier and let the account tell you — your own Recepte data will beat any of my assumptions within two weeks.</p>
+    </div>
   </div>
 </section>
 
 <footer>
-  <b>Sources:</b> all hooks quoted from the <a href="./comments.html">1,795-comment corpus</a> with upvote counts · all interest and behaviour IDs queried live from the Boom ad account, 19 Aug 2026 · CTWA cost from the Recepte campaign<br>
-  <b>Companions:</b> <a href="./engines.html">three engines</a> · <a href="./costs.html">budget</a> · <a href="./funnel.html">funnel model</a><br>
+  <b>Sources:</b> Meta creative benchmarks 2026 (format ROAS, CPM, Reels length, hook window) · interest &amp; behaviour IDs queried live from the Boom ad account · headlines from the <a href="./comments.html">1,795-comment corpus</a><br>
+  <b>Companions:</b> <a href="./flow.html">UI flow</a> · <a href="./fishing.html">ads &amp; funnel</a> · <a href="./costs.html">budget</a><br>
   <b>Data &amp; scripts:</b> <a href="https://github.com/matalon888/loom-boom-research">github.com/matalon888/loom-boom-research</a>
 </footer>
 
